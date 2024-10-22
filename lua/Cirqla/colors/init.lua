@@ -3,16 +3,16 @@ local U = require("Cirqla.utils")
 
 function C.extend_palette(options)
 	-- Backgrounds
-	C.bg = C["000000"]                                     -- Main background
-	C.bg_dark = C["000001"]                                -- Darker background for inactive areas
-	C.bg_inactive = C["000011"]                            -- Background for inactive windows
-	C.bg_highlight = U.darken(C["010000"], 0.08, C["000000"]) -- Highlighted background
-	C.bg_visual = C["001011"]                              -- Visual mode background
-	C.bg_bright = C["001111"]                              -- Bright background
-	C.bg_sidebar = C["000010"]                             -- Sidebar background
-	C.bg_statusline = C["000101"]                          -- Statusline background
-	C.bg_selected = C["001000"]                            -- Background for selected items
-	C.bg_fold = C["000011"]                                -- Background for folded sections
+	C.bg = C["000000"]                                    -- Main background
+	C.bg_dark = C["000001"]                               -- Darker background for inactive areas
+	C.bg_inactive = C["000011"]                           -- Background for inactive windows
+	C.bg_highlight = U.darken(C["000000"], 0.1, C["010000"]) -- Highlighted background
+	C.bg_visual = C["001011"]                             -- Visual mode background
+	C.bg_bright = C["001111"]                             -- Bright background
+	C.bg_sidebar = C["000010"]                            -- Sidebar background
+	C.bg_statusline = C["000101"]                         -- Statusline background
+	C.bg_selected = C["001000"]                           -- Background for selected items
+	C.bg_fold = C["000011"]                               -- Background for folded sections
 
 	-- Foregrounds
 	C.fg = C["011111"]                                     -- Main foreground (text)
