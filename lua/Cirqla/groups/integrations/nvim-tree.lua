@@ -2,9 +2,9 @@ local C = require("Cirqla.colors")
 local U = require("Cirqla.utils")
 
 return {
-	NvimTreeFolderName = { fg = C["001101"] },
+	NvimTreeFolderName = { fg = C.fg },
 	NvimTreeFolderIcon = { fg = C["011010"] },
-	NvimTreeCursorLine = { bg = C.bg_highlight },
+	NvimTreeCursorLine = { bg = C.bg_highlight, fg = C.fg_highlight, blend = 48 },
 	NvimTreeNormal = { fg = C["010101"] },
 	NvimTreeOpenedFolderName = { fg = C["011011"] },
 	NvimTreeEmptyFolderName = { fg = C["000101"] },
