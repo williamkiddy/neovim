@@ -48,7 +48,7 @@ return {
 	NormalFloat = { fg = C.fg_float, bg = C.bg_float },
 	FloatBorder = { fg = C.fg_float_border, bg = C.bg_float_border },
 
-	Pmenu = { bg = C.bg_popup, fg = C.fg_popup },
+	Pmenu = { bg = C.bg_popup, fg = C.fg_popup, blend = 80 },
 	PmenuSel = { bg = C.bg_selected },
 	PmenuSbar = { bg = C["000001"] },                 -- Change as needed
 	PmenuThumb = { bg = C["000001"], fg = C["000001"] }, -- Change as needed
