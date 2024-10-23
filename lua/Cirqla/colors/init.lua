@@ -11,7 +11,7 @@ function C.extend_palette(options)
 	C.bg_visual = C["001011"]                               -- Visual mode background
 	C.bg_bright = C["001111"]                               -- Bright background
 	C.bg_sidebar = C["000010"]                              -- Sidebar background
-	C.bg_statusline = C["000101"]                           -- Statusline background
+	C.bg_statusline = C.none                                -- Statusline background
 	C.bg_selected = C["001000"]                             -- Background for selected items
 	C.bg_fold = C["000011"]                                 -- Background for folded sections
 

@@ -3,7 +3,9 @@ local M = {}
 -- Default options
 local defaults = {
 	italic_comments = true,
-	transparent_background = false,
+	transparent = {
+		bg = false,
+	},
 	cursorline = {
 		blend = 0.78,
 		bold = true,
