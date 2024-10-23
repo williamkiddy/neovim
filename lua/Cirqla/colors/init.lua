@@ -2,6 +2,7 @@ local C = require("Cirqla.colors.colors")
 local U = require("Cirqla.utils")
 
 function C.extend_palette(options)
+	C.none = "NONE"
 	-- Backgrounds
 	C.bg = C["000000"]                                      -- Main background
 	C.bg_dark = C["000001"]                                 -- Darker background for inactive areas

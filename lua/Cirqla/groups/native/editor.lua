@@ -66,4 +66,19 @@ return {
 	SpellCap = { sp = C.warning, undercurl = true },
 	SpellLocal = { sp = C.info, undercurl = true },
 	SpellRare = { sp = C.hint, undercurl = true },
+
+	StatusLine = { fg = C.fg_sidebar, bg = C.bg_statusline }, -- status line of current window
+	StatusLineNC = { fg = C["011010"], bg = C.bg_statusline }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+	TabLine = { bg = C.bg_statusline, fg = C.fg },          -- tab pages line, not active tab page label
+	TabLineFill = { bg = C.black0, fg = C.none },           -- tab pages line, where there are no labels
+	TabLineSel = { fg = C.fg_bright, bg = C.bg },           -- tab pages line, active tab page label
+	Title = { fg = C.fg_bright, bold = true },              -- titles for output from ":set all", ":autocmd" etc.
+	Visual = { bg = C.bg_visual, bold = O.cursorline.bold }, -- Visual mode selection
+	VisualNOS = { bg = C.bg_visual },                       -- Visual mode selection when vim is "Not Owning the Selection".
+	WarningMsg = { fg = C.warning },                        -- warning messages
+	Whitespace = { fg = C["010100"] },                      -- "nbsp", "space", "tab" and "trail" in 'listchars'
+	WildMenu = { bg = C.bg_visual },                        -- current match in 'wildmenu' completion
+	WinBar = { bg = C.bg_dark, fg = C.fg },
+	WinBarNC = { bg = C.bg_dark, fg = C.fg_inactive },
+
 }
