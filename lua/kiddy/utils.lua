@@ -1,6 +1,6 @@
 local M = {}
 
-M.NAME = 'Cirqla'
+M.NAME = "kiddy"
 
 function M.loaded()
 	return vim.g.colors_name == M.NAME
@@ -13,21 +13,23 @@ function M.highlight(table)
 end
 
 function M.is_none(string)
-	return string == 'NONE' or string == 'none'
+	return string == "NONE" or string == "none"
 end
 
 function M.none()
-	return 'NONE'
+	return "NONE"
 end
 
 function M.merge(table1, table2)
-	if table1 == table2 == nil then return {} end
+	if table1 == table2 == nil then
+		return {}
+	end
 	if table1 == nil then
 		return table2
 	elseif table2 == nil then
 		return table1
 	end
-	return vim.tbl_deep_extend('force', table1, table2)
+	return vim.tbl_deep_extend("force", table1, table2)
 end
 
 function M.hex_to_rgb(str)
@@ -36,7 +38,7 @@ function M.hex_to_rgb(str)
 end
 
 function M.rgb_to_hex(r, g, b)
-	return '#' .. string.format('%x', r) .. string.format('%x', g) .. string.format('%x', b)
+	return "#" .. string.format("%x", r) .. string.format("%x", g) .. string.format("%x", b)
 end
 
 function M.rgb_to_hsv(r, g, b)
@@ -58,7 +60,9 @@ function M.rgb_to_hsv(r, g, b)
 	else
 		if max == r then
 			h = (g - b) / d
-			if g < b then h = h + 6 end
+			if g < b then
+				h = h + 6
+			end
 		elseif max == g then
 			h = (b - r) / d + 2
 		elseif max == b then
@@ -98,13 +102,19 @@ function M.hsv_to_rbg(h, s, v)
 	return r * 255, g * 255, b * 255
 end
 
-function M.darken(hex, amount, bg) return M.blend(hex, bg, math.abs(amount)) end
+function M.darken(hex, amount, bg)
+	return M.blend(hex, bg, math.abs(amount))
+end
 
-function M.lighten(hex, amount, bg) return M.blend(hex, bg, math.abs(amount)) end
+function M.lighten(hex, amount, bg)
+	return M.blend(hex, bg, math.abs(amount))
+end
 
 -- Adapted from @folke/tokyonight.nvim.
 function M.blend(foreground, background, alpha)
-	if M.is_none(foreground) or M.is_none(background) then return M.none() end
+	if M.is_none(foreground) or M.is_none(background) then
+		return M.none()
+	end
 
 	local fg = { M.hex_to_rgb(foreground) }
 	local bg = { M.hex_to_rgb(background) }
