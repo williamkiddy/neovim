@@ -41,8 +41,8 @@ function C.extend_palette(options)
 
 	-- Diff highlighting
 	C.diff = {
-		change0 = C.sec2, -- Change color 1
-		change1 = C.sec4, -- Change color 2
+		change0 = C.sec2,
+		change1 = C.sec4,
 		add = C.sec5, -- Additions in diff
 		delete = C.base4, -- Deletions in diff
 	}
