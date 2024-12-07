@@ -1,1 +1,1 @@
-lua require 'Cirqla' .load()
+lua require 'kiddy' .load()
