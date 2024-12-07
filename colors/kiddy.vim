@@ -1,1 +1,1 @@
-lua require("kiddy").load()
+lua require 'kiddy'.load()
