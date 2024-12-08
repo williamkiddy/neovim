@@ -9,7 +9,7 @@ return {
 	CmpDocumentationBorder = { fg = C.base4, bg = C.base0 },
 	CmpPmenu = { fg = C.sec6, bg = C.base0 },
 	CmpPmenuSel = { bg = C.sec2 },
-	CmpItemKindText = { fg = C.sec1, bg = U.darken(C.sec1, 0.68) },
+	CmpItemKindText = { fg = C.sec1, bg = U.darken(C.sec1, 0.68, C.bg) },
 	CmpItemKindFunction = { fg = C.sec5 },
 	CmpItemKindVariable = { fg = C.sec4 },
 	CmpItemKindClass = { fg = C.sec6 },

@@ -25,7 +25,7 @@ function M.load(opts)
 end
 
 -- Add command to nvim
-vim.api.nvim_create_user_command("kiddy", function(args)
+vim.api.nvim_create_user_command("Kiddy", function(args)
 	M.load(args)
 	vim.cmd("colorscheme kiddy")
 end, {

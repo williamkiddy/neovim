@@ -8,7 +8,7 @@ function C.extend_palette(options)
 	C.bg_dark = C.base1 -- Darker background for inactive areas
 	C.bg_inactive = C.base2 -- Background for inactive windows
 	C.bg_highlight = U.lighten(C.sec0, 0.08, C.base0) -- Highlighted background
-	C.bg_visual = C.sec3 -- Visual mode background
+	C.bg_visual = C.sec3 -- for highlighting (cursor)
 	C.bg_bright = C.sec8 -- Bright background
 	C.bg_sidebar = C.base6 -- Sidebar background
 	C.bg_statusline = C.none -- Statusline background
@@ -55,11 +55,11 @@ function C.extend_palette(options)
 	}
 
 	-- Diagnostics
-	C.error = C.base4 -- Error color
-	C.warn = C.sec6 -- Warning color
-	C.warning = C.sec7 -- Additional warning color
-	C.hint = C.sec2 -- Hint color
-	C.info = C.sec3 -- Info color
+	C.error = C.def0 -- Error color
+	C.warn = C.def1 -- Warning color
+	C.warning = C.accent5 -- Additional warning color
+	C.hint = C.def3 -- Hint color
+	C.info = C.sec2 -- Info color
 end
 
 return C
