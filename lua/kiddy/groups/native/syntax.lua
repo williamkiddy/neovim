@@ -10,8 +10,8 @@ return {
 	Number = { fg = C.accent6 }, -- Numbers
 	Boolean = { fg = C.hue2 }, -- Booleans
 	Float = { fg = C.hue6 }, -- Floats
-	Identifier = { fg = C.pastel8 }, -- Identifiers
-	Function = { fg = C.pastel2, bold = true }, -- Functions
+	Identifier = { fg = C.def8 }, -- Identifiers
+	Function = { fg = C.tone4, bold = true }, -- Functions
 	Statement = { fg = C.hue0, bold = true }, -- Statements
 	Conditional = { fg = C.hue7, bold = true }, -- Conditionals
 	Repeat = { fg = C.accent4, bold = true }, -- Repeat statements
@@ -19,9 +19,9 @@ return {
 	Operator = { fg = C.accent4 }, -- Operators
 	Keyword = { fg = C.pastel7, bold = true }, -- Keywords
 	PreProc = { fg = C.hue6 }, -- Preprocessor directives
-	Type = { fg = C.hue8, bold = true }, -- Types
+	Type = { fg = C.tone7, bold = true }, -- Types
 	Structure = { fg = C.accent0, bold = true }, -- Structures
-	Special = { fg = C.hue8 }, -- Special characters
+	Special = { fg = C.tone7 }, -- Special characters
 
 	-- Specific syntax highlightings
 	Todo = { fg = C.accent1, bg = C.pastel1, bold = true }, -- TODO comments

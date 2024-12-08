@@ -3,7 +3,7 @@ local U = require("kiddy.utils")
 
 return {
 	CmpItemAbbr = { fg = C.base5 },
-	CmpItemAbbrMatch = { fg = C.accent2, bg = C.bg_selected, bold = true },
+	CmpItemAbbrMatch = { fg = C.fg_selected, bg = C.bg_selected, bold = true },
 	CmpItemAbbrMatchFuzzy = { fg = C.sec3, bg = C.base0, bold = true },
 	CmpDocumentation = { bg = C.base0 },
 	CmpDocumentationBorder = { fg = C.base4, bg = C.base0 },
