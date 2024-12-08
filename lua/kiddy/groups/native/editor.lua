@@ -1,7 +1,8 @@
+local U = require("kiddy.utils")
 local M = {}
 function M.get(colors, options)
 	return {
-		Comment = { fg = colors.base3, italic = O.italic_comments }, -- Comment text in base3 color, italicized if configured
+		Comment = { fg = colors.base3, italic = options.italic_comments }, -- Comment text in base3 color, italicized if configured
 		ColorColumn = { bg = colors.bg_visual }, -- Color column background set to bg_visual
 		Conceal = { fg = colors.base0 }, -- Concealed text in base0 color
 

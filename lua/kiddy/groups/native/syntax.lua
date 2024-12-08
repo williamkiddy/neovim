@@ -1,4 +1,5 @@
 local M = {}
+
 function M.get(colors, options)
 	return {
 		-- General syntax highlighting
@@ -46,4 +47,5 @@ function M.get(colors, options)
 		Whitespace = { fg = colors.none }, -- Whitespace
 	}
 end
+
 return M
