@@ -15,13 +15,13 @@ M.native = {
 	"syntax",
 }
 
-function M.get_groups()
+function M.get_groups(colors, options)
 	local groups = {}
 	for _, native in ipairs(M.native) do
-		groups = merge(groups, require("kiddy.groups.native." .. native))
+		groups = merge(groups, require("kiddy.groups.native." .. native).get(colors, options))
 	end
 	for _, integration in ipairs(M.integrations) do
-		groups = merge(groups, require("kiddy.groups.integrations." .. integration))
+		groups = merge(groups, require("kiddy.groups.integrations." .. integration).get(colors, options))
 	end
 	return merge(groups, C.options.override or {})
 end
