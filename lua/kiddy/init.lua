@@ -16,9 +16,10 @@ function M.load(opts)
 	if opts then
 		C.setup(opts)
 	end
+	require("kiddy.colors").extend_palette(C.options)
 
 	-- Now G.get_groups() can access updated options from C.options
-	U.highlight(G.get_groups(require("kiddy.colors").extend_palette(C.options), C.options))
+	U.highlight(G.get_groups(require("kiddy.colors"), C.options))
 end
 
 -- Add command to nvim
