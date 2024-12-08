@@ -10,12 +10,12 @@ return {
 	Number = { fg = C.accent6 }, -- Numbers
 	Boolean = { fg = C.hue2 }, -- Booleans
 	Float = { fg = C.hue6 }, -- Floats
-	Identifier = { fg = C.pastel6 }, -- Identifiers
+	Identifier = { fg = C.pastel8 }, -- Identifiers
 	Function = { fg = C.pastel2, bold = true }, -- Functions
 	Statement = { fg = C.hue0, bold = true }, -- Statements
 	Conditional = { fg = C.hue7, bold = true }, -- Conditionals
-	Repeat = { fg = C.hue5, bold = true }, -- Repeat statements
-	Label = { fg = C.pastel1, bold = true }, -- Labels
+	Repeat = { fg = C.accent4, bold = true }, -- Repeat statements
+	Label = { fg = C.tone4, bold = true }, -- Labels
 	Operator = { fg = C.accent4 }, -- Operators
 	Keyword = { fg = C.pastel7, bold = true }, -- Keywords
 	PreProc = { fg = C.hue6 }, -- Preprocessor directives
