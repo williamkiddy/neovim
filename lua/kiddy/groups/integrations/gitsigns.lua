@@ -36,4 +36,4 @@ function M.get(colors, options)
 	}
 end
 
-return {}
+return M
