@@ -8,6 +8,8 @@ M.integrations = {
 	"nvim-tree",
 	"neo-tree",
 	"nvim-cmp",
+	"treesitter",
+	"kinds",
 }
 
 M.native = {
