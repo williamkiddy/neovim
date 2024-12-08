@@ -1,16 +1,14 @@
-local C = require("kiddy.colors")
-local U = require("kiddy.utils")
 local M = {}
 function M.get(colors, options)
 	return {
-		CmpItemAbbr = { fg = C.base5 },
-		CmpItemAbbrMatch = { fg = C.fg_selected, bg = C.bg_selected, bold = true },
-		CmpItemAbbrMatchFuzzy = { fg = C.sec3, bg = C.base0, bold = true },
-		CmpDocumentation = { bg = C.base0 },
-		CmpDocumentationBorder = { fg = C.base4, bg = C.base0 },
-		CmpPmenu = { fg = C.sec6, bg = C.base0 },
-		CmpPmenuSel = { bg = C.sec2 },
-		CmpItemKindText = { fg = C.fg_highlight },
+		CmpItemAbbr = { fg = colors.base5 },
+		CmpItemAbbrMatch = { fg = colors.fg_selected, bg = colors.bg_selected, bold = true },
+		CmpItemAbbrMatchFuzzy = { fg = colors.sec3, bg = colors.base0, bold = true },
+		CmpDocumentation = { bg = colors.base0 },
+		CmpDocumentationBorder = { fg = colors.base4, bg = colors.base0 },
+		CmpPmenu = { fg = colors.sec6, bg = colors.base0 },
+		CmpPmenuSel = { bg = colors.sec2 },
+		CmpItemKindText = { fg = colors.fg_highlight },
 		CmpItemKindFunction = { link = "Function" }, -- Functions
 		CmpItemKindVariable = { link = "Identifier" }, -- Variables
 		CmpItemKindClass = { link = "Type" }, -- Classes
@@ -26,7 +24,7 @@ function M.get(colors, options)
 		CmpItemKindEvent = { link = "Special" }, -- Events
 		CmpItemKindOperator = { link = "Operator" }, -- Operators
 		CmpItemKindTypeParameter = { link = "Type" }, -- Type Parameters
-		CmpItemKindSnippet = { fg = C.def2 }, -- Snippets
+		CmpItemKindSnippet = { fg = colors.def2 }, -- Snippets
 	}
 end
 return M
