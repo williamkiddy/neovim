@@ -25,5 +25,5 @@ return {
 	CmpItemKindEvent = { link = "Special" }, -- Events
 	CmpItemKindOperator = { link = "Operator" }, -- Operators
 	CmpItemKindTypeParameter = { link = "Type" }, -- Type Parameters
-	CmpItemKindSnippet = { C.def2 }, -- Snippets
+	CmpItemKindSnippet = { fg = C.def2 }, -- Snippets
 }
