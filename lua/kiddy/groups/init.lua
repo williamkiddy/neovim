@@ -15,6 +15,7 @@ M.integrations = {
 M.native = {
 	"editor",
 	"syntax",
+	"extra",
 }
 
 function M.get_groups(colors, options)
