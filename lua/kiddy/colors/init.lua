@@ -12,7 +12,7 @@ function C.extend_palette(options)
 	C.bg_bright = C.pastel8 -- Bright background
 	C.bg_sidebar = C.base6 -- Sidebar background
 	C.bg_statusline = C.none -- Statusline background
-	C.bg_selected = C.base3 -- Background for selected items
+	C.bg_selected = U.blend(C.base3, C.base6, 0.3) -- Background for selected items
 	C.bg_fold = C.base2 -- Background for folded sections
 
 	-- Foregrounds
@@ -22,9 +22,9 @@ function C.extend_palette(options)
 	C.fg_highlight = U.lighten(C.sec1, 0.2, C.base4) -- Highlighted text
 	C.fg_bright = C.base6 -- Bright foreground (text)
 	C.fg_visual = C.sec3 -- Visual mode text
-	C.fg_sidebar = C.sec2 -- Sidebar text
+	C.fg_sidebar = C.sec5 -- Sidebar text
 	C.fg_statusline = C.sec7 -- Statusline text
-	C.fg_selected = C.sec6 -- Text for selected items
+	C.fg_selected = C.sec8 -- Text for selected items
 	C.fg_fold = C.base4 -- Text for folded sections
 
 	-- Popups

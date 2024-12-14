@@ -1,25 +1,32 @@
 local colors = {
 	-- base colors
-	base0 = "#1a1a1d", -- charcoal or midnight black
-	base1 = "#2b2b34", -- shadow black or storm gray
-	base2 = "#2f3e2d", -- forest moss or olive green
-	base3 = "#4b5b73", -- slate stone or blue slate
-	base4 = "#577bae", -- sky blue or steel blue
-	base5 = "#4d4d4d", -- ash gray or graphite
-	base6 = "#2a2f3b", -- navy gray or dark midnight
-	base7 = "#ffffff", -- snow white or ivory
-	base8 = "#b0b0b0", -- silver or dove gray
+	base0 = "#1c1b1e", -- obsidian black
+	base1 = "#322b36", -- warm plum
+	base2 = "#405a3a", -- mossy green
+	base3 = "#4e6b8a", -- muted ocean
+	base4 = "#8575ba", -- lavender stone
+	base5 = "#726e6d", -- smoky ash
+	base6 = "#2e3543", -- twilight navy
+	base7 = "#f4e9db", -- antique white
+	base8 = "#c8b6a6", -- sand dune
 
-	-- secondary colors
-	sec0 = "#7a5c8d", -- violet orchid or purple orchid
-	sec1 = "#d4a6c8", -- lavender mist or lilac
-	sec2 = "#a3d99a", -- mint leaf or pale mint
-	sec3 = "#e76b71", -- salmon pink or coral red
-	sec4 = "#ff7f50", -- coral reef or tangerine
-	sec5 = "#b2d800", -- lime green or lime
-	sec6 = "#008b8b", -- teal or sea green
-	sec7 = "#ff6f61", -- tomato red or crimson
-	sec8 = "#ff8c00", -- amber or tangerine
+	sec0 = "#2d3b51",
+	sec1 = "#db6e70",
+	sec2 = "#7dcdb4",
+	sec3 = "#d9c495",
+	sec4 = "#7578af",
+	sec5 = "#95307d",
+	sec6 = "#6fb1c7",
+	sec7 = "#c1c7d4",
+
+	sec8 = "#414a65",
+	sec9 = "#f57876",
+	sec10 = "#7ee3c0",
+	sec11 = "#e4cb96",
+	sec12 = "#586ba8",
+	sec13 = "#a53b83",
+	sec14 = "#6fbfd1",
+	sec15 = "#e9ecf4",
 
 	-- standard colors
 	def0 = "#d98e8e", -- rose or light pink
