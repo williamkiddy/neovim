@@ -3,7 +3,6 @@ local M = {}
 function M.get(colors, options)
 	return {
 		-- General syntax highlighting
-		Comment = { fg = colors.base2, italic = options.italic_comments }, -- Comments
 		Constant = { fg = colors.def7 }, -- Constants
 		String = { fg = colors.tone3 }, -- Strings
 		Character = { fg = colors.hue7 }, -- Characters

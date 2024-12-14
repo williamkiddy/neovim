@@ -36,7 +36,7 @@ function C.extend_palette(options)
 	-- Floating windows
 	C.bg_float = C.base1 -- Background for floating windows
 	C.fg_float = C.base5 -- Text for floating windows
-	C.bg_float_border = C.base3 -- Border background for floating windows
+	C.bg_float_border = C.bg_float -- Border background for floating windows
 	C.fg_float_border = C.sec3 -- Border text for floating windows
 
 	-- Diff highlighting

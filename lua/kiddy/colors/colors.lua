@@ -10,23 +10,25 @@ local colors = {
 	base7 = "#f4e9db", -- antique white
 	base8 = "#c8b6a6", -- sand dune
 
-	sec0 = "#2d3b51",
-	sec1 = "#db6e70",
-	sec2 = "#7dcdb4",
-	sec3 = "#d9c495",
-	sec4 = "#7578af",
-	sec5 = "#95307d",
-	sec6 = "#6fb1c7",
-	sec7 = "#c1c7d4",
+	-- Normal Colors
+	sec0 = "#262736",
+	sec1 = "#7E4248",
+	sec2 = "#3E7461",
+	sec3 = "#B6B530",
+	sec4 = "#60737E",
+	sec5 = "#6E4D6B",
+	sec6 = "#7bb3d1",
+	sec7 = "#D6C4D6",
 
-	sec8 = "#414a65",
-	sec9 = "#f57876",
-	sec10 = "#7ee3c0",
-	sec11 = "#e4cb96",
-	sec12 = "#586ba8",
-	sec13 = "#a53b83",
-	sec14 = "#6fbfd1",
-	sec15 = "#e9ecf4",
+	-- Bright Colors
+	sec8 = "#2c3c52",
+	sec9 = "#D49A94",
+	sec10 = "#90e38a",
+	sec11 = "#d6be87",
+	sec12 = "#8293b7",
+	sec13 = "#D49A94",
+	sec14 = "#94d0e1",
+	sec15 = "#F1e7f4",
 
 	-- standard colors
 	def0 = "#d98e8e", -- rose or light pink
