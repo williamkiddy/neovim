@@ -11,17 +11,17 @@ local colors = {
 	base8 = "#c8b6a6", -- sand dune
 
 	-- Normal Colors
-	sec0 = "#262736",
+	sec0 = "#262A36",
 	sec1 = "#7E4248",
 	sec2 = "#3E7461",
-	sec3 = "#B6B530",
+	sec3 = "#C4C08F",
 	sec4 = "#60737E",
 	sec5 = "#6E4D6B",
 	sec6 = "#7bb3d1",
-	sec7 = "#D6C4D6",
+	sec7 = "#B6B4BF",
 
 	-- Bright Colors
-	sec8 = "#2c3c52",
+	sec8 = "#2c2c3D",
 	sec9 = "#D49A94",
 	sec10 = "#90e38a",
 	sec11 = "#d6be87",
