@@ -21,7 +21,7 @@ local colors = {
 	sec7 = "#B6B4BF",
 
 	-- Bright Colors
-	sec8 = "#2c2c3D",
+	sec8 = "#404356",
 	sec9 = "#D49A94",
 	sec10 = "#90e38a",
 	sec11 = "#d6be87",
