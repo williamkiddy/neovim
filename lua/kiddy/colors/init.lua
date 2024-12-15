@@ -27,6 +27,10 @@ function C.extend_palette(options)
 	C.fg_selected = C.sec8 -- Text for selected items
 	C.fg_fold = C.base4 -- Text for folded sections
 
+	if options.theme == "Mufflora" then
+		C.bg = C.sec0
+	end
+
 	-- Popups
 	C.bg_popup = C.base6 -- Popup background
 	C.fg_popup = C.sec6 -- Popup text
@@ -55,11 +59,11 @@ function C.extend_palette(options)
 	}
 
 	-- Diagnostics
-	C.error = C.def0 -- Error color
-	C.warn = C.def1 -- Warning color
-	C.warning = C.accent5 -- Additional warning color
-	C.hint = C.def3 -- Hint color
-	C.info = C.sec2 -- Info color
+	C.error = U.blend(C.def0, C.bg, 0.5) -- Error color
+	C.warn = U.blend(C.def1, C.bg, 0.5) -- Warning color
+	C.warning = U.blend(C.accent5, C.bg, 0.5) -- Additional warning color
+	C.hint = U.blend(C.def3, C.bg, 0.5) -- Hint color
+	C.info = U.blend(C.sec2, C.bg, 0.5) -- Info color
 end
 
 return C

@@ -3,13 +3,14 @@ local M = {}
 -- Default options
 local defaults = {
 	italic_comments = true,
+	theme = "",
 	transparent = {
 		bg = false,
 	},
 	cursorline = {
 		blend = 0.78,
 		bold = true,
-		bold_number = true
+		bold_number = true,
 	},
 	override = {},
 }
@@ -40,11 +41,11 @@ function M.override_options(new_options)
 end
 
 -- Initialize options with defaults
-M.options = vim.tbl_deep_extend('force', {}, defaults)
+M.options = vim.tbl_deep_extend("force", {}, defaults)
 
 -- Function to set up the options
 function M.setup(options)
-	M.options = vim.tbl_deep_extend('force', M.options, options or {})
+	M.options = vim.tbl_deep_extend("force", M.options, options or {})
 end
 
 return M
