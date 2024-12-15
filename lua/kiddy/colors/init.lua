@@ -9,7 +9,7 @@ function C.extend_palette(options)
 	C.bg_inactive = C.base2 -- Background for inactive windows
 	C.bg_highlight = U.lighten(C.sec0, 0.08, C.base0) -- Highlighted background
 	C.bg_visual = C.sec3 -- for highlighting (cursor)
-	C.bg_bright = C.pastel8 -- Bright background
+	C.bg_bright = U.lighten(C.pastel8, 0.2, C.bg) -- Bright background
 	C.bg_sidebar = C.base6 -- Sidebar background
 	C.bg_statusline = C.none -- Statusline background
 	C.bg_selected = U.blend(C.bg, C.def8, 0.9) -- Background for selected items
@@ -18,9 +18,9 @@ function C.extend_palette(options)
 	-- Foregrounds
 	C.fg = C.base5 -- Main foreground (text)
 	C.fg_dark = C.base6 -- Darker text
-	C.fg_inactive = C.se -- Inactive window text
+	C.fg_inactive = C.sec8 -- Inactive window text
 	C.fg_highlight = U.lighten(C.sec1, 0.2, C.base4) -- Highlighted text
-	C.fg_bright = C.base6 -- Bright foreground (text)
+	C.fg_bright = U.lighten(C.base6, 0.3, C.bg) -- Bright foreground (text)
 	C.fg_visual = C.sec3 -- Visual mode text
 	C.fg_sidebar = C.sec5 -- Sidebar text
 	C.fg_statusline = C.sec7 -- Statusline text
