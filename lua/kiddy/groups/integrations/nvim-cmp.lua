@@ -26,6 +26,7 @@ function M.get(colors, options)
 		CmpItemKindOperator = { link = "Operator" }, -- Operators
 		CmpItemKindTypeParameter = { link = "Type" }, -- Type Parameters
 		CmpItemKindSnippet = { fg = colors.def2 }, -- Snippets
+		CmpItemKindUnknown = { fg = colors.fg_inactive },
 	}
 end
 return M
