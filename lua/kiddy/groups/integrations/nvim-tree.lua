@@ -3,7 +3,7 @@ function M.get(colors, options)
 	return {
 		NvimTreeFolderName = { fg = colors.fg },
 		NvimTreeFolderIcon = { fg = colors.sec0 },
-		NvimTreeCursorLine = { bg = colors.bg_highlight },
+		NvimTreeCursorLine = { bg = colors.bg_selected },
 		NvimTreeNormal = { fg = colors.sec7 },
 		NvimTreeOpenedFolderName = { fg = colors.sec7 },
 		NvimTreeEmptyFolderName = { fg = colors.base3 },

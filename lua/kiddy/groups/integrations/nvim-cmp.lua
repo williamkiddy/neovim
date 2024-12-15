@@ -5,10 +5,19 @@ function M.get(colors, options)
 		CmpItemAbbrMatch = { fg = colors.fg_selected, bg = colors.bg_selected, bold = true },
 		CmpItemAbbrMatchFuzzy = { fg = colors.sec3, bg = colors.base0, bold = true },
 		CmpItemMenu = { fg = colors.fg, bg = colors.bg_popup },
+		CmpItemMenuLsp = { fg = colors.sec3, bg = colors.bg_popup },
+		CmpItemMenuSnippet = { fg = colors.sec2, bg = colors.bg_popup },
+
+		SpecialCmpBorder = { fg = colors.border, bg = colors.bg_popup },
+		CmpScrollbar = { bg = colors.bg_sidebar },
+		CmpScrollbarThumb = { fg = colors.fg_sidebar, bg = colors.bg_sidebar },
+		CmpGhostText = { fg = colors.fg_inactive, bg = colors.bg_popup, italic = true },
+
 		CmpDocumentation = { bg = colors.base0 },
 		CmpDocumentationBorder = { fg = colors.base4, bg = colors.base0 },
 		CmpPmenu = { fg = colors.sec6, bg = colors.base0 },
 		CmpPmenuSel = { bg = colors.sec2 },
+
 		CmpItemKindText = { fg = colors.fg_highlight },
 		CmpItemKindFunction = { link = "Function" }, -- Functions
 		CmpItemKindVariable = { link = "Identifier" }, -- Variables

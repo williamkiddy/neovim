@@ -18,7 +18,7 @@ function C.extend_palette(options)
 	-- Foregrounds
 	C.fg = C.base5 -- Main foreground (text)
 	C.fg_dark = C.base6 -- Darker text
-	C.fg_inactive = C.base4 -- Inactive window text
+	C.fg_inactive = C.sec8 -- Inactive window text
 	C.fg_highlight = U.lighten(C.sec1, 0.2, C.base4) -- Highlighted text
 	C.fg_bright = C.base6 -- Bright foreground (text)
 	C.fg_visual = C.sec3 -- Visual mode text
