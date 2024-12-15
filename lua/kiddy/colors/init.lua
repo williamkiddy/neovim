@@ -20,7 +20,7 @@ function C.extend_palette(options)
 	C.fg_dark = C.base6 -- Darker text
 	C.fg_inactive = C.sec8 -- Inactive window text
 	C.fg_highlight = U.lighten(C.sec1, 0.2, C.base4) -- Highlighted text
-	C.fg_bright = U.lighten(C.base6, 0.8, C.bg) -- Bright foreground (text)
+	C.fg_bright = U.lighten(C.base6, 0.8, C.pastel8) -- Bright foreground (text)
 	C.fg_visual = C.sec3 -- Visual mode text
 	C.fg_sidebar = C.sec5 -- Sidebar text
 	C.fg_statusline = C.sec7 -- Statusline text
