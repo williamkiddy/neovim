@@ -4,6 +4,7 @@ function M.get(colors, options)
 		CmpItemAbbr = { fg = colors.base5 },
 		CmpItemAbbrMatch = { fg = colors.fg_selected, bg = colors.bg_selected, bold = true },
 		CmpItemAbbrMatchFuzzy = { fg = colors.sec3, bg = colors.base0, bold = true },
+		CmpItemMenu = { fg = colors.fg, bg = colors.bg_popup },
 		CmpDocumentation = { bg = colors.base0 },
 		CmpDocumentationBorder = { fg = colors.base4, bg = colors.base0 },
 		CmpPmenu = { fg = colors.sec6, bg = colors.base0 },
