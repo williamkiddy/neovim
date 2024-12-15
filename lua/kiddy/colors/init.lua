@@ -12,7 +12,7 @@ function C.extend_palette(options)
 	C.bg_bright = C.pastel8 -- Bright background
 	C.bg_sidebar = C.base6 -- Sidebar background
 	C.bg_statusline = C.none -- Statusline background
-	C.bg_selected = U.blend(C.base3, C.sec7, 0.7) -- Background for selected items
+	C.bg_selected = U.blend(C.base3, C.def8, 0.7) -- Background for selected items
 	C.bg_fold = C.base2 -- Background for folded sections
 
 	-- Foregrounds
@@ -24,11 +24,12 @@ function C.extend_palette(options)
 	C.fg_visual = C.sec3 -- Visual mode text
 	C.fg_sidebar = C.sec5 -- Sidebar text
 	C.fg_statusline = C.sec7 -- Statusline text
-	C.fg_selected = C.sec7 -- Text for selected items
+	C.fg_selected = C.sec15 -- Text for selected items
 	C.fg_fold = C.base4 -- Text for folded sections
 
 	if options.theme == "Mufflora" then
 		C.bg = C.sec0
+		C.bg_selected = U.blend(C.bg, C.hue7, 0.7)
 	end
 
 	-- Popups
