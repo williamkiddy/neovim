@@ -29,7 +29,7 @@ function C.extend_palette(options)
 
 	if options.theme == "Mufflora" then
 		C.bg = C.sec0
-		C.bg_selected = U.blend(C.bg, C.hue7, 0.12)
+		C.bg_selected = U.blend(C.bg, C.hue7, 0.1)
 	end
 
 	-- Popups
