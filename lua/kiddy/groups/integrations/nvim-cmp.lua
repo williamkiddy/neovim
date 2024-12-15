@@ -1,5 +1,6 @@
 local M = {}
 local U = require("kiddy.utils")
+
 function M.get(colors, options)
 	return {
 		CmpItemAbbr = { fg = colors.base5 },
@@ -20,23 +21,32 @@ function M.get(colors, options)
 		CmpPmenuSel = { bg = colors.sec2 },
 
 		CmpItemKindText = { fg = colors.fg_highlight },
-		CmpItemKindFunction = { link = "Function" }, -- Functions
-		CmpItemKindVariable = { link = "Identifier" }, -- Variables
-		CmpItemKindClass = { link = "Type" }, -- Classes
-		CmpItemKindInterface = { link = "Type" }, -- Interfaces
-		CmpItemKindModule = { link = "Include" }, -- Modules
-		CmpItemKindKeyword = { link = "Keyword" }, -- Keywords
-		CmpItemKindField = { link = "Field" }, -- Fields
-		CmpItemKindProperty = { link = "Identifier" }, -- Properties
-		CmpItemKindEnum = { link = "Constant" }, -- Enums
-		CmpItemKindEnumMember = { link = "Constant" }, -- Enum Members
-		CmpItemKindConstant = { link = "Constant" }, -- Constants
-		CmpItemKindStruct = { link = "Structure" }, -- Structures
-		CmpItemKindEvent = { link = "Special" }, -- Events
-		CmpItemKindOperator = { link = "Operator" }, -- Operators
-		CmpItemKindTypeParameter = { link = "Type" }, -- Type Parameters
-		CmpItemKindSnippet = { fg = colors.def2 }, -- Snippets
+		CmpItemKindMethod = { link = "Function" },
+		CmpItemKindFunction = { link = "Function" },
+		CmpItemKindConstructor = { link = "Function" },
+		CmpItemKindField = { link = "Field" },
+		CmpItemKindVariable = { link = "Identifier" },
+		CmpItemKindClass = { link = "Type" },
+		CmpItemKindInterface = { link = "Type" },
+		CmpItemKindModule = { link = "Include" },
+		CmpItemKindProperty = { link = "Identifier" },
+		CmpItemKindUnit = { link = "Constant" },
+		CmpItemKindValue = { link = "Constant" },
+		CmpItemKindEnum = { link = "Constant" },
+		CmpItemKindKeyword = { link = "Keyword" },
+		CmpItemKindSnippet = { fg = colors.def2 },
+		CmpItemKindColor = { link = "Special" },
+		CmpItemKindFile = { link = "Directory" },
+		CmpItemKindReference = { link = "Type" },
+		CmpItemKindFolder = { link = "Directory" },
+		CmpItemKindEnumMember = { link = "Constant" },
+		CmpItemKindConstant = { link = "Constant" },
+		CmpItemKindStruct = { link = "Structure" },
+		CmpItemKindEvent = { link = "Special" },
+		CmpItemKindOperator = { link = "Operator" },
+		CmpItemKindTypeParameter = { link = "Type" },
 		CmpItemKindUnknown = { fg = colors.fg_inactive },
 	}
 end
+
 return M
