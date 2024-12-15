@@ -10,19 +10,19 @@ local colors = {
 	base7 = "#f4e9db", -- antique white
 	base8 = "#c8b6a6", -- sand dune
 
-	-- Normal Colors
+	-- Normal Colos
 	sec0 = "#262A36",
-	sec1 = "#7E4248",
-	sec2 = "#3E7461",
+	sec1 = "#AC6A68",
+	sec2 = "#74AC68",
 	sec3 = "#C4C08F",
 	sec4 = "#60737E",
 	sec5 = "#6E4D6B",
-	sec6 = "#7bb3d1",
+	sec6 = "#688FAC",
 	sec7 = "#B6B4BF",
 
 	-- Bright Colors
 	sec8 = "#404356",
-	sec9 = "#D49A94",
+	sec9 = "#AC6A68",
 	sec10 = "#90e38a",
 	sec11 = "#d6be87",
 	sec12 = "#8293b7",
