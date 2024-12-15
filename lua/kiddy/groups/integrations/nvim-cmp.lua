@@ -24,7 +24,7 @@ function M.get(colors, options)
 		CmpItemKindMethod = { link = "Function" },
 		CmpItemKindFunction = { link = "Function" },
 		CmpItemKindConstructor = { link = "Function" },
-		CmpItemKindField = { link = "Field" },
+		CmpItemKindField = { fg = colors.sec8 },
 		CmpItemKindVariable = { link = "Identifier" },
 		CmpItemKindClass = { link = "Type" },
 		CmpItemKindInterface = { link = "Type" },
