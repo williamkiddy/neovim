@@ -1,4 +1,5 @@
 local M = {}
+local U = require("kiddy.utils")
 function M.get(colors, options)
 	return {
 		Comment = { fg = colors.fg_bright, italic = options.italic_comments }, -- Comment text, italicized if configured
