@@ -32,6 +32,19 @@ local colors = {
 	sec14 = "#7DCFFF",
 	sec15 = "#C0CAF5",
 
+	-- Default colors: These colors are soft, pastel-inspired hues, ideal for creating a calm, serene color scheme.
+	-- Perfect for design systems aiming for a gentle and modern aesthetic, suitable for backgrounds,
+	-- buttons, and subtle UI elements. Each color evokes a different mood, from warmth (Goldenrod) to coolness (Sky Blue).
+	def0 = "#d98e8e",
+	def1 = "#d8b165",
+	def2 = "#d8c84e",
+	def3 = "#a8c68a",
+	def4 = "#8cb3c4",
+	def5 = "#b2a8c9",
+	def6 = "#d98e9c",
+	def7 = "#d98e8e",
+	def8 = "#8cb3b3",
+
 	-- Accent Colors: Deep and Subtle Highlights
 	-- Accents that add depth and richness to the color palette without overwhelming the design.
 	-- Perfect for highlighting important elements or creating subtle contrasts.
