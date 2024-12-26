@@ -8,8 +8,8 @@ local colors = {
 	base3 = "#C5E1A5",
 	base4 = "#A5D6A7",
 	base5 = "#81D4FA",
-	base6 = "#1B1A1A",
-	base7 = "#4D4F5F",
+	base6 = "#242834",
+	base7 = "#4D505F",
 	base8 = "#D6D6EF",
 
 	-- Secondary Colors: Vibrant and Modern Tones
@@ -40,10 +40,10 @@ local colors = {
 	def2 = "#d8c84e",
 	def3 = "#a8c68a",
 	def4 = "#8cb3c4",
-	def5 = "#b2a8c9",
-	def6 = "#d98e9c",
-	def7 = "#d98e8e",
-	def8 = "#8cb3b3",
+	def5 = "#82A8EF",
+	def6 = "#AE93E3",
+	def7 = "#d39edE",
+	def8 = "#EEBEEE",
 
 	-- Accent Colors: Deep and Subtle Highlights
 	-- Accents that add depth and richness to the color palette without overwhelming the design.
