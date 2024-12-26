@@ -1,4 +1,3 @@
-local U = require("kiddy.utils")
 local M = {}
 function M.get(colors, options)
 	return {
@@ -21,10 +20,7 @@ function M.get(colors, options)
 		ErrorMsg = { fg = colors.error }, -- Error messages
 
 		VertSplit = { fg = colors.fg_inactive, bg = colors.bg }, -- Vertical split line with inactive foreground
-		WinSeparator = { fg = colors.fg_inactive, bg = colors.bg }, -- Window separator with inactive foreground
-
-		Folded = { fg = colors.fg_fold, bg = colors.bg_fold }, -- Folded text
-		FoldColumn = { bg = colors.bg_fold, fg = colors.fg_fold }, -- Fold column with background and foreground
+		WinSeparator = { fg = colors.fg_inactive, bg = colors.bg }, -- Window separator with inactive foreground Folded = { fg = colors.fg_fold, bg = colors.bg_fold }, -- Folded text FoldColumn = { bg = colors.bg_fold, fg = colors.fg_fold }, -- Fold column with background and foreground
 
 		SignColumn = { bg = colors.bg_sidebar, fg = colors.fg_sidebar }, -- Sign column in sidebar colors
 		SignColumnSB = { bg = colors.bg_sidebar, fg = colors.fg_sidebar }, -- Second sign column

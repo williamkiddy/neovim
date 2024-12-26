@@ -1,89 +1,88 @@
 local colors = {
-	-- base colors
-	base0 = "#1c1b1e", -- obsidian black
-	base1 = "#322b36", -- warm plum
-	base2 = "#405a3a", -- mossy green
-	base3 = "#4e6b8a", -- muted ocean
-	base4 = "#8575ba", -- lavender stone
-	base5 = "#726e6d", -- smoky ash
-	base6 = "#2e3543", -- twilight navy
-	base7 = "#f4e9db", -- antique white
-	base8 = "#c8b6a6", -- sand dune
+	-- Base Colors: Soft Pastels and Neutrals
+	-- These are the foundational colors with soft pastel shades, providing a calming and neutral background.
+	-- Ideal for general background, light text, and soft accents.
+	base0 = "#F1C6D6",
+	base1 = "#E5B9D9",
+	base2 = "#D7A0D1",
+	base3 = "#C5E1A5",
+	base4 = "#A5D6A7",
+	base5 = "#81D4FA",
+	base6 = "#1B1A1A",
+	base7 = "#4D4F5F",
+	base8 = "#D6D6EF",
 
-	-- Normal Colos
-	sec0 = "#262A36",
-	sec1 = "#AC6A68",
-	sec2 = "#74AC68",
-	sec3 = "#C4C08F",
-	sec4 = "#60737E",
-	sec5 = "#6E4D6B",
-	sec6 = "#688FAC",
-	sec7 = "#B6B4BF",
+	-- Secondary Colors: Vibrant and Modern Tones
+	-- Vibrant colors that add life and contrast to the palette, creating a modern and dynamic feel.
+	-- Use for call-to-action elements, buttons, or any areas needing visual attention.
+	sec0 = "#181825",
+	sec1 = "#F7768E",
+	sec2 = "#9ECE6A",
+	sec3 = "#E0AF68",
+	sec4 = "#7AA2F7",
+	sec5 = "#BB9AF7",
+	sec6 = "#7DCFFF",
+	sec7 = "#A9B1D6",
+	sec8 = "#414868",
+	sec9 = "#F7768E",
+	sec10 = "#73DACA",
+	sec11 = "#E0AF68",
+	sec12 = "#7AA2F7",
+	sec13 = "#9D7CD8",
+	sec14 = "#7DCFFF",
+	sec15 = "#C0CAF5",
 
-	-- Bright Colors
-	sec8 = "#404356",
-	sec9 = "#AC6A68",
-	sec10 = "#90e38a",
-	sec11 = "#d6be87",
-	sec12 = "#8293b7",
-	sec13 = "#D49A94",
-	sec14 = "#94d0e1",
-	sec15 = "#F1e7f4",
+	-- Accent Colors: Deep and Subtle Highlights
+	-- Accents that add depth and richness to the color palette without overwhelming the design.
+	-- Perfect for highlighting important elements or creating subtle contrasts.
+	accent0 = "#1c1b1e",
+	accent1 = "#4e4439",
+	accent2 = "#d9c7a1",
+	accent3 = "#f3e4b4",
+	accent4 = "#b8f7b4",
+	accent5 = "#a6f0d2",
+	accent6 = "#b3f9f4",
+	accent7 = "#c7fffc",
+	accent8 = "#f3fffb",
 
-	-- standard colors
-	def0 = "#d98e8e", -- rose or light pink
-	def1 = "#d8b165", -- goldenrod or sunset gold
-	def2 = "#d8c84e", -- yellow ochre or gold
-	def3 = "#a8c68a", -- celery green or soft green
-	def4 = "#8cb3c4", -- periwinkle or sky blue
-	def5 = "#b2a8c9", -- lavender mist or lilac gray
-	def6 = "#d98e9c", -- mauve or rosy pink
-	def7 = "#d98e8e", -- coral or peach pink
-	def8 = "#8cb3b3", -- aqua mist or turquoise green
+	-- Tones: Subtle Variations for a Balanced Look
+	-- These tones offer subtle variations of the main palette, ideal for adding depth and subtle transitions.
+	-- Use for borders, dividers, or less dominant UI elements that still need to fit within the palette.
+	tone0 = "#b28ff9",
+	tone1 = "#a398d8",
+	tone2 = "#94a1b7",
+	tone3 = "#85a896",
+	tone4 = "#96b47d",
+	tone5 = "#b2c164",
+	tone6 = "#d7ce5a",
+	tone7 = "#f2dc73",
+	tone8 = "#ffeb8d",
 
-	-- accent colors
-	accent0 = "#f6b8a4", -- sandy rose or pale rose
-	accent1 = "#f3d1e6", -- baby pink or soft blush
-	accent2 = "#b2e0fd", -- light sky blue or pastel blue
-	accent3 = "#66b2d6", -- clear sky or light blue
-	accent4 = "#6de7a5", -- pale mint or fresh mint
-	accent5 = "#d19a66", -- warm taupe or golden beige
-	accent6 = "#e9d0b3", -- biscuit or light biscuit
-	accent7 = "#ffb5c4", -- peach blossom or light peach
-	accent8 = "#ff4500", -- orange red or fiery orange
+	-- Bright Hues: Bold and Colorful Accents
+	-- These are vivid, bold hues that make a statement and draw attention.
+	-- Ideal for highlighting key interactive elements like buttons, links, or active states.
+	hue0 = "#ff5e3a",
+	hue1 = "#ff9b0f",
+	hue2 = "#ffea00",
+	hue3 = "#00c853",
+	hue4 = "#00b0ff",
+	hue5 = "#1e88e5",
+	hue6 = "#5e35b1",
+	hue7 = "#d5006d",
+	hue8 = "#ffd700",
 
-	-- additional tones
-	tone0 = "#9c6b9b", -- deep lavender or purple haze
-	tone1 = "#d9b0c5", -- soft mauve or light lavender
-	tone2 = "#a8d8a2", -- pastel mint or pale mint
-	tone3 = "#e7a8b2", -- soft coral or light peach
-	tone4 = "#ffc27a", -- golden apricot or amber
-	tone5 = "#ffcdcd", -- soft blush or pink blush
-	tone6 = "#b3e5fc", -- light sky blue or pastel blue
-	tone7 = "#ccccff", -- lavender mist or light lilac
-	tone8 = "#f4a460", -- sandy brown or golden brown
-
-	-- colorful hues
-	hue0 = "#ff5e3a", -- sunset red or crimson
-	hue1 = "#ff9b0f", -- golden orange or sunshine yellow
-	hue2 = "#ffea00", -- lemon yellow or bright yellow
-	hue3 = "#00c853", -- fresh grass or bright green
-	hue4 = "#00b0ff", -- cyan blue or bright blue
-	hue5 = "#1e88e5", -- ocean blue or deep sky blue
-	hue6 = "#5e35b1", -- royal purple or vivid purple
-	hue7 = "#d5006d", -- vibrant fuchsia or pink violet
-	hue8 = "#ffd700", -- gold or golden yellow
-
-	-- gentle pastels
-	pastel0 = "#ff7d58", -- coral blush or pink coral
-	pastel1 = "#ffb84d", -- warm gold or golden peach
-	pastel2 = "#ffec66", -- lemon yellow or soft lemon
-	pastel3 = "#33d857", -- fresh mint or spring green
-	pastel4 = "#33c7ff", -- soft sky blue or light ocean
-	pastel5 = "#4fa6e6", -- ocean blue or blue sky
-	pastel6 = "#7e57b1", -- lavender or pale purple
-	pastel7 = "#ff5b94", -- pink blossom or soft pink
-	pastel8 = "#ffe4e1", -- misty rose or light rose
+	-- Gentle Pastels: Soft and Warm Tones for a Calm Aesthetic
+	-- Soft pastel shades that create a relaxing and comfortable aesthetic.
+	-- Perfect for background accents, lighter text, and less demanding UI elements.
+	pastel0 = "#ff7d58",
+	pastel1 = "#ffb84d",
+	pastel2 = "#ffec66",
+	pastel3 = "#33d857",
+	pastel4 = "#33c7ff",
+	pastel5 = "#4fa6e6",
+	pastel6 = "#7e57b1",
+	pastel7 = "#ff5b94",
+	pastel8 = "#ffe4e1",
 }
 
 return colors
