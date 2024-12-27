@@ -8,42 +8,9 @@ local colors = {
 	base3 = "#C5E1A5",
 	base4 = "#A5D6A7",
 	base5 = "#81D4FA",
-	base6 = "#242834",
-	base7 = "#4D505F",
+	base6 = "#1B1A1A",
+	base7 = "#4D4F5F",
 	base8 = "#D6D6EF",
-
-	-- Secondary Colors: Vibrant and Modern Tones
-	-- Vibrant colors that add life and contrast to the palette, creating a modern and dynamic feel.
-	-- Use for call-to-action elements, buttons, or any areas needing visual attention.
-	sec0 = "#181825",
-	sec1 = "#F7768E",
-	sec2 = "#9ECE6A",
-	sec3 = "#E0AF68",
-	sec4 = "#7AA2F7",
-	sec5 = "#BB9AF7",
-	sec6 = "#7DCFFF",
-	sec7 = "#A9B1D6",
-	sec8 = "#414868",
-	sec9 = "#F7768E",
-	sec10 = "#73DACA",
-	sec11 = "#E0AF68",
-	sec12 = "#7AA2F7",
-	sec13 = "#9D7CD8",
-	sec14 = "#7DCFFF",
-	sec15 = "#C0CAF5",
-
-	-- Default colors: These colors are soft, pastel-inspired hues, ideal for creating a calm, serene color scheme.
-	-- Perfect for design systems aiming for a gentle and modern aesthetic, suitable for backgrounds,
-	-- buttons, and subtle UI elements. Each color evokes a different mood, from warmth (Goldenrod) to coolness (Sky Blue).
-	def0 = "#d98e8e",
-	def1 = "#d8b165",
-	def2 = "#d8c84e",
-	def3 = "#a8c68a",
-	def4 = "#8cb3c4",
-	def5 = "#82A8EF",
-	def6 = "#AE93E3",
-	def7 = "#d39edE",
-	def8 = "#EEBEEE",
 
 	-- Accent Colors: Deep and Subtle Highlights
 	-- Accents that add depth and richness to the color palette without overwhelming the design.
@@ -58,6 +25,39 @@ local colors = {
 	accent7 = "#c7fffc",
 	accent8 = "#f3fffb",
 
+	-- Section Colors (sec)
+	-- These colors are designed for different sections and elements in your interface.
+	-- They represent the key color palette, combining soft tones with vibrant accents.
+	sec0 = "#20202F",
+	sec1 = "#e46876",
+	sec2 = "#a3c6a8",
+	sec3 = "#e8c28c",
+	sec4 = "#81a1c1",
+	sec5 = "#c49ac6",
+	sec6 = "#88c0d0",
+	sec7 = "#e5e9f0",
+	sec8 = "#3b4252",
+	sec9 = "#CF737F",
+	sec10 = "#b8dbb2",
+	sec11 = "#f3e2b0",
+	sec12 = "#a3cfee",
+	sec13 = "#d5a6dd",
+	sec14 = "#aee3f3",
+	sec15 = "#eceff4",
+
+	-- Default colors: These colors are soft, pastel-inspired hues, ideal for creating a calm, serene color scheme.
+	-- Perfect for design systems aiming for a gentle and modern aesthetic, suitable for backgrounds,
+	-- buttons, and subtle UI elements. Each color evokes a different mood, from warmth (Goldenrod) to coolness (Sky Blue).
+	def0 = "#d98e8e",
+	def1 = "#d8b165",
+	def2 = "#d8c84e",
+	def3 = "#a8c68a",
+	def4 = "#8cb3c4",
+	def5 = "#82A8EF",
+	def6 = "#AE93E3",
+	def7 = "#d39edE",
+	def8 = "#EEBEEE",
+
 	-- Tones: Subtle Variations for a Balanced Look
 	-- These tones offer subtle variations of the main palette, ideal for adding depth and subtle transitions.
 	-- Use for borders, dividers, or less dominant UI elements that still need to fit within the palette.
@@ -71,31 +71,45 @@ local colors = {
 	tone7 = "#f2dc73",
 	tone8 = "#ffeb8d",
 
-	-- Bright Hues: Bold and Colorful Accents
+	-- Bright Hues: Bold and Colorful Accents (Terminal based)
 	-- These are vivid, bold hues that make a statement and draw attention.
-	-- Ideal for highlighting key interactive elements like buttons, links, or active states.
-	hue0 = "#ff5e3a",
-	hue1 = "#ff9b0f",
-	hue2 = "#ffea00",
-	hue3 = "#00c853",
-	hue4 = "#00b0ff",
-	hue5 = "#1e88e5",
-	hue6 = "#5e35b1",
-	hue7 = "#d5006d",
-	hue8 = "#ffd700",
+	-- Ideal for highlighting key interactive elements like buttons, links, or active states in a terminal.
+	hue0 = "#FF4C4C",
+	hue1 = "#FF6A3D",
+	hue2 = "#FF7A3A",
+	hue3 = "#FF9B45",
+	hue4 = "#FFB747",
+	hue5 = "#D1E34C",
+	hue6 = "#62C400",
+	hue7 = "#4DBB59",
+	hue8 = "#3B9AC0",
+	hue9 = "#4488C2",
+	hue10 = "#7F55B9",
+	hue11 = "#A74EAD",
+	hue12 = "#E16C87",
+	hue13 = "#F14571",
+	hue14 = "#FFB06F",
+	hue15 = "#F3A04A",
 
-	-- Gentle Pastels: Soft and Warm Tones for a Calm Aesthetic
+	-- Gentle Pastels: Soft and Warm Tones for a Calm Aesthetic (Terminal based)
 	-- Soft pastel shades that create a relaxing and comfortable aesthetic.
-	-- Perfect for background accents, lighter text, and less demanding UI elements.
-	pastel0 = "#ff7d58",
-	pastel1 = "#ffb84d",
-	pastel2 = "#ffec66",
-	pastel3 = "#33d857",
-	pastel4 = "#33c7ff",
-	pastel5 = "#4fa6e6",
-	pastel6 = "#7e57b1",
-	pastel7 = "#ff5b94",
-	pastel8 = "#ffe4e1",
+	-- Perfect for background accents, lighter text, and less demanding UI elements in a terminal.
+	pastel0 = "#F7D6D6",
+	pastel1 = "#F7B8B8",
+	pastel2 = "#F5C6A5",
+	pastel3 = "#F2D580",
+	pastel4 = "#F1D95B",
+	pastel5 = "#D1E9A0",
+	pastel6 = "#A7C8E8",
+	pastel7 = "#A1C5F2",
+	pastel8 = "#A1B6D9",
+	pastel9 = "#C7B2D4",
+	pastel10 = "#B89FD1",
+	pastel11 = "#F4A8B8",
+	pastel12 = "#D7E9F0",
+	pastel13 = "#F1D0D8",
+	pastel14 = "#D0E3C4",
+	pastel15 = "#F0F0C7",
 }
 
 return colors
