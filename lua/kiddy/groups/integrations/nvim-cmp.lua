@@ -4,7 +4,7 @@ local U = require("kiddy.utils")
 function M.get(colors, options)
 	return {
 		CmpItemAbbr = { fg = colors.base5 },
-		CmpItemAbbrMatch = { fg = colors.fg_selected, bg = U.blend(colors.bg, colors.bg_selected, 0.8), bold = true },
+		CmpItemAbbrMatch = { fg = colors.fg_selected, bold = true },
 		CmpItemAbbrMatchFuzzy = { fg = colors.sec3, bold = true },
 		CmpItemMenu = { fg = colors.fg, bg = colors.bg_popup },
 		CmpItemMenuLsp = { fg = colors.sec3, bg = colors.bg_popup },
@@ -17,7 +17,7 @@ function M.get(colors, options)
 
 		CmpDocumentation = { bg = colors.base0 },
 		CmpDocumentationBorder = { fg = colors.base4, bg = colors.base0 },
-		CmpPmenu = { fg = colors.sec6, bg = colors.base0 },
+		CmpPmenu = { fg = colors.sec6, bg = U.blend(colors.bg, colors.hue2, 0.1) },
 		CmpPmenuSel = { bg = colors.sec2 },
 
 		CmpItemKindText = { fg = colors.fg_highlight },

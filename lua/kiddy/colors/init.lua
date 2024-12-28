@@ -8,7 +8,7 @@ function C.extend_palette(options)
 	C.bg_dark = C.base1 -- Darker background for inactive areas
 	C.bg_inactive = C.base2 -- Background for inactive windows
 	C.bg_highlight = U.lighten(C.sec0, 0.08, C.base0) -- Highlighted background
-	C.bg_visual = C.sec3 -- for highlighting (cursor)
+	C.bg_visual = C.accent0 -- for highlighting (cursor)
 	C.bg_bright = U.lighten(C.pastel8, 0.2, C.bg) -- Bright background
 	C.bg_sidebar = C.base6 -- Sidebar background
 	C.bg_statusline = C.none -- Statusline background
@@ -16,12 +16,12 @@ function C.extend_palette(options)
 	C.bg_fold = C.base2 -- Background for folded sections
 
 	-- Foregrounds
-	C.fg = C.base5 -- Main foreground (text)
+	C.fg = C.base7 -- Main foreground (text)
 	C.fg_dark = C.base6 -- Darker text
 	C.fg_inactive = C.sec8 -- Inactive window text
 	C.fg_highlight = C.sec2 -- Highlighted text
 	C.fg_bright = U.lighten(C.base6, 0.8, C.pastel8) -- Bright foreground (text)
-	C.fg_visual = C.sec3 -- Visual mode text
+	C.fg_visual = C.tone2 -- Visual mode text
 	C.fg_sidebar = C.sec8 -- Sidebar text
 	C.fg_statusline = C.sec7 -- Statusline text
 	C.fg_selected = C.sec15 -- Text for selected items
@@ -33,14 +33,14 @@ function C.extend_palette(options)
 	end
 
 	-- Popups
-	C.bg_popup = C.base6 -- Popup background
-	C.fg_popup = C.sec6 -- Popup text
+	C.bg_popup = C.sec8 -- Popup background
+	C.fg_popup = C.tone1 -- Popup text
 	C.bg_popup_border = C.base1 -- Popup border background
 	C.fg_popup_border = C.sec3 -- Popup border text
 
 	-- Floating windows
-	C.bg_float = U.blend(C.bg, C.tone1, 0.8) -- Background for floating windows
-	C.fg_float = C.sec6 -- Text for floating windows
+	C.bg_float = C.pastel9 -- Background for floating windows
+	C.fg_float = C.tone3 -- Text for floating windows
 	C.bg_float_border = C.bg_float -- Border background for floating windows
 	C.fg_float_border = C.sec3 -- Border text for floating windows
 
