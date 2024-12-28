@@ -17,7 +17,7 @@ function M.get(colors, options)
 
 		CmpDocumentation = { bg = colors.base0 },
 		CmpDocumentationBorder = { fg = colors.base4, bg = colors.base0 },
-		CmpPmenu = { fg = colors.sec6, bg = U.blend(colors.bg, colors.hue2, 0.1) },
+		CmpPmenu = { fg = colors.sec6, bg = U.blend(colors.bg, colors.hue11, 0.9) },
 		CmpPmenuSel = { bg = colors.sec2 },
 
 		CmpItemKindText = { fg = colors.fg_highlight },

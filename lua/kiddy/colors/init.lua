@@ -39,7 +39,7 @@ function C.extend_palette(options)
 	C.fg_popup_border = C.sec3 -- Popup border text
 
 	-- Floating windows
-	C.bg_float = C.pastel9 -- Background for floating windows
+	C.bg_float = U.blend(C.pastel9, C.bg, 0.9) -- Background for floating windows
 	C.fg_float = C.tone3 -- Text for floating windows
 	C.bg_float_border = C.bg_float -- Border background for floating windows
 	C.fg_float_border = C.sec3 -- Border text for floating windows
