@@ -112,36 +112,4 @@ local colors = {
 	pastel15 = "#F0F0C7",
 }
 
-main.colors = {
-	foreground = colors.base7,
-	background = colors.sec0,
-	cursor_border = colors.sec0,
-	cursor_bg = colors.base0,
-	cursor_fg = colors.base7,
-	selection_bg = colors.base4,
-	selection_fg = colors.base0,
-
-	ansi = {
-		colors.sec0,
-		colors.sec1,
-		colors.sec2,
-		colors.sec3,
-		colors.sec4,
-		colors.sec5,
-		colors.sec6,
-		colors.sec7,
-	},
-
-	brights = {
-		colors.sec8,
-		colors.sec9,
-		colors.sec10,
-		colors.sec11,
-		colors.sec12,
-		colors.sec13,
-		colors.sec14,
-		colors.sec15,
-	},
-}
-
 return colors
