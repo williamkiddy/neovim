@@ -29,7 +29,7 @@ local colors = {
 	-- These colors are designed for different sections and elements in your interface.
 	-- They represent the key color palette, combining soft tones with vibrant accents.
 	sec0 = "#20202F",
-	sec1 = "#e46876",
+	sec1 = "#CF737F",
 	sec2 = "#a3c6a8",
 	sec3 = "#e8c28c",
 	sec4 = "#81a1c1",
@@ -37,7 +37,7 @@ local colors = {
 	sec6 = "#88c0d0",
 	sec7 = "#e5e9f0",
 	sec8 = "#3b4252",
-	sec9 = "#CF737F",
+	sec9 = "#e46876",
 	sec10 = "#b8dbb2",
 	sec11 = "#f3e2b0",
 	sec12 = "#a3cfee",
