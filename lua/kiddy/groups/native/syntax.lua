@@ -3,24 +3,24 @@ local M = {}
 function M.get(colors, options)
 	return {
 		-- General syntax highlighting
-		Constant = { fg = colors.def7 }, -- Constants
-		String = { fg = colors.tone3 }, -- Strings
-		Character = { fg = colors.hue7 }, -- Characters
-		Number = { fg = colors.accent6 }, -- Numbers
-		Boolean = { fg = colors.hue2 }, -- Booleans
-		Float = { fg = colors.hue6 }, -- Floats
-		Identifier = { fg = colors.def8 }, -- Identifiers
-		Function = { fg = colors.tone4, bold = true }, -- Functions
+		Constant = { fg = colors.def7 },            -- Constants
+		String = { fg = colors.tone3 },             -- Strings
+		Character = { fg = colors.hue7 },           -- Characters
+		Number = { fg = colors.accent6 },           -- Numbers
+		Boolean = { fg = colors.base2 },            -- Booleans
+		Float = { fg = colors.hue6 },               -- Floats
+		Identifier = { fg = colors.def8 },          -- Identifiers
+		Function = { fg = colors.base3, bold = true }, -- Functions
 		Statement = { fg = colors.hue0, bold = true }, -- Statements
 		Conditional = { fg = colors.hue7, bold = true }, -- Conditionals
 		Repeat = { fg = colors.accent4, bold = true }, -- Repeat statements
 		Label = { fg = colors.tone4, bold = true }, -- Labels
-		Operator = { fg = colors.accent4 }, -- Operators
+		Operator = { fg = colors.accent4 },         -- Operators
 		Keyword = { fg = colors.pastel7, bold = true }, -- Keywords
-		PreProc = { fg = colors.hue6 }, -- Preprocessor directives
-		Type = { fg = colors.tone7, bold = true }, -- Types
+		PreProc = { fg = colors.hue6 },             -- Preprocessor directives
+		Type = { fg = colors.tone7, bold = true },  -- Types
 		Structure = { fg = colors.accent0, bold = true }, -- Structures
-		Special = { fg = colors.tone7 }, -- Special characters
+		Special = { fg = colors.tone7 },            -- Special characters
 
 		-- Specific syntax highlightings
 		Todo = { fg = colors.accent1, bg = colors.pastel1, bold = true }, -- TODO comments
@@ -28,8 +28,8 @@ function M.get(colors, options)
 
 		-- Markdown specific
 		MarkdownHeading = { fg = colors.def7, bold = true }, -- Markdown headings
-		MarkdownLinkText = { fg = colors.base2 }, -- Markdown link text
-		MarkdownLinkUrl = { fg = colors.base4 }, -- Markdown link URLs
+		MarkdownLinkText = { fg = colors.base2 },      -- Markdown link text
+		MarkdownLinkUrl = { fg = colors.base4 },       -- Markdown link URLs
 
 		-- Git specific
 		GitAdd = { fg = colors.pastel3, bg = colors.accent0, bold = true }, -- Git additions
