@@ -8,7 +8,7 @@ function M.get(colors, options)
 		Character = { fg = colors.hue7 },           -- Characters
 		Number = { fg = colors.accent6 },           -- Numbers
 		Boolean = { fg = colors.base2 },            -- Booleans
-		Float = { fg = colors.hue6 },               -- Floats
+		Float = { fg = colors.pastel1 },            -- Floats
 		Identifier = { fg = colors.def8 },          -- Identifiers
 		Function = { fg = colors.base3, bold = true }, -- Functions
 		Statement = { fg = colors.hue0, bold = true }, -- Statements
@@ -29,7 +29,7 @@ function M.get(colors, options)
 		-- Markdown specific
 		MarkdownHeading = { fg = colors.def7, bold = true }, -- Markdown headings
 		MarkdownLinkText = { fg = colors.base2 },      -- Markdown link text
-		MarkdownLinkUrl = { fg = colors.base4 },       -- Markdown link URLs
+		MarkdownLinkUrl = { fg = colors.base3 },       -- Markdown link URLs
 
 		-- Git specific
 		GitAdd = { fg = colors.pastel3, bg = colors.accent0, bold = true }, -- Git additions

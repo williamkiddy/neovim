@@ -5,6 +5,7 @@ local M = {}
 function M.get(colors, options)
   -- stylua: ignore
   local ret = {
+    ["@none"]                  = { link = "None" },
     ["@annotation"]            = { link = "PreProc" },
     ["@attribute"]             = { link = "PreProc" },
     ["@boolean"]               = { link = "Boolean" },
@@ -20,7 +21,7 @@ function M.get(colors, options)
     ["@comment.warning"]       = { fg = colors.warning },
     ["@constant"]              = { link = "Constant" },
     ["@constant.builtin"]      = { link = "Special" },
-    ["@constant.macro"]        = { link = "Define" },
+    ["@constant.macro"]        = { link = "PreProc" },
     ["@constructor"]           = { fg = colors.tone1 },
     ["@constructor.tsx"]       = { fg = colors.tone6 },
     ["@diff.delta"]            = { link = "DiffChange" },
