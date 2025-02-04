@@ -3,7 +3,7 @@ local M = {}
 function M.get(colors, options)
 	return {
 		-- General syntax highlighting
-		Constant = { fg = colors.def7 },               -- Constants
+		Constant = { fg = colors.base6 },              -- Constants
 		String = { fg = colors.tone3 },                -- Strings
 		Character = { fg = colors.pastel7 },           -- Characters
 		Number = { fg = colors.accent6 },              -- Numbers
