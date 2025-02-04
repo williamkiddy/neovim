@@ -33,14 +33,14 @@ function C.extend_palette(options)
 	end
 
 	-- Popups
-	C.bg_popup = U.blend(C.bg, C.base8, 0.144) -- Popup background
-	C.fg_popup = U.lighten(C.fg, 0.2, C.bg)  -- Popup text
-	C.bg_popup_border = C.base1              -- Popup border background
-	C.fg_popup_border = C.sec3               -- Popup border text
+	C.bg_popup = U.blend(C.bg, C.base8, 0.866) -- Popup background
+	C.fg_popup = U.lighten(C.fg, 0.2, C.bg) -- Popup text
+	C.bg_popup_border = C.base1             -- Popup border background
+	C.fg_popup_border = C.sec3              -- Popup border text
 
 	-- Floating windows
 	C.bg_float = U.blend(C.bg, C.pastel9, 0.9) -- Background for floating windows
-	C.fg_float = U.blend(C.fg, C.tone3, 0.144) -- Text for floating windows
+	c.fg_float = u.blend(c.fg, c.tone3, 0.144) -- text for floating windows
 	C.bg_float_border = C.bg_float          -- Border background for floating windows
 	C.fg_float_border = C.sec3              -- Border text for floating windows
 
