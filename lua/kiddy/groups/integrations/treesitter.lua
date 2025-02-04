@@ -67,8 +67,8 @@ function M.get(colors, options)
     ["@type"]                  = { link = "Type" },
     ["@type.builtin"]          = { link = "Type" },
     ["@variable"]              = { link = "Constant" },
-    ["@variable.builtin"]      = { fg = colors.hue5 },
-    ["@variable.parameter"]    = { fg = colors.hue6 },
+    ["@variable.builtin"]      = { fg = colors.accent7 },
+    ["@variable.parameter"]    = { fg = colors.sec9 },
   }
 
   for i, colors_i in ipairs(ret) do
