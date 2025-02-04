@@ -3,7 +3,7 @@ local M = {}
 function M.get(colors, options)
 	return {
 		-- General syntax highlighting
-		Constant = { fg = colors.base6 },              -- Constants
+		Constant = { fg = colors.sec10 },              -- Constants
 		String = { fg = colors.tone3 },                -- Strings
 		Character = { fg = colors.pastel7 },           -- Characters
 		Number = { fg = colors.accent6 },              -- Numbers
@@ -15,7 +15,7 @@ function M.get(colors, options)
 		Conditional = { fg = colors.pastel11, bold = true }, -- Conditionals
 		Repeat = { fg = colors.sec4, bold = true },    -- Repeat statements
 		Label = { fg = colors.tone4, bold = true },    -- Labels
-		Operator = { fg = colors.sec4 },               -- Operators
+		Operator = { fg = colors.sec10 },              -- Operators
 		Keyword = { fg = colors.sec10, bold = true },  -- Keywords
 		PreProc = { fg = colors.pastel12 },            -- Preprocessor directives
 		Type = { fg = colors.tone7, bold = true },     -- Types
