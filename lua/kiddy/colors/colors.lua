@@ -1,27 +1,28 @@
 local colors = {
 	-- Dark Backgrounds and Panels
-	base0    = "#262831", -- Darker for better contrast
-	base1    = "#303241",
-	base2    = "#3B3F54",
+	base0   = "#262831", -- Darker for better contrast
+	base1   = "#303241",
+	base2   = "#3B3F54",
 
 	-- Unique Accent Shades with a Fruity Twist
-	base3    = "#2A3568",
-	base4    = "#4178A5",
-	base5    = "#39A86B",
-	base6    = "#CF9A3C",
-	base7    = "#C23E7E",
-	base8    = "#E9E7E2",
+	base3   = "#2A3568",
+	base4   = "#4178A5",
+	base5   = "#39A86B",
+	base6   = "#CF9A3C",
+	base7   = "#B6829C",
+	base8   = "#E9E7E2",
 
-	-- Accent Colors: Deep and Subtle Highlights
-	accent0  = "#1b191d",
-	accent1  = "#524439",
-	accent2  = "#D6C399",
-	accent3  = "#F0DEAE",
-	accent4  = "#B3F2A1",
-	accent5  = "#94E7C9",
-	accent6  = "#A0EAF1",
-	accent7  = "#C1F6F5",
-	accent8  = "#EFFFFD",
+	-- Accent Colors: Deep and Subtle Highlights with Darker Tones and RGB Accents
+	accent0 = "#1A141F",
+	accent1 = "#3A2A2D",
+	accent2 = "#23352B",
+	accent3 = "#1C2A3A",
+	accent4 = "#D47A6D",
+	accent5 = "#A0E96D",
+	accent6 = "#7DA4F2",
+	accent7 = "#E6D57C",
+	accent8 = "#F6C5F1",
+
 
 	sec0     = "#141418",
 	sec1     = "#1C1D22",
@@ -37,7 +38,7 @@ local colors = {
 	sec11    = "#7962D4",
 	sec12    = "#A05CD4",
 	sec13    = "#D45CC5",
-	sec14    = "#DEDCDC",
+	sec14    = "#AEACAC",
 	sec15    = "#E6F5F5",
 
 	-- Default Colors: More Balanced Pastel Shades
