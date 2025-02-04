@@ -14,7 +14,7 @@ function M.get(colors, options)
 		Conditional = { fg = colors.pastel11, bold = true }, -- Conditionals
 		Repeat = { fg = colors.sec4, bold = true },      -- Repeat statements
 		Label = { fg = colors.tone4, bold = true },      -- Labels
-		Operator = { fg = colors.accent6 },              -- Operators
+		Operator = { fg = colors.sec10 },                -- Operators
 		Keyword = { fg = colors.extra.mineral4, bold = true }, -- Keywords
 		PreProc = { fg = colors.tone3 },                 -- Preprocessor directives
 		Type = { fg = colors.tone7, bold = true },       -- Types
