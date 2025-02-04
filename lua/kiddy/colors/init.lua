@@ -40,7 +40,7 @@ function C.extend_palette(options)
 
 	-- Floating windows
 	C.bg_float = U.blend(C.bg, C.pastel9, 0.9) -- Background for floating windows
-	c.fg_float = u.blend(c.fg, c.tone3, 0.144) -- text for floating windows
+	C.fg_float = U.blend(C.fg, C.tone3, 0.144) -- Text for floating windows
 	C.bg_float_border = C.bg_float          -- Border background for floating windows
 	C.fg_float_border = C.sec3              -- Border text for floating windows
 
