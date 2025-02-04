@@ -12,7 +12,7 @@ function C.extend_palette(options)
 	C.bg_bright = U.lighten(C.sec15, 0.2, C.bg) -- Bright background
 	C.bg_sidebar = C.sec10                      -- Sidebar background
 	C.bg_statusline = C.none                    -- Statusline background
-	C.bg_selected = U.blend(C.bg, C.sec6, 0.88) -- Background for selected items
+	C.bg_selected = U.blend(C.bg, C.base5, 0.88) -- Background for selected items
 	C.bg_fold = C.base2                         -- Background for folded sections
 
 	-- Foregrounds
