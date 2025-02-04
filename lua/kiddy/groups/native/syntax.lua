@@ -2,24 +2,24 @@ local M = {}
 function M.get(colors, options)
 	return {
 		-- General syntax highlighting
-		Constant = { fg = colors.base7 },                -- Constants
-		String = { fg = colors.tone3 },                  -- Strings
-		Character = { fg = colors.pastel7 },             -- Characters
-		Number = { fg = colors.accent6 },                -- Numbers
-		Boolean = { fg = colors.base2 },                 -- Booleans
-		Float = { fg = colors.pastel1 },                 -- Floats
-		Identifier = { fg = colors.def8 },               -- Identifiers
-		Function = { fg = colors.base5, bold = true },   -- Functions
-		Statement = { fg = colors.hue0, bold = true },   -- Statements
-		Conditional = { fg = colors.pastel11, bold = true }, -- Conditionals
-		Repeat = { fg = colors.sec4, bold = true },      -- Repeat statements
-		Label = { fg = colors.tone4, bold = true },      -- Labels
-		Operator = { fg = colors.sec10 },                -- Operators
-		Keyword = { fg = colors.extra.mineral4, bold = true }, -- Keywords
-		PreProc = { fg = colors.tone3 },                 -- Preprocessor directives
-		Type = { fg = colors.tone7, bold = true },       -- Types
-		Structure = { fg = colors.accent6, bold = true }, -- Structures
-		Special = { fg = colors.tone7 },                 -- Special characters
+		Constant = { fg = colors.sec5 },           -- Constants
+		String = { fg = colors.sec7 },             -- Strings
+		Character = { fg = colors.sec9 },          -- Characters
+		Number = { fg = colors.sec11 },            -- Numbers
+		Boolean = { fg = colors.sec13 },           -- Booleans
+		Float = { fg = colors.sec8 },              -- Floats
+		Identifier = { fg = colors.sec10 },        -- Identifiers
+		Function = { fg = colors.sec3, bold = true }, -- Functions
+		Statement = { fg = colors.sec2, bold = true }, -- Statements
+		Conditional = { fg = colors.sec7, bold = true }, -- Conditionals
+		Repeat = { fg = colors.sec4, bold = true }, -- Repeat statements
+		Label = { fg = colors.sec11, bold = true }, -- Labels
+		Operator = { fg = colors.sec10 },          -- Operators
+		Keyword = { fg = colors.sec11, bold = true }, -- Keywords
+		PreProc = { fg = colors.sec6 },            -- Preprocessor directives
+		Type = { fg = colors.sec6, bold = true },  -- Types
+		Structure = { fg = colors.sec4, bold = true }, -- Structures
+		Special = { fg = colors.sec5 },            -- Special characters
 
 		-- Specific syntax highlightings
 		Todo = { fg = colors.accent1, bg = colors.pastel1, bold = true }, -- TODO comments
