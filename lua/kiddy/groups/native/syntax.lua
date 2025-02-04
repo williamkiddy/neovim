@@ -4,24 +4,24 @@ local U = require("kiddy.utils")
 function M.get(colors, options)
 	return {
 		-- General syntax highlighting
-		Constant = { fg = { colors.sec9 }, -- Constants
-		String = { fg = colors.tone3 },                       -- Strings
-		Character = { fg = colors.pastel7 },                  -- Characters
-		Number = { fg = colors.accent6 },                     -- Numbers
-		Boolean = { fg = colors.base2 },                      -- Booleans
-		Float = { fg = colors.pastel1 },                      -- Floats
-		Identifier = { fg = colors.def8 },                    -- Identifiers
-		Function = { fg = colors.base5, bold = true },        -- Functions
-		Statement = { fg = colors.hue0, bold = true },        -- Statements
-		Conditional = { fg = colors.pastel11, bold = true },  -- Conditionals
-		Repeat = { fg = colors.sec4, bold = true },           -- Repeat statements
-		Label = { fg = colors.tone4, bold = true },           -- Labels
-		Operator = { fg = colors.sec10 },                     -- Operators
-		Keyword = { fg = colors.sec10, bold = true },         -- Keywords
-		PreProc = { fg = colors.pastel12 },                   -- Preprocessor directives
-		Type = { fg = colors.tone7, bold = true },            -- Types
-		Structure = { fg = colors.accent0, bold = true },     -- Structures
-		Special = { fg = colors.tone7 },                      -- Special characters
+		Constant = { fg = colors.sec9 },               -- Constants
+		String = { fg = colors.tone3 },                -- Strings
+		Character = { fg = colors.pastel7 },           -- Characters
+		Number = { fg = colors.accent6 },              -- Numbers
+		Boolean = { fg = colors.base2 },               -- Booleans
+		Float = { fg = colors.pastel1 },               -- Floats
+		Identifier = { fg = colors.def8 },             -- Identifiers
+		Function = { fg = colors.base5, bold = true }, -- Functions
+		Statement = { fg = colors.hue0, bold = true }, -- Statements
+		Conditional = { fg = colors.pastel11, bold = true }, -- Conditionals
+		Repeat = { fg = colors.sec4, bold = true },    -- Repeat statements
+		Label = { fg = colors.tone4, bold = true },    -- Labels
+		Operator = { fg = colors.sec10 },              -- Operators
+		Keyword = { fg = colors.sec10, bold = true },  -- Keywords
+		PreProc = { fg = colors.pastel12 },            -- Preprocessor directives
+		Type = { fg = colors.tone7, bold = true },     -- Types
+		Structure = { fg = colors.accent0, bold = true }, -- Structures
+		Special = { fg = colors.tone7 },               -- Special characters
 
 		-- Specific syntax highlightings
 		Todo = { fg = colors.accent1, bg = colors.pastel1, bold = true }, -- TODO comments
