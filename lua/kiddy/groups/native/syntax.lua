@@ -4,7 +4,7 @@ local U = require("kiddy.utils")
 function M.get(colors, options)
 	return {
 		-- General syntax highlighting
-		Constant = { fg = U.blend(colors.sec9, colors.bg, 0.144) }, -- Constants
+		Constant = { fg = { colors.sec9 }, -- Constants
 		String = { fg = colors.tone3 },                       -- Strings
 		Character = { fg = colors.pastel7 },                  -- Characters
 		Number = { fg = colors.accent6 },                     -- Numbers
