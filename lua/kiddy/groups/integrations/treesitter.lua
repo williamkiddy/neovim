@@ -66,7 +66,7 @@ function M.get(colors, options)
     ["@tag"]                   = { link = "Label" },
     ["@type"]                  = { link = "Type" },
     ["@type.builtin"]          = { link = "Type" },
-    ["@variable"]              = { link = "base6" },
+    ["@variable"]              = { link = "Constant" },
     ["@variable.builtin"]      = { fg = colors.hue5 },
     ["@variable.parameter"]    = { fg = colors.hue6 },
   }
