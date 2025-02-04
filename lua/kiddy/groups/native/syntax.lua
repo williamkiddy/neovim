@@ -3,7 +3,7 @@ function M.get(colors, options)
 	return {
 		-- General syntax highlighting
 		Constant = { fg = colors.sec5 },           -- Constants
-		String = { fg = colors.sec7 },             -- Strings
+		String = { fg = colors.sec6 },             -- Strings
 		Character = { fg = colors.sec9 },          -- Characters
 		Number = { fg = colors.sec11 },            -- Numbers
 		Boolean = { fg = colors.sec13 },           -- Booleans
