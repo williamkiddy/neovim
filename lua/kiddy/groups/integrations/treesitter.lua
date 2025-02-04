@@ -51,7 +51,7 @@ function M.get(colors, options)
     ["@markup.strong"]         = { bold = true },
     ["@markup.underline"]      = { underline = true },
     ["@module"]                = { link = "Include" },
-    ["@module.builtin"]        = { fg = colors.red },
+    ["@module.builtin"]        = { fg = colors.def5 },
     ["@namespace.builtin"]     = { link = "@variable.builtin" },
     ["@number"]                = { link = "Number" },
     ["@operator"]              = { link = "Operator" },
