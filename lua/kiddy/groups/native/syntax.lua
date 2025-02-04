@@ -10,13 +10,13 @@ function M.get(colors, options)
 		Boolean = { fg = colors.base2 },               -- Booleans
 		Float = { fg = colors.pastel1 },               -- Floats
 		Identifier = { fg = colors.def8 },             -- Identifiers
-		Function = { fg = colors.base3, bold = true }, -- Functions
+		Function = { fg = colors.sec7, bold = true },  -- Functions
 		Statement = { fg = colors.hue0, bold = true }, -- Statements
 		Conditional = { fg = colors.pastel11, bold = true }, -- Conditionals
-		Repeat = { fg = colors.accent4, bold = true }, -- Repeat statements
+		Repeat = { fg = colors.sec4, bold = true },    -- Repeat statements
 		Label = { fg = colors.tone4, bold = true },    -- Labels
-		Operator = { fg = colors.accent4 },            -- Operators
-		Keyword = { fg = colors.pastel7, bold = true }, -- Keywords
+		Operator = { fg = colors.sec4 },               -- Operators
+		Keyword = { fg = colors.sec10, bold = true },  -- Keywords
 		PreProc = { fg = colors.pastel12 },            -- Preprocessor directives
 		Type = { fg = colors.tone7, bold = true },     -- Types
 		Structure = { fg = colors.accent0, bold = true }, -- Structures
