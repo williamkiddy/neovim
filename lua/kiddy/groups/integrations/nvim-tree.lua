@@ -1,5 +1,5 @@
 local M = {}
-local U = require("utils")
+local U = require("kiddy.utils")
 function M.get(colors, options)
 	return {
 		NvimTreeFolderName = { fg = colors.fg },
