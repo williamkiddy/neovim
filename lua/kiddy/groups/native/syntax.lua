@@ -10,7 +10,7 @@ function M.get(colors, options)
 		Boolean = { fg = colors.base2 },               -- Booleans
 		Float = { fg = colors.pastel1 },               -- Floats
 		Identifier = { fg = colors.def8 },             -- Identifiers
-		Function = { fg = colors.sec7, bold = true },  -- Functions
+		Function = { fg = colors.base5, bold = true }, -- Functions
 		Statement = { fg = colors.hue0, bold = true }, -- Statements
 		Conditional = { fg = colors.pastel11, bold = true }, -- Conditionals
 		Repeat = { fg = colors.sec4, bold = true },    -- Repeat statements
