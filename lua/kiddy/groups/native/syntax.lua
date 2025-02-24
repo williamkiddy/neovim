@@ -8,7 +8,7 @@ function M.get(colors, options)
 		Number = { fg = colors.base7 },            -- Numbers
 		Boolean = { fg = colors.sec13 },           -- Booleans
 		Float = { fg = colors.sec8 },              -- Floats
-		Identifier = { fg = colors.sec8 },         -- Identifiers
+		Identifier = { fg = colors.sec10 },        -- Identifiers
 		Function = { fg = colors.sec5, bold = true }, -- Functions
 		Statement = { fg = colors.sec2, bold = true }, -- Statements
 		Conditional = { fg = colors.sec7, bold = true }, -- Conditionals
@@ -16,7 +16,7 @@ function M.get(colors, options)
 		Label = { fg = colors.sec11, bold = true }, -- Labels
 		Operator = { fg = colors.sec10 },          -- Operators
 		Keyword = { fg = colors.base4, bold = true }, -- Keywords
-		PreProc = { fg = colors.sec6 },            -- Preprocessor directives
+		PreProc = { fg = colors.sec9 },            -- Preprocessor directives
 		Type = { fg = colors.sec6, bold = true },  -- Types
 		Structure = { fg = colors.sec4, bold = true }, -- Structures
 		Special = { fg = colors.accent7 },         -- Special characters
