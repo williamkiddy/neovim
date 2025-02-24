@@ -3,7 +3,7 @@ local U = require("kiddy.utils")
 
 function M.get(colors, options)
 	return {
-		CmpItemAbbr = { fg = colors.base5 },
+		CmpItemAbbr = { fg = colors.base6 },
 		CmpItemAbbrMatch = { fg = colors.fg_selected, bold = true },
 		CmpItemAbbrMatchFuzzy = { fg = colors.sec3, bold = true },
 		CmpItemMenu = { fg = colors.fg, bg = colors.bg_popup },

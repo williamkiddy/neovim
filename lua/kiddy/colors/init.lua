@@ -24,7 +24,7 @@ function C.extend_palette(options)
 	C.fg_visual = C.sec6                        -- Visual mode text
 	C.fg_sidebar = C.base2                      -- Sidebar text
 	C.fg_statusline = C.sec7                    -- Statusline text
-	C.fg_selected = C.sec3                      -- Text for selected items
+	C.fg_selected = C.sec15                     -- Text for selected items
 	C.fg_fold = C.base4                         -- Text for folded sections
 
 	if options.theme == "Mufflora" then
