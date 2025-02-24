@@ -16,8 +16,8 @@ function M.get(colors, options)
 		Label = { fg = colors.sec11, bold = true }, -- Labels
 		Operator = { fg = colors.sec10 },          -- Operators
 		Keyword = { fg = colors.base4, bold = true }, -- Keywords
-		PreProc = { fg = colors.sec9 },            -- Preprocessor directives
-		Type = { fg = colors.sec6, bold = true },  -- Types
+		PreProc = { fg = colors.sec6 },            -- Preprocessor directives
+		Type = { fg = colors.sec8, bold = true },  -- Types
 		Structure = { fg = colors.sec4, bold = true }, -- Structures
 		Special = { fg = colors.accent7 },         -- Special characters
 
