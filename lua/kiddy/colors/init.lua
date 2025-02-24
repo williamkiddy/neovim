@@ -12,12 +12,12 @@ function C.extend_palette(options)
 	C.bg_bright = U.lighten(C.sec15, 0.2, C.bg) -- Bright background
 	C.bg_sidebar = C.sec10                      -- Sidebar background
 	C.bg_statusline = C.none                    -- Statusline background
-	C.bg_selected = U.blend(C.bg, C.base5, 0.88) -- Background for selected items
+	C.bg_selected = U.blend(C.bg, C.base4, 0.88) -- Background for selected items
 	C.bg_fold = C.base2                         -- Background for folded sections
 
 	-- Foregrounds
-	C.fg = C.base2                              -- Main foreground (text)
-	C.fg_dark = U.blend(C.base2, C.sec14, 0.144) -- Darker text
+	C.fg = C.sec14                              -- Main foreground (text)
+	C.fg_dark = U.blend(C.base2, C.sec14, 0.32) -- Darker text
 	C.fg_inactive = C.sec8                      -- Inactive window text
 	C.fg_highlight = C.sec2                     -- Highlighted text
 	C.fg_bright = U.lighten(C.base8, 0.8, C.sec10) -- Bright foreground (text)
