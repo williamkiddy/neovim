@@ -15,19 +15,19 @@ function M.get(colors, options)
 		LspInfoBorder = { fg = colors.fg_highlight, bg = colors.bg_bright },
 
 		-- diagnostics
-		DiagnosticError = { fg = colors.error }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-		DiagnosticWarn = { fg = colors.warning }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-		DiagnosticInfo = { fg = colors.info }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-		DiagnosticHint = { fg = colors.hint }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-		DiagnosticUnnecessary = { fg = colors.accent2 }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+		DiagnosticError = { fg = colors.error },                                                     -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+		DiagnosticWarn = { fg = colors.warning },                                                    -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+		DiagnosticInfo = { fg = colors.info },                                                       -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+		DiagnosticHint = { fg = colors.hint },                                                       -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+		DiagnosticUnnecessary = { fg = colors.sec1 },                                                -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 		DiagnosticVirtualTextError = { bg = U.blend(colors.error, colors.bg, 0.1), fg = colors.error }, -- Used for "Error" diagnostic virtual text
 		DiagnosticVirtualTextWarn = { bg = U.blend(colors.warning, colors.bg, 0.1), fg = colors.warning }, -- Used for "Warning" diagnostic virtual text
 		DiagnosticVirtualTextInfo = { bg = U.blend(colors.info, colors.bg, 0.1), fg = colors.info }, -- Used for "Information" diagnostic virtual text
 		DiagnosticVirtualTextHint = { bg = U.blend(colors.hint, colors.bg, 0.1), fg = colors.hint }, -- Used for "Hint" diagnostic virtual text
-		DiagnosticUnderlineError = { undercurl = true, sp = colors.error }, -- Used to underline "Error" diagnostics
-		DiagnosticUnderlineWarn = { undercurl = true, sp = colors.warning }, -- Used to underline "Warning" diagnostics
-		DiagnosticUnderlineInfo = { undercurl = true, sp = colors.info }, -- Used to underline "Information" diagnostics
-		DiagnosticUnderlineHint = { undercurl = true, sp = colors.hint }, -- Used to underline "Hint" diagnostics
+		DiagnosticUnderlineError = { undercurl = true, sp = colors.error },                          -- Used to underline "Error" diagnostics
+		DiagnosticUnderlineWarn = { undercurl = true, sp = colors.warning },                         -- Used to underline "Warning" diagnostics
+		DiagnosticUnderlineInfo = { undercurl = true, sp = colors.info },                            -- Used to underline "Information" diagnostics
+		DiagnosticUnderlineHint = { undercurl = true, sp = colors.hint },                            -- Used to underline "Hint" diagnostics
 
 		-- Health
 		healthError = { fg = colors.error },

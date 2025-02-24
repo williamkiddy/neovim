@@ -2,8 +2,8 @@ local M = {}
 function M.get(colors, options)
 	return {
 		-- General syntax highlighting
-		Constant = { fg = colors.sec5 },           -- Constants
-		String = { fg = colors.sec6 },             -- Strings
+		Constant = { fg = colors.sec8 },           -- Constants
+		String = { fg = colors.sec4 },             -- Strings
 		Character = { fg = colors.sec9 },          -- Characters
 		Number = { fg = colors.sec11 },            -- Numbers
 		Boolean = { fg = colors.sec13 },           -- Booleans
