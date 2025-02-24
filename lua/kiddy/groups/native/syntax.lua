@@ -5,7 +5,7 @@ function M.get(colors, options)
 		Constant = { fg = colors.sec8 },           -- Constants
 		String = { fg = colors.sec4 },             -- Strings
 		Character = { fg = colors.sec9 },          -- Characters
-		Number = { fg = colors.sec11 },            -- Numbers
+		Number = { fg = colors.base7 },            -- Numbers
 		Boolean = { fg = colors.sec13 },           -- Booleans
 		Float = { fg = colors.sec8 },              -- Floats
 		Identifier = { fg = colors.sec10 },        -- Identifiers
@@ -15,7 +15,7 @@ function M.get(colors, options)
 		Repeat = { fg = colors.sec4, bold = true }, -- Repeat statements
 		Label = { fg = colors.sec11, bold = true }, -- Labels
 		Operator = { fg = colors.sec10 },          -- Operators
-		Keyword = { fg = colors.sec11, bold = true }, -- Keywords
+		Keyword = { fg = colors.base4, bold = true }, -- Keywords
 		PreProc = { fg = colors.sec6 },            -- Preprocessor directives
 		Type = { fg = colors.sec6, bold = true },  -- Types
 		Structure = { fg = colors.sec4, bold = true }, -- Structures

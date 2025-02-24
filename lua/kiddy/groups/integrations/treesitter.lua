@@ -22,7 +22,7 @@ function M.get(colors, options)
     ["@constant"]              = { link = "Constant" },
     ["@constant.builtin"]      = { link = "Special" },
     ["@constant.macro"]        = { link = "PreProc" },
-    ["@constructor"]           = { fg = colors.sec3 },
+    ["@constructor"]           = { fg = colors.base4 },
     ["@constructor.tsx"]       = { link = "@constructor" },
     ["@diff.delta"]            = { link = "DiffChange" },
     ["@diff.minus"]            = { link = "DiffDelete" },
