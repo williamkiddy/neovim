@@ -25,7 +25,7 @@ local colors = {
 
 	-- Secondary Colors: Strong and Subtle
 	sec0     = "#1E1E2E",
-	sec1     = "#2F2F3A",
+	sec1     = "#2F2F4A",
 	sec2     = "#F7768E",
 	sec3     = "#B07990",
 	sec4     = "#8EC07C",
