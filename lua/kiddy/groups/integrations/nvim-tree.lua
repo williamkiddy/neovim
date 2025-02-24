@@ -11,7 +11,7 @@ function M.get(colors, options)
 		NvimTreeIndentMarker = { fg = colors.base4 },
 		NvimTreeWinSeparator = { fg = colors.fg_sidebar },
 		NvimTreeRootFolder = { fg = colors.sec2, bold = true },
-		NvimTreeSymlink = { fg = colors.base5 },
+		NvimTreeSymlink = { fg = colors.base6 },
 		NvimTreeStatuslineNC = { fg = colors.base4, bg = colors.bg_highlight },
 		NvimTreeGitDirty = { fg = colors.sec15 },
 		NvimTreeGitNew = { fg = colors.git.add },

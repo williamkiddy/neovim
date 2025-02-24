@@ -8,7 +8,7 @@ function M.get(colors, options)
 		Number = { fg = colors.base7 },            -- Numbers
 		Boolean = { fg = colors.sec13 },           -- Booleans
 		Float = { fg = colors.sec8 },              -- Floats
-		Identifier = { fg = colors.sec10 },        -- Identifiers
+		Identifier = { fg = colors.sec8 },         -- Identifiers
 		Function = { fg = colors.sec5, bold = true }, -- Functions
 		Statement = { fg = colors.sec2, bold = true }, -- Statements
 		Conditional = { fg = colors.sec7, bold = true }, -- Conditionals
