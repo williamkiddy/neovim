@@ -1,6 +1,6 @@
 local colors = {
 	-- Dark Backgrounds and Panels
-	base0    = "#262831", -- Darker for better contrast
+	base0    = "#262831",
 	base1    = "#303241",
 	base2    = "#3B3F54",
 
@@ -23,10 +23,11 @@ local colors = {
 	accent7  = "#E6D57C",
 	accent8  = "#F6C5F1",
 
+	-- Secondary Colors: Strong and Subtle
 	sec0     = "#1E1E2E",
-	sec1     = "#282828",
+	sec1     = "#2F2F3A",
 	sec2     = "#F7768E",
-	sec3     = "#D3869B",
+	sec3     = "#A0707F",
 	sec4     = "#8EC07C",
 	sec5     = "#F28FAD",
 	sec6     = "#FF9E64",
@@ -37,7 +38,7 @@ local colors = {
 	sec11    = "#89DCEB",
 	sec12    = "#DDB6F2",
 	sec13    = "#A6E3A1",
-	sec14    = "#94E2D5",
+	sec14    = "#E0E0E0",
 	sec15    = "#F9E2AF",
 
 	-- Default Colors: More Balanced Pastel Shades
@@ -141,5 +142,7 @@ local colors = {
 		bright8 = "#72FF56",
 	}
 }
+
+return colors
 
 return colors
