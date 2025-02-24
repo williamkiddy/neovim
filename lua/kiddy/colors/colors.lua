@@ -144,5 +144,3 @@ local colors = {
 }
 
 return colors
-
-return colors
