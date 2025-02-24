@@ -19,7 +19,7 @@ function M.get(colors, options)
 		PreProc = { fg = colors.sec6 },            -- Preprocessor directives
 		Type = { fg = colors.sec6, bold = true },  -- Types
 		Structure = { fg = colors.sec4, bold = true }, -- Structures
-		Special = { fg = colors.sec5 },            -- Special characters
+		Special = { fg = colors.accent7 },         -- Special characters
 
 		-- Specific syntax highlightings
 		Todo = { fg = colors.accent1, bg = colors.pastel1, bold = true }, -- TODO comments
