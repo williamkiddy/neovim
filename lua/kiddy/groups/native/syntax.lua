@@ -8,14 +8,14 @@ function M.get(colors, options)
 		Number = { fg = colors.base7 },            -- Numbers
 		Boolean = { fg = colors.sec13 },           -- Booleans
 		Float = { fg = colors.sec8 },              -- Floats
-		Identifier = { fg = colors.sec7 },         -- Identifiers
+		Identifier = { fg = colors.sec12 },        -- Identifiers
 		Function = { fg = colors.sec5, bold = true }, -- Functions
 		Statement = { fg = colors.sec2, bold = true }, -- Statements
 		Conditional = { fg = colors.sec7, bold = true }, -- Conditionals
 		Repeat = { fg = colors.sec4, bold = true }, -- Repeat statements
 		Label = { fg = colors.sec11, bold = true }, -- Labels
 		Operator = { fg = colors.sec10 },          -- Operators
-		Keyword = { fg = colors.base4, bold = true }, -- Keywords
+		Keyword = { fg = colors.accent6, bold = true }, -- Keywords
 		PreProc = { fg = colors.sec6 },            -- Preprocessor directives
 		Type = { fg = colors.sec8, bold = true },  -- Types
 		Structure = { fg = colors.sec4, bold = true }, -- Structures
