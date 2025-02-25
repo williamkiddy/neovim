@@ -13,10 +13,10 @@ local colors = {
 	base8    = "#E9E7E2",
 
 	-- Accent Colors: Deep and Subtle Highlights with Darker Tones and RGB Accents
-	accent0  = "#1A141F",
-	accent1  = "#3A2A2D",
-	accent2  = "#23352B",
-	accent3  = "#1C2A3A",
+	accent0  = "#1E1B27",
+	accent1  = "#4A3F48",
+	accent2  = "#2B4940",
+	accent3  = "#26404F",
 	accent4  = "#D47A6D",
 	accent5  = "#A0E96D",
 	accent6  = "#7DA4F2",
@@ -142,5 +142,7 @@ local colors = {
 		bright8 = "#72FF56",
 	}
 }
+
+
 
 return colors

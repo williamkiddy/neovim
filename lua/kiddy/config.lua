@@ -12,6 +12,9 @@ local defaults = {
 		bold = true,
 		bold_number = true,
 	},
+	diagnostic = {
+		undercurl = true
+	},
 	override = {},
 }
 
@@ -40,7 +43,7 @@ function M.override_options(new_options)
 	end
 end
 
--- Initialize options with defaults
+-- Initializaaaa#20202F"e options with defaults
 M.options = vim.tbl_deep_extend("force", {}, defaults)
 
 -- Function to set up the options
