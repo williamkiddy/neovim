@@ -45,7 +45,7 @@ function C.extend_palette(options)
 
 		C.bg_selected = U.blend(C.bg, C.hue7, 0.92)
 	elseif options.theme == "Puffica" then
-		C.bg = C.base3
+		C.bg = C.base2
 		C.bg_highlight = C.pastel9
 
 		C.fg = C.pastel15
