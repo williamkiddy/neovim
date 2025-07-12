@@ -27,13 +27,6 @@ function C.extend_palette(options)
 	C.fg_selected = C.sec15 -- Text for selected items
 	C.fg_fold = C.base4 -- Text for folded sections
 
-	if options.theme == "Mufflora" then
-		-- High contrast
-		C.bg = C.sec0
-
-		C.bg_selected = U.blend(C.bg, C.hue7, 0.92)
-	end
-
 	-- Popups
 	C.bg_popup = C.sec1 -- Popup background
 	C.fg_popup = C.sec9 -- Popup text
@@ -45,6 +38,18 @@ function C.extend_palette(options)
 	C.fg_float = U.blend(C.fg, C.sec10, 0.144) -- Text for floating windows
 	C.bg_float_border = C.bg_float -- Border background for floating windows
 	C.fg_float_border = C.fg_float -- Border text for floating windows
+
+	if options.theme == "Mufflora" then
+		-- High contrast
+		C.bg = C.sec0
+
+		C.bg_selected = U.blend(C.bg, C.hue7, 0.92)
+	elseif options.theme == "Puffica" then
+		C.bg = C.base3
+		C.bg_highlight = C.pastel9
+
+		C.fg = C.pastel15
+	end
 
 	-- Diff highlighting
 	C.diff = {
