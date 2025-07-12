@@ -8,7 +8,7 @@ function C.extend_palette(options)
 	C.bg_dark = C.sec1 -- Darker background for inactive areas
 	C.bg_inactive = C.base2 -- Background for inactive windows
 	C.bg_highlight = U.blend(C.sec1, C.base0, 0.2) -- Highlighted background
-	C.bg_visual = C.sec13 -- for highlighting (cursor)
+	C.bg_visual = C.extra.neutral7 -- for highlighting (cursor)
 	C.bg_bright = U.lighten(C.sec15, 0.2, C.bg) -- Bright background
 	C.bg_sidebar = C.sec10 -- Sidebar background
 	C.bg_statusline = C.none -- Statusline background
