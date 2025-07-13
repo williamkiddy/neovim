@@ -1,8 +1,8 @@
 local colors = {
 	-- Dark Backgrounds and Panels
-	base0 = "#262831",
+	base0 = "#1e1f23",
 	base1 = "#303241",
-	base2 = "#3B3F54",
+	base2 = "#3e404c",
 
 	-- Unique Accent Shades with a Fruity Twist
 	base3 = "#2A3568",
