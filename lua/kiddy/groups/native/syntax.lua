@@ -2,24 +2,24 @@ local M = {}
 function M.get(colors, options)
 	return {
 		-- General syntax highlighting
-		Constant = { fg = colors.sec8 }, -- Constants
-		String = { fg = colors.sec4 }, -- Strings
-		Character = { fg = colors.sec9 }, -- Characters
-		Number = { fg = colors.base7 }, -- Numbers
-		Boolean = { fg = colors.sec13 }, -- Booleans
-		Float = { fg = colors.sec8 }, -- Floats
-		Identifier = { fg = colors.sec12 }, -- Identifiers
-		Function = { fg = colors.sec13, bold = true }, -- Functions
-		Statement = { fg = colors.sec2, bold = true }, -- Statements
-		Conditional = { fg = colors.sec7, bold = true }, -- Conditionals
-		Repeat = { fg = colors.sec4, bold = true }, -- Repeat statements
-		Label = { fg = colors.sec11, bold = true }, -- Labels
-		Operator = { fg = colors.sec10 }, -- Operators
-		Keyword = { fg = colors.accent6, bold = true }, -- Keywords
-		PreProc = { fg = colors.sec6 }, -- Preprocessor directives
-		Type = { fg = colors.sec8, bold = true }, -- Types
-		Structure = { fg = colors.sec4, bold = true }, -- Structures
-		Special = { fg = colors.accent7 }, -- Special characters
+		Constant = { fg = colors.pastel8 }, -- Constants
+		String = { fg = colors.pastel5 }, -- Strings
+		Character = { fg = colors.pastel9 }, -- Characters
+		Number = { fg = colors.pastel8 }, -- Numbers
+		Boolean = { fg = colors.pastel4 }, -- Booleans
+		Float = { fg = colors.pastel3 }, -- Floats
+		Identifier = { fg = colors.pastel2 }, -- Identifiers
+		Function = { fg = colors.pastel11, bold = true }, -- Functions
+		Statement = { fg = colors.pastel3, bold = true }, -- Statements
+		Conditional = { fg = colors.pastel6, bold = true }, -- Conditionals
+		Repeat = { fg = colors.pastel9, bold = true }, -- Repeat statements
+		Label = { fg = colors.pastel11, bold = true }, -- Labels
+		Operator = { fg = colors.pastel9 }, -- Operators
+		Keyword = { fg = colors.pastel1, bold = true }, -- Keywords
+		PreProc = { fg = colors.pastel7 }, -- Preprocessor directives
+		Type = { fg = colors.pastel2, bold = true }, -- Types
+		Structure = { fg = colors.pastel11, bold = true }, -- Structures
+		Special = { fg = colors.pastel3 }, -- Special characters
 
 		-- Specific syntax highlightings
 		Todo = { fg = colors.accent1, bg = colors.pastel1, bold = true }, -- TODO comments
