@@ -1,6 +1,6 @@
 local colors = {
 	-- Dark Backgrounds and Panels
-	base0 = "#1e1f23",
+	base0 = "#202227",
 	base1 = "#303241",
 	base2 = "#3e404c",
 
