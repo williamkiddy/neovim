@@ -5,7 +5,7 @@ function M.get(colors, options)
 		NvimTreeFolderName = { fg = colors.fg },
 		NvimTreeFolderIcon = { fg = colors.sec },
 		NvimTreeCursorLine = { bg = colors.bg_selected },
-		NvimTreeNormal = { fg = colors.def4 },
+		NvimTreeNormal = { fg = colors.base1 },
 		NvimTreeOpenedFolderName = { link = "NvimTreeNormal" },
 		NvimTreeEmptyFolderName = { fg = U.blend(colors.fg, colors.bg, 0.144) },
 		NvimTreeIndentMarker = { fg = colors.base4 },
