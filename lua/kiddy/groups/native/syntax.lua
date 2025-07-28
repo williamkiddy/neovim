@@ -1,48 +1,37 @@
 local M = {}
 function M.get(colors, options)
 	return {
-		-- General syntax highlighting
-		Constant = { fg = colors.pastel8 }, -- Constants
-		String = { fg = colors.pastel5 }, -- Strings
-		Character = { fg = colors.pastel9 }, -- Characters
-		Number = { fg = colors.pastel8 }, -- Numbers
-		Boolean = { fg = colors.pastel4 }, -- Booleans
-		Float = { fg = colors.pastel3 }, -- Floats
-		Identifier = { fg = colors.pastel2 }, -- Identifiers
-		Function = { fg = colors.pastel11, bold = true }, -- Functions
-		Statement = { fg = colors.pastel3, bold = true }, -- Statements
-		Conditional = { fg = colors.pastel6, bold = true }, -- Conditionals
-		Repeat = { fg = colors.pastel9, bold = true }, -- Repeat statements
-		Label = { fg = colors.pastel11, bold = true }, -- Labels
-		Operator = { fg = colors.pastel9 }, -- Operators
-		Keyword = { fg = colors.pastel1, bold = true }, -- Keywords
-		PreProc = { fg = colors.pastel7 }, -- Preprocessor directives
-		Type = { fg = colors.pastel2, bold = true }, -- Types
-		Structure = { fg = colors.pastel11, bold = true }, -- Structures
-		Special = { fg = colors.pastel3 }, -- Special characters
-
-		-- Specific syntax highlightings
-		Todo = { fg = colors.accent1, bg = colors.pastel1, bold = true }, -- TODO comments
-		Error = { fg = colors.hue0, bg = colors.pastel8, bold = true }, -- Error highlights
-
-		-- Markdown specific
-		MarkdownHeading = { fg = colors.def7, bold = true }, -- Markdown headings
-		MarkdownLinkText = { fg = colors.base2 }, -- Markdown link text
-		MarkdownLinkUrl = { fg = colors.sec13 }, -- Markdown link URLs
-
-		-- Git specific
-		GitAdd = { fg = colors.git.add, bold = true }, -- Git additions
-		GitChange = { fg = colors.git.change, bold = true }, -- Git changes
-		GitDelete = { fg = colors.git.remove, bold = true }, -- Git deletions
-
-		-- Spell Checking
-		SpellBad = { sp = colors.hue1, undercurl = true }, -- Bad spell check
-		SpellCap = { sp = colors.pastel6, undercurl = true }, -- Capitalization errors
-		SpellLocal = { sp = colors.accent4, undercurl = true }, -- Local spell check errors
-		SpellRare = { sp = colors.hue5, undercurl = true }, -- Rare word check
-
-		-- Miscellaneous
-		Whitespace = { fg = colors.none }, -- Whitespace
+		Constant = { fg = colors.pastel7 },
+		String = { fg = colors.pastel5 },
+		Character = { fg = colors.pastel5 },
+		Number = { fg = colors.pastel3 },
+		Boolean = { fg = colors.pastel7 },
+		Float = { fg = colors.pastel3 },
+		Identifier = { fg = colors.pastel15 },
+		Function = { fg = colors.sec9 },
+		Statement = { fg = colors.pastel6 },
+		Conditional = { fg = colors.pastel6 },
+		Repeat = { fg = colors.pastel6 },
+		Label = { fg = colors.pastel6 },
+		Operator = { fg = colors.pastel12 },
+		Keyword = { fg = colors.pastel6 },
+		PreProc = { fg = colors.sec3 },
+		Type = { fg = colors.sec9 },
+		Structure = { fg = colors.sec9 },
+		Special = { fg = colors.pastel12 },
+		Todo = { fg = colors.sec8, bold = true },
+		Error = { fg = colors.hue0 },
+		MarkdownHeading = { fg = colors.pastel15, bold = true },
+		MarkdownLinkText = { fg = colors.sec9, underline = true },
+		MarkdownLinkUrl = { fg = colors.pastel12 },
+		GitAdd = { fg = colors.git.add },
+		GitChange = { fg = colors.git.change },
+		GitDelete = { fg = colors.git.delete },
+		SpellBad = { sp = colors.hue0, undercurl = true },
+		SpellCap = { sp = colors.pastel6, undercurl = true },
+		SpellLocal = { sp = colors.pastel6, undercurl = true },
+		SpellRare = { sp = colors.pastel6, undercurl = true },
+		Whitespace = { fg = colors.none },
 	}
 end
 
