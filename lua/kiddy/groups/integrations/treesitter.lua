@@ -35,7 +35,7 @@ function M.get(colors, options)
 		["@keyword.directive"] = { fg = colors.accent1 },
 		["@keyword.exception"] = { fg = colors.hue0 },
 		["@keyword.function"] = { fg = colors.sec3 },
-		["@keyword.import"] = { fg = colors.def4 },
+		["@keyword.import"] = { fg = colors.sec9 },
 		["@keyword.operator"] = { link = "Operator" },
 		["@keyword.repeat"] = { link = "Repeat" },
 		["@label"] = { link = "Label" },
