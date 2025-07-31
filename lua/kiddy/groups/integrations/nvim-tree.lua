@@ -3,9 +3,9 @@ local U = require("kiddy.utils")
 function M.get(colors, options)
 	return {
 		NvimTreeFolderName = { fg = colors.fg },
-		NvimTreeFolderIcon = { fg = colors.sec },
+		NvimTreeFolderIcon = { fg = colors.sec3 },
 		NvimTreeCursorLine = { bg = colors.bg_selected },
-		NvimTreeNormal = { fg = colors.extra.neutral4 },
+		NvimTreeNormal = { fg = colors.sec9 },
 		NvimTreeOpenedFolderName = { link = "NvimTreeNormal" },
 		NvimTreeEmptyFolderName = { fg = U.blend(colors.fg, colors.bg, 0.144) },
 		NvimTreeIndentMarker = { fg = colors.base4 },
