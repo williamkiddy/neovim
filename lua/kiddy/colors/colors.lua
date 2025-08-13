@@ -1,7 +1,7 @@
 local colors = {
 	-- Dark Backgrounds and Panels
 	base0 = "#202127",
-	base1 = "#303241",
+	base1 = "#292933",
 	base2 = "#3e404c",
 
 	-- Unique Accent Shades with a Fruity Twist
