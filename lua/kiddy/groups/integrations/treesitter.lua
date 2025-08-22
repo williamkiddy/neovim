@@ -1,3 +1,4 @@
+local U = require("kiddy.utils")
 local M = {}
 
 function M.get(colors, options)
