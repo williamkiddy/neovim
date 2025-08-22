@@ -3,24 +3,30 @@ local U = require("kiddy.utils")
 
 function C.extend_palette(options)
 	C.none = "NONE"
+
 	-- Backgrounds
 	C.bg = C.base0 -- Main background
-	C.bg_dark = C.sec1 -- Darker background for inactive areas
+	C.bg_dark = C.accent0 -- Darker background
 	C.bg_inactive = C.base2 -- Background for inactive windows
-	C.bg_highlight = U.blend(C.sec1, C.base0, 0.2) -- Highlighted background
-	C.bg_visual = C.extra.neutral7 -- for highlighting (cursor)
-	C.bg_bright = U.lighten(C.sec15, 0.2, C.bg) -- Bright background
+	C.bg_highlight = C.base1 -- Highlighted background
+	C.bg_visual = C.accent3 -- Visual selection
+	C.bg_bright = C.pastel15 -- Bright background
 	C.bg_sidebar = C.sec10 -- Sidebar background
-	C.bg_statusline = C.none -- Statusline background
-	C.bg_selected = U.blend(C.bg, C.sec10, 0.4) -- Background for selected items
+	C.bg_statusline = C.base1 -- Statusline background
+	C.bg_selected = C.hue7 -- Background for selected items
 	C.bg_fold = C.base2 -- Background for folded sections
 
 	-- Foregrounds
 	C.fg = C.pastel15 -- Main foreground (text)
-	C.fg_dark = C.extra.neutral5 -- Darker text
-	C.fg_inactive = C.base1 -- Inactive window text
+	C.fg_dark = C.extra.neutral6 -- Darker text
+	C.fg_inactive = C.extra.neutral4 -- Inactive window text
 	C.fg_highlight = C.pastel13 -- Highlighted text
-	C.fg_bright = U.lighten(C.base8, 0.8, C.sec10) -- Bright foreground (text)
+	C.fg_bright = C.base8 -- Bright foreground (text)
+	C.fg_visual = C.pastel4 -- Visual mode text
+	C.fg_sidebar = C.extra.neutral3 -- Sidebar text
+	C.fg_statusline = C.pastel3 -- Statusline text
+	C.fg_selected = C.sec15 -- Text for selected items
+	C.fg_fold = C.sec9 -- Text for folded sections10) -- Bright foreground (text)
 	C.fg_visual = C.pastel4 -- Visual mode text
 	C.fg_sidebar = C.base2 -- Sidebar text
 	C.fg_statusline = C.pastel3 -- Statusline text
@@ -39,15 +45,14 @@ function C.extend_palette(options)
 	C.bg_float_border = C.bg_float -- Border background for floating windows
 	C.fg_float_border = C.fg_float -- Border text for floating windows
 
+	-- Theme variations
 	if options.theme == "Mufflora" then
 		-- High contrast
 		C.bg = C.sec0
-
 		C.bg_selected = U.blend(C.bg, C.hue7, 0.92)
 	elseif options.theme == "Puffica" then
 		C.bg = C.base2
 		C.bg_highlight = C.pastel9
-
 		C.fg = C.pastel15
 	end
 
@@ -72,6 +77,7 @@ function C.extend_palette(options)
 	C.warning = C.sec4 -- Additional warning color
 	C.hint = C.sec8 -- Hint color
 	C.info = C.sec7 -- Info color
+	C.todo = C.accent7 -- Todo comments
 end
 
 return C
