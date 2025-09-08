@@ -24,22 +24,22 @@ local colors = {
 	accent8 = "#F6C5F1",
 
 	-- Secondary Colors: Strong and Subtle
-	sec0 = "#1E1E2E",
-	sec1 = "#2F2F4A",
-	sec2 = "#F7768E",
-	sec3 = "#B07990",
-	sec4 = "#8EC07C",
-	sec5 = "#F28FAD",
-	sec6 = "#FF9E64",
-	sec7 = "#E0AF68",
-	sec8 = "#CBA6F7",
-	sec9 = "#B4BEFE",
-	sec10 = "#EAB387",
-	sec11 = "#99CCDB",
-	sec12 = "#DDB6F2",
-	sec13 = "#A6E3A1",
-	sec14 = "#E0E0E0",
-	sec15 = "#F9E2AF",
+	sec0 = "#1A1B26",
+	sec1 = "#F7768E",
+	sec2 = "#9ECE6A",
+	sec3 = "#E0AF68",
+	sec4 = "#7AA2F7",
+	sec5 = "#BB9AF7",
+	sec6 = "#7DCFFF",
+	sec7 = "#C9D1E6",
+	sec8 = "#414868",
+	sec9 = "#FF5C8F",
+	sec10 = "#B9F27C",
+	sec11 = "#F3D47F",
+	sec12 = "#82AAFF",
+	sec13 = "#D4BBFF",
+	sec14 = "#76E5FF",
+	sec15 = "#FFFFFF",
 
 	-- Default Colors: More Balanced Pastel Shades
 	def0 = "#D98181",
@@ -50,7 +50,7 @@ local colors = {
 	def5 = "#789EF0",
 	def6 = "#A185E3",
 	def7 = "#D089E0",
-	def8 = "#EB98EB",
+	def8 = "#E0A3E3",
 
 	-- Tones: Subtle Variations for Better Contrast
 	tone0 = "#A67BF9",
@@ -140,6 +140,36 @@ local colors = {
 		bright6 = "#C7F13E",
 		bright7 = "#98FA4A",
 		bright8 = "#72FF56",
+	},
+
+	fruit = {
+		-- Reds & Pinks: balanced, juicy, not too harsh
+		strawberry = { light = "#FF9AA2", medium = "#FF6B81", dark = "#B22234" },
+		cherry = { light = "#FF8DAA", medium = "#FF355E", dark = "#8B0000" },
+		raspberry = { light = "#FF7FB3", medium = "#E60064", dark = "#990036" },
+
+		-- Oranges: warm, smooth gradient
+		tangerine = { light = "#FFBE7D", medium = "#FF8C42", dark = "#CC5C1A" },
+		apricot = { light = "#FFD8A8", medium = "#FFA64D", dark = "#CC7A1F" },
+
+		-- Yellows: bright but harmonious
+		banana = { light = "#FFF9A6", medium = "#FFEA3B", dark = "#CFC100" },
+		lemon = { light = "#FFFCC2", medium = "#FFF44F", dark = "#C7B800" },
+
+		-- Greens: fresh, natural, balanced with warm fruits
+		lime = { light = "#D4FF91", medium = "#A3E64D", dark = "#4B8B3B" },
+		kiwi = { light = "#D9FFB3", medium = "#7ED957", dark = "#3B7A2F" },
+		apple = { light = "#B9FF9C", medium = "#57C34A", dark = "#2E7D32" },
+
+		-- Blues: calm, fruity, balanced with warmer tones
+		blueberry = { light = "#B8D4FF", medium = "#4A90F2", dark = "#1A3E91" },
+		grape = { light = "#C5B3FF", medium = "#7B5DFF", dark = "#4B2E91" },
+		plum = { light = "#E0B3FF", medium = "#A04DFF", dark = "#630099" },
+
+		-- Exotic fruits: extra fruity pops
+		mango = { light = "#FFE28D", medium = "#FFB533", dark = "#CC7A00" },
+		passion = { light = "#FFD8B3", medium = "#FF9233", dark = "#CC5000" },
+		dragonfruit = { light = "#FFB3E0", medium = "#FF4DC2", dark = "#B2007A" },
 	},
 }
 
