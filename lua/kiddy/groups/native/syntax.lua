@@ -9,7 +9,7 @@ function M.get(colors, options)
 		Boolean = { fg = colors.def1, bold = true },
 		Float = { fg = colors.hue2 },
 
-		Identifier = { fg = colors.def2 },
+		Identifier = { fg = colors.tone2 },
 		Function = { fg = colors.def4 },
 
 		Statement = { fg = colors.tone3, bold = true },
