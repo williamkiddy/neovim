@@ -77,7 +77,7 @@ function C.extend_palette(options)
 	C.warning = C.sec4 -- Additional warning color
 	C.hint = C.sec8 -- Hint color
 	C.info = C.sec7 -- Info color
-	C.todo = C.accent7 -- Todo comments
+	C.todo = C.def3 -- Todo comments
 end
 
 return C

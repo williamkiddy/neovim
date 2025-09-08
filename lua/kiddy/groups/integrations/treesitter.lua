@@ -1,131 +1,91 @@
-local M = {}
+local m = {}
 
-function M.get(colors)
+function m.get(colors)
 	return {
-		-- Base elements
-		["@none"] = { link = "None" },
-		["@annotation"] = { link = "Identifier" },
-		["@attribute"] = { link = "PreProc" },
+		-- base elements
+		["@none"] = { link = "none" },
+		["@annotation"] = { fg = colors.sec1 },
+		["@attribute"] = { fg = colors.sec2 },
 
-		-- Booleans
-		["@boolean"] = { link = "Boolean" },
-		["@boolean.true"] = { link = "Boolean" },
-		["@boolean.false"] = { link = "Boolean" },
+		-- booleans
+		["@boolean"] = { fg = colors.sec3, bold = true },
+		["@boolean.true"] = { fg = colors.sec3, bold = true },
+		["@boolean.false"] = { fg = colors.sec3, bold = true },
 
-		-- Characters
-		["@character"] = { link = "Character" },
-		["@character.printf"] = { link = "SpecialChar" },
-		["@character.special"] = { link = "SpecialChar" },
+		-- characters
+		["@character"] = { fg = colors.sec4 },
+		["@character.printf"] = { fg = colors.sec4 },
+		["@character.special"] = { fg = colors.sec4 },
 
-		-- Comments
-		["@comment"] = { link = "Comment" },
-		["@comment.error"] = { link = "Error" },
-		["@comment.hint"] = { link = "Hint" },
-		["@comment.info"] = { link = "Info" },
-		["@comment.note"] = { link = "Note" },
-		["@comment.todo"] = { link = "Todo" },
-		["@comment.warning"] = { link = "Warning" },
-		["@comment.documentation"] = { link = "Comment" },
+		-- comments
+		["@comment"] = { fg = colors.sec5, italic = true },
+		["@comment.error"] = { fg = colors.sec1, bold = true },
+		["@comment.hint"] = { fg = colors.sec6 },
+		["@comment.info"] = { fg = colors.sec7 },
+		["@comment.note"] = { fg = colors.sec8 },
+		["@comment.todo"] = { fg = colors.fruit1, bold = true },
+		["@comment.warning"] = { fg = colors.fruit2, bold = true },
+		["@comment.documentation"] = { fg = colors.sec5 },
 
-		-- Constants
-		["@constant"] = { link = "Constant" },
-		["@constant.builtin"] = { link = "Special" },
-		["@constant.macro"] = { link = "Define" },
+		-- constants
+		["@constant"] = { fg = colors.sec9 },
+		["@constant.builtin"] = { fg = colors.sec10 },
+		["@constant.macro"] = { fg = colors.sec11 },
 
-		-- Constructors
-		["@constructor"] = { link = "Function" },
-		["@constructor.tsx"] = { link = "Function" },
+		-- constructors
+		["@constructor"] = { fg = colors.sec12 },
+		["@constructor.tsx"] = { fg = colors.sec12 },
 
-		-- Diff
-		["@diff.delta"] = { link = "DiffChange" },
-		["@diff.minus"] = { link = "DiffDelete" },
-		["@diff.plus"] = { link = "DiffAdd" },
+		-- diff
+		["@diff.delta"] = { fg = colors.fruit3 },
+		["@diff.minus"] = { fg = colors.fruit1 },
+		["@diff.plus"] = { fg = colors.fruit2 },
 
-		-- Functions
-		["@function"] = { link = "Function" },
-		["@function.builtin"] = { link = "Special" },
-		["@function.call"] = { link = "Function" },
-		["@function.macro"] = { link = "Define" },
-		["@function.method"] = { link = "Function" },
-		["@function.method.call"] = { link = "Function" },
+		-- functions
+		["@function"] = { fg = colors.sec13 },
+		["@function.builtin"] = { fg = colors.sec14 },
+		["@function.call"] = { fg = colors.sec13 },
+		["@function.macro"] = { fg = colors.sec15 },
+		["@function.method"] = { fg = colors.sec13 },
+		["@function.method.call"] = { fg = colors.sec13 },
 
-		-- Keywords
-		["@keyword"] = { link = "Keyword" },
-		["@keyword.conditional"] = { link = "Conditional" },
-		["@keyword.debug"] = { link = "Debug" },
-		["@keyword.directive"] = { link = "PreProc" },
-		["@keyword.exception"] = { link = "Exception" },
-		["@keyword.function"] = { link = "Function" },
-		["@keyword.import"] = { link = "Include" },
-		["@keyword.operator"] = { link = "Operator" },
-		["@keyword.repeat"] = { link = "Repeat" },
-		["@keyword.return"] = { link = "Return" },
+		-- keywords
+		["@keyword"] = { fg = colors.sec1, bold = true },
+		["@keyword.conditional"] = { fg = colors.sec2, bold = true },
+		["@keyword.debug"] = { fg = colors.sec3 },
+		["@keyword.directive"] = { fg = colors.sec4 },
+		["@keyword.exception"] = { fg = colors.sec5, bold = true },
+		["@keyword.function"] = { fg = colors.sec6 },
+		["@keyword.import"] = { fg = colors.sec7 },
+		["@keyword.operator"] = { fg = colors.sec8 },
+		["@keyword.repeat"] = { fg = colors.sec9 },
+		["@keyword.return"] = { fg = colors.sec10 },
 
-		-- Labels & markup
-		["@label"] = { link = "Label" },
-		["@markup"] = { link = "None" },
-		["@markup.emphasis"] = { link = "Italic" },
-		["@markup.heading"] = { link = "Title" },
-		["@markup.link"] = { link = "Underlined" },
-		["@markup.raw"] = { link = "None" },
-		["@markup.strong"] = { link = "Bold" },
-		["@markup.underline"] = { link = "Underlined" },
+		-- types
+		["@type"] = { fg = colors.sec11 },
+		["@type.builtin"] = { fg = colors.sec12 },
+		["@type.definition"] = { fg = colors.sec13 },
 
-		-- Modules & namespaces
-		["@module"] = { link = "Include" },
-		["@module.builtin"] = { link = "Special" },
-		["@namespace"] = { link = "Namespace" },
-		["@namespace.builtin"] = { link = "Special" },
+		-- variables
+		["@variable"] = { fg = colors.sec14 },
+		["@variable.builtin"] = { fg = colors.sec15 },
+		["@variable.parameter"] = { fg = colors.sec1 },
+		["@variable.member"] = { fg = colors.sec2 },
 
-		-- Numbers
-		["@number"] = { link = "Number" },
-		["@number.float"] = { link = "Float" },
-		["@number.binary"] = { link = "Number" },
-		["@number.hex"] = { link = "Number" },
+		-- fields & methods
+		["@field"] = { fg = colors.sec3 },
+		["@field.key"] = { fg = colors.sec4 },
+		["@method"] = { fg = colors.sec5 },
+		["@method.call"] = { fg = colors.sec6 },
 
-		-- Operators
-		["@operator"] = { link = "Operator" },
-		["@property"] = { link = "Identifier" },
-		["@punctuation.bracket"] = { link = "Delimiter" },
-		["@punctuation.delimiter"] = { link = "Delimiter" },
-		["@punctuation.special"] = { link = "Delimiter" },
-
-		-- Strings
-		["@string"] = { link = "String" },
-		["@string.documentation"] = { link = "Comment" },
-		["@string.escape"] = { link = "SpecialChar" },
-		["@string.regexp"] = { link = "String" },
-
-		-- Tags
-		["@tag"] = { link = "Tag" },
-		["@tag.attribute"] = { link = "Identifier" },
-		["@tag.delimiter"] = { link = "Delimiter" },
-
-		-- Types
-		["@type"] = { link = "Type" },
-		["@type.builtin"] = { link = "Special" },
-		["@type.definition"] = { link = "Type" },
-
-		-- Variables
-		["@variable"] = { link = "Identifier" },
-		["@variable.builtin"] = { link = "Special" },
-		["@variable.parameter"] = { link = "Identifier" },
-		["@variable.member"] = { link = "Identifier" },
-
-		-- Fields & methods
-		["@field"] = { link = "Identifier" },
-		["@field.key"] = { link = "Identifier" },
-		["@method"] = { link = "Function" },
-		["@method.call"] = { link = "Function" },
-
-		-- Text elements
-		["@text.literal"] = { link = "String" },
-		["@text.reference"] = { link = "Underlined" },
-		["@text.title"] = { link = "Title" },
-		["@text.todo"] = { link = "Todo" },
-		["@text.warning"] = { link = "WarningMsg" },
-		["@text.danger"] = { link = "ErrorMsg" },
+		-- text elements
+		["@text.literal"] = { fg = colors.sec7 },
+		["@text.reference"] = { fg = colors.sec8, underline = true },
+		["@text.title"] = { fg = colors.def2, bold = true },
+		["@text.todo"] = { fg = colors.todo, bold = true },
+		["@text.warning"] = { fg = colors.warning, bold = true },
+		["@text.danger"] = { fg = colors.warn, bold = true },
 	}
 end
 
-return M
+return m
