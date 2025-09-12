@@ -173,4 +173,58 @@ local colors = {
 	},
 }
 
+colors.named = {
+	core = {
+		black  = colors.base1,
+		white  = colors.base8,
+		red    = colors.hue0,
+		orange = colors.hue3,
+		yellow = colors.hue4,
+		green  = colors.base5,
+		blue   = colors.base4,
+		purple = colors.base7,
+		pink   = colors.sec1,
+		cyan   = colors.sec6,
+	},
+
+	accent = {
+		black  = colors.accent0,
+		white  = colors.accent8,
+		red    = colors.accent4,
+		orange = colors.hue2,
+		yellow = colors.accent7,
+		green  = colors.accent5,
+		blue   = colors.accent6,
+		purple = colors.base7,
+		pink   = colors.accent8,
+		cyan   = colors.accent3,
+	},
+
+	sec = {
+		black  = colors.sec0,
+		white  = colors.sec15,
+		red    = colors.sec1,
+		orange = colors.sec3,
+		yellow = colors.sec11,
+		green  = colors.sec2,
+		blue   = colors.sec4,
+		purple = colors.sec5,
+		pink   = colors.sec9,
+		cyan   = colors.sec6,
+	},
+
+	def = {
+		black  = colors.base0,
+		white  = colors.def8,
+		red    = colors.def0,
+		orange = colors.def1,
+		yellow = colors.def2,
+		green  = colors.def3,
+		blue   = colors.def5,
+		purple = colors.def6,
+		pink   = colors.def7,
+		cyan   = colors.def4,
+	},
+}
+
 return colors

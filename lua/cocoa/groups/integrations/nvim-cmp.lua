@@ -1,5 +1,5 @@
 local M = {}
-local U = require("kiddy.utils")
+local U = require("cocoa.utils")
 
 function M.get(colors, options)
 	return {

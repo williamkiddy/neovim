@@ -1,5 +1,5 @@
-local merge = require("kiddy.utils").merge
-local C = require("kiddy.config")
+local merge = require("cocoa.utils").merge
+local C = require("cocoa.config")
 
 local M = {}
 
@@ -21,10 +21,10 @@ M.native = {
 function M.get_groups(colors, options)
 	local groups = {}
 	for _, native in ipairs(M.native) do
-		groups = merge(groups, require("kiddy.groups.native." .. native).get(colors, options))
+		groups = merge(groups, require("cocoa.groups.native." .. native).get(colors, options))
 	end
 	for _, integration in ipairs(M.integrations) do
-		groups = merge(groups, require("kiddy.groups.integrations." .. integration).get(colors, options))
+		groups = merge(groups, require("cocoa.groups.integrations." .. integration).get(colors, options))
 	end
 	return merge(groups, C.options.override or {})
 end

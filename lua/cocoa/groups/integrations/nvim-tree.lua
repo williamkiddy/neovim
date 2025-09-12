@@ -1,11 +1,11 @@
 local M = {}
-local U = require("kiddy.utils")
+local U = require("cocoa.utils")
 function M.get(colors, options)
 	return {
 		NvimTreeFolderName = { fg = colors.fg },
 		NvimTreeFolderIcon = { fg = colors.sec3 },
 		NvimTreeCursorLine = { bg = colors.bg_selected },
-		NvimTreeNormal = { fg = colors.sec9 },
+		NvimTreeNormal = { fg = colors.fg },
 		NvimTreeOpenedFolderName = { link = "NvimTreeNormal" },
 		NvimTreeEmptyFolderName = { fg = U.blend(colors.fg, colors.bg, 0.144) },
 		NvimTreeIndentMarker = { fg = colors.base4 },
