@@ -16,6 +16,7 @@ local defaults = {
 		undercurl = true
 	},
 	override = {},
+	themeconf = "core" -- Can be core/accent/sec/def
 }
 
 -- Function to merge two tables

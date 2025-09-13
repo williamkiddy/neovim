@@ -2,34 +2,34 @@ local M = {}
 
 function M.get(colors, options)
 	return {
-		Constant = { fg = colors.sec10 },
-		String = { fg = colors.sec12 },
-		Character = { fg = colors.sec14 },
-		Number = { fg = colors.sec9 },
-		Boolean = { fg = colors.sec13, bold = true },
-		Float = { fg = colors.sec11 },
+		Constant = { fg = colors[options.themeconf].blue },
+		String = { fg = colors[options.themeconf].green },
+		Character = { fg = colors[options.themeconf].cyan },
+		Number = { fg = colors[options.themeconf].blue },
+		Boolean = { fg = colors[options.themeconf].yellow, bold = true },
+		Float = { fg = colors[options.themeconf].blue },
 
-		Identifier = { fg = colors.sec15 },
-		Function = { fg = colors.sec7 },
+		Identifier = { fg = colors[options.themeconf].blue },
+		Function = { fg = colors[options.themeconf].orange },
 
-		Statement = { fg = colors.sec1, bold = true },
-		Conditional = { fg = colors.sec2, bold = true },
-		Repeat = { fg = colors.sec5, bold = true },
-		Label = { fg = colors.sec6 },
-		Operator = { fg = colors.sec13 },
-		Keyword = { fg = colors.sec8, bold = true },
+		Statement = { fg = colors[options.themeconf].yellow, bold = true },
+		Conditional = { fg = colors[options.themeconf].orange, bold = true },
+		Repeat = { fg = colors[options.themeconf].magenta, bold = true },
+		Label = { fg = colors[options.themeconf].cyan },
+		Operator = { fg = colors[options.themeconf].yellow },
+		Keyword = { fg = colors[options.themeconf].green, bold = true },
 
-		PreProc = { fg = colors.sec3, italic = true },
-		Type = { fg = colors.sec14 },
-		Structure = { fg = colors.sec7, bold = true },
+		PreProc = { fg = colors[options.themeconf].purple, italic = true },
+		Type = { fg = colors[options.themeconf].yellow },
+		Structure = { fg = colors[options.themeconf].cyan, bold = true },
 
-		Special = { fg = colors.sec4 },
+		Special = { fg = colors[options.themeconf].yellow },
 		Todo = { fg = colors.fruit1, bold = true },
 		Error = { fg = colors.fruit2, bold = true },
 
-		MarkdownHeading = { fg = colors.fruit.strawberry.light, bold = true },
-		MarkdownLinkText = { fg = colors.sec12, underline = true },
-		MarkdownLinkUrl = { fg = colors.sec5 },
+		MarkdownHeading = { fg = colors[options.themeconf].pink, bold = true },
+		MarkdownLinkText = { fg = colors[options.themeconf].purple, underline = true },
+		MarkdownLinkUrl = { fg = colors[options.themeconf].magenta },
 
 		GitAdd = { fg = colors.git.add },
 		GitChange = { fg = colors.git.change },
@@ -37,11 +37,11 @@ function M.get(colors, options)
 
 		SpellBad = { sp = colors.change0, undercurl = true },
 		SpellCap = { sp = colors.change1, undercurl = true },
-		SpellLocal = { sp = colors.sec14, undercurl = true },
-		SpellRare = { sp = colors.sec12, undercurl = true },
+		SpellLocal = { sp = colors[options.themeconf].green, undercurl = true },
+		SpellRare = { sp = colors[options.themeconf].yellow, undercurl = true },
 
-		Whitespace = { fg = colors.sec8 },
-		NonText = { fg = colors.sec7 },
+		Whitespace = { fg = colors[options.themeconf].red },
+		NonText = {},
 	}
 end
 

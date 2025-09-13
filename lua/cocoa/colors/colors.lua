@@ -5,7 +5,7 @@ local colors = {
 	base2 = "#3e404c",
 
 	-- Unique Accent Shades with a Fruity Twist
-	base3 = "#2A3568",
+	base3 = "#8067A0",
 	base4 = "#4178A5",
 	base5 = "#39A86B",
 	base6 = "#CF9A3C",
@@ -30,7 +30,7 @@ local colors = {
 	sec3 = "#E0AF68",
 	sec4 = "#7AA2F7",
 	sec5 = "#BB9AF7",
-	sec6 = "#7DCFFF",
+	sec6 = "#7DBFDF",
 	sec7 = "#C9D1E6",
 	sec8 = "#414868",
 	sec9 = "#FF5C8F",
@@ -175,16 +175,17 @@ local colors = {
 
 colors.named = {
 	core = {
-		black  = colors.base1,
-		white  = colors.base8,
-		red    = colors.hue0,
-		orange = colors.hue3,
-		yellow = colors.hue4,
-		green  = colors.base5,
-		blue   = colors.base4,
-		purple = colors.base7,
-		pink   = colors.sec1,
-		cyan   = colors.sec6,
+		black   = colors.base1,
+		white   = colors.base8,
+		red     = colors.hue0,
+		orange  = colors.hue3,
+		yellow  = colors.hue4,
+		green   = colors.base5,
+		blue    = colors.base4,
+		purple  = colors.base7,
+		pink    = colors.base3,
+		cyan    = colors.sec6,
+		magenta = colors.sec5
 	},
 
 	accent = {
