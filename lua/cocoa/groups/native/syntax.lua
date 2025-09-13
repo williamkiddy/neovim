@@ -31,12 +31,12 @@ function M.get(colors, options)
 		MarkdownLinkText = { fg = colors.named[options.themeconf].purple, underline = true },
 		MarkdownLinkUrl = { fg = colors.named[options.themeconf].magenta },
 
-		GitAdd = { fg = colors.named.git.add },
-		GitChange = { fg = colors.named.git.change },
-		GitDelete = { fg = colors.named.git.delete },
+		GitAdd = { fg = colors.git.add },
+		GitChange = { fg = colors.git.change },
+		GitDelete = { fg = colors.git.delete },
 
-		SpellBad = { sp = colors.named.change0, undercurl = true },
-		SpellCap = { sp = colors.named.change1, undercurl = true },
+		SpellBad = { sp = colors.change0, undercurl = true },
+		SpellCap = { sp = colors.change1, undercurl = true },
 		SpellLocal = { sp = colors.named[options.themeconf].green, undercurl = true },
 		SpellRare = { sp = colors.named[options.themeconf].yellow, undercurl = true },
 
