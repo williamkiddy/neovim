@@ -7,7 +7,7 @@ local colors = {
 	-- Unique Accent Shades with a Fruity Twist
 	base3 = "#8067A0",
 	base4 = "#7399E9",
-	base5 = "#39AF6F",
+	base5 = "#39AF8F",
 	base6 = "#CF9A3C",
 	base7 = "#B6829C",
 	base8 = "#E9E7E2",
