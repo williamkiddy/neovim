@@ -18,7 +18,7 @@ function M.get(colors, options)
 		CmpDocumentation = { bg = colors.base0 },
 		CmpDocumentationBorder = { fg = colors.base4, bg = colors.base0 },
 		CmpPmenu = { link = "NormalFloat" },
-		CmpPmenuSel = { bg = colors.sec2 },
+		CmpPmenuSel = { bg = colors.base3 },
 
 		CmpItemKindText = { fg = colors.fg_highlight },
 		CmpItemKindMethod = { link = "Function" },
