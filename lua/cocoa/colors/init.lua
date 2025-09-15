@@ -40,10 +40,10 @@ function C.extend_palette(options)
 	C.fg_popup_border = C.sec3 -- Popup border text
 
 	-- Floating windows
-	C.bg_float = U.blend(C.bg, C.base4, 0.8) -- Background for floating windows
-	C.fg_float = C.base8                    -- Text for floating windows
-	C.bg_float_border = C.bg_float          -- Border background for floating windows
-	C.fg_float_border = C.fg_float          -- Border text for floating windows
+	C.bg_float = C.extra.mineral7 -- Background for floating windows
+	C.fg_float = C.base8          -- Text for floating windows
+	C.bg_float_border = C.bg_float -- Border background for floating windows
+	C.fg_float_border = C.fg_float -- Border text for floating windows
 
 	-- Theme variations
 	if options.theme == "Mufflora" then
