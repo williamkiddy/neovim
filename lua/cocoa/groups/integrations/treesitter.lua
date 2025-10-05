@@ -122,7 +122,7 @@ function M.get(colors, options)
 		["@variable.builtin"]             = { link = "Special" },
 		["@variable.member"]              = { link = "Field" },
 		["@variable.parameter"]           = { link = "Parameter" },
-		["@variable.parameter.builtin"]   = { fg = Util.blend_fg(c.yellow, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
+		["@variable.parameter.builtin"]   = { fg = colors.named[options.themeconf].yellow }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
 		-- fields & methods
 		["@field"]                        = { link = "Field" },
