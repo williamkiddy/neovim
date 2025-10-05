@@ -1,90 +1,142 @@
 local M = {}
 
-function M.get(colors)
+function M.get(colors, options)
 	return {
 		-- base elements
-		["@none"] = { link = "none" },
-		["@annotation"] = { link = "Annotation" },
-		["@attribute"] = { link = "Attribute" },
+		["@none"]                         = { link = "none" },
+		["@annotation"]                   = { link = "PreProc" },
+		["@attribute"]                    = { link = "PreProc" },
 
 		-- booleans
-		["@boolean"] = { link = "Boolean" },
-		["@boolean.true"] = { link = "Boolean" },
-		["@boolean.false"] = { link = "Boolean" },
+		["@boolean"]                      = { link = "Boolean" },
+		["@boolean.true"]                 = { link = "Boolean" },
+		["@boolean.false"]                = { link = "Boolean" },
 
 		-- characters
-		["@character"] = { link = "Character" },
-		["@character.printf"] = { link = "Character" },
-		["@character.special"] = { link = "Character" },
+		["@character"]                    = { link = "Character" },
+		["@character.printf"]             = { link = "SpeacialChar" },
+		["@character.special"]            = { link = "SpecialChar" },
 
 		-- comments
-		["@comment"] = { link = "Comment" },
-		["@comment.error"] = { link = "Error" },
-		["@comment.hint"] = { link = "Hint" },
-		["@comment.info"] = { link = "Info" },
-		["@comment.note"] = { link = "Note" },
-		["@comment.todo"] = { link = "Todo" },
-		["@comment.warning"] = { link = "Warning" },
-		["@comment.documentation"] = { link = "Comment" },
+		["@comment"]                      = { link = "Comment" },
+		["@comment.error"]                = { link = "Error" },
+		["@comment.hint"]                 = { fg = C.hint },
+		["@comment.info"]                 = { fg = C.info },
+		["@comment.note"]                 = { link = "Note" },
+		["@comment.todo"]                 = { link = "Todo" },
+		["@comment.warning"]              = { link = C.warning },
+		["@comment.documentation"]        = { link = "Comment" },
 
 		-- constants
-		["@constant"] = { link = "Constant" },
-		["@constant.builtin"] = { link = "Builtin" },
-		["@constant.macro"] = { link = "Macro" },
+		["@constant"]                     = { link = "Constant" },
+		["@constant.builtin"]             = { link = "Special" },
+		["@constant.macro"]               = { link = "Define" },
 
 		-- constructors
-		["@constructor"] = { link = "Constructor" },
-		["@constructor.tsx"] = { link = "Constructor" },
+		["@constructor"]                  = { fg = C.def6 },
+		["@constructor.tsx"]              = { link = "PreProc" },
 
 		-- diff
-		["@diff.delta"] = { link = "DiffAdd" },
-		["@diff.minus"] = { link = "DiffDelete" },
-		["@diff.plus"] = { link = "DiffChange" },
+		["@diff.delta"]                   = { link = "DiffChange" },
+		["@diff.minus"]                   = { link = "DiffDelete" },
+		["@diff.plus"]                    = { link = "DiffAdd" },
 
 		-- functions
-		["@function"] = { link = "Function" },
-		["@function.builtin"] = { link = "Builtin" },
-		["@function.call"] = { link = "Function" },
-		["@function.macro"] = { link = "Macro" },
-		["@function.method"] = { link = "Method" },
-		["@function.method.call"] = { link = "Method" },
+		["@function"]                     = { link = "Function" },
+		["@function.builtin"]             = { link = "Special" },
+		["@function.call"]                = { link = "@Function" },
+		["@function.macro"]               = { link = "Macro" },
+		["@function.method"]              = { link = "Function" },
+		["@function.method.call"]         = { link = "@function.method" },
 
 		-- keywords
-		["@keyword"] = { link = "Keyword" },
-		["@keyword.conditional"] = { link = "Conditional" },
-		["@keyword.debug"] = { link = "Debug" },
-		["@keyword.directive"] = { link = "Directive" },
-		["@keyword.exception"] = { link = "Exception" },
-		["@keyword.function"] = { link = "Function" },
-		["@keyword.import"] = { link = "Include" },
-		["@keyword.operator"] = { link = "Operator" },
-		["@keyword.repeat"] = { link = "Repeat" },
-		["@keyword.return"] = { link = "Return" },
+		["@keyword"]                      = { link = "Keyword" },
+		["@keyword.conditional"]          = { link = "Conditional" },
+		["@keyword.debug"]                = { link = "Debug" },
+		["@keyword.directive"]            = { link = "PreProc" },
+		["@keyword.exception"]            = { link = "Exception" },
+		["@keyword.function"]             = { link = "Function" },
+		["@keyword.import"]               = { link = "Include" },
+		["@keyword.operator"]             = { link = "@operator" },
+		["@keyword.repeat"]               = { link = "Repeat" },
+		["@keyword.return"]               = { link = "Return" },
+		["@keyword.storage"]              = { link = "StorageClass" },
+
+		-- markups
+		["@markup"]                       = "@none",
+		["@markup.emphasis"]              = { italic = true },
+		["@markup.environment"]           = "Macro",
+		["@markup.environment.name"]      = "Type",
+		["@markup.heading"]               = "Title",
+		["@markup.italic"]                = { italic = true },
+		["@markup.link"]                  = { fg = colors.def4 },
+		["@markup.link.label"]            = "SpecialChar",
+		["@markup.link.label.symbol"]     = "Identifier",
+		["@markup.link.url"]              = "Underlined",
+		["@markup.list"]                  = { fg = colors.tone2 },                        -- For special punctutation that does not fall in the categories before.
+		["@markup.list.checked"]          = { fg = colors.named[options.themeconf].green }, -- For brackets and parens.
+		["@markup.list.markdown"]         = { fg = colors.named[options.themeconf].orange, bold = true },
+		["@markup.list.unchecked"]        = { fg = colors.named[options.themeconf].blue }, -- For brackets and parens.
+		["@markup.math"]                  = "Special",
+		["@markup.raw"]                   = "String",
+		["@markup.raw.markdown_inline"]   = { bg = colors.bg_visual, fg = colors.named[options.themeconf].blue },
+		["@markup.strikethrough"]         = { strikethrough = true },
+		["@markup.strong"]                = { bold = true },
+		["@markup.underline"]             = { underline = true },
+
+		-- others
+		["@module"]                       = "Include",
+		["@module.builtin"]               = { fg = colors.named[options.themeconf].red }, -- Variable names that are defined by the languages, like `this` or `self`.
+		["@namespace.builtin"]            = "@variable.builtin",
+		["@number"]                       = "Number",
+		["@number.float"]                 = "Float",
+		["@operator"]                     = { link = "Opterator" },                        -- For any operator: `+`, but also `->` and `*` in C.
+		["@property"]                     = { fg = colors.named[options.themeconf].green },
+		["@punctuation.bracket"]          = { fg = colors.fg_dark },                       -- For brackets and parens.
+		["@punctuation.delimiter"]        = { fg = colors.named[options.themeconf].blue }, -- For delimiters ie: `.`
+		["@punctuation.special"]          = { fg = colors.tone2 },                         -- For special symbols (e.g. `{}` in string interpolation)
+		["@punctuation.special.markdown"] = { fg = colors.named[options.themeconf].orange }, -- For special symbols (e.g. `{}` in string interpolation)
+
+		-- strings
+		["@string"]                       = "String",
+		["@string.documentation"]         = { fg = colors.named[options.themeconf].yellow },
+		["@string.escape"]                = { fg = colors.named[options.themeconf].magenta }, -- For escape characters within a string.
+		["@string.regexp"]                = { fg = colors.accent6 },                        -- For regexes.
+
+		-- tags
+		["@tag"]                          = "Label",
+		["@tag.attribute"]                = "@property",
+		["@tag.delimiter"]                = "Delimiter",
+		["@tag.delimiter.tsx"]            = { fg = colors.named[options.themeconf].yellow },
+		["@tag.tsx"]                      = { fg = colors.named[options.themeconf].red },
+		["@tag.javascript"]               = { fg = colors.named[options.themeconf].red },
 
 		-- types
-		["@type"] = { link = "Type" },
-		["@type.builtin"] = { link = "TypeBuiltin" },
-		["@type.definition"] = { link = "TypeDef" },
+		["@type"]                         = { link = "Type" },
+		["@type.builtin"]                 = { link = "TypeBuiltin" },
+		["@type.definition"]              = { link = "TypeDef" },
+		["@type.qualifier"]               = "@keyword",
 
 		-- variables
-		["@variable"] = { link = "Identifier" },
-		["@variable.builtin"] = { link = "Special" },
-		["@variable.parameter"] = { link = "Parameter" },
-		["@variable.member"] = { link = "Field" },
+		["@variable"]                     = { link = "Identifier" },
+		["@variable.builtin"]             = { link = "Special" },
+		["@variable.member"]              = { link = "Field" },
+		["@variable.parameter"]           = { link = "Parameter" },
+		["@variable.parameter.builtin"]   = { fg = Util.blend_fg(c.yellow, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
 		-- fields & methods
-		["@field"] = { link = "Field" },
-		["@field.key"] = { link = "Property" },
-		["@method"] = { link = "Method" },
-		["@method.call"] = { link = "Method" },
+		["@field"]                        = { link = "Field" },
+		["@field.key"]                    = { link = "Property" },
+		["@method"]                       = { link = "Method" },
+		["@method.call"]                  = { link = "Method" },
 
 		-- text elements
-		["@text.literal"] = { link = "String" },
-		["@text.reference"] = { link = "Identifier" },
-		["@text.title"] = { link = "Title" },
-		["@text.todo"] = { link = "Todo" },
-		["@text.warning"] = { link = "WarningMsg" },
-		["@text.danger"] = { link = "ErrorMsg" },
+		["@text.literal"]                 = { link = "String" },
+		["@text.reference"]               = { link = "Identifier" },
+		["@text.title"]                   = { link = "Title" },
+		["@text.todo"]                    = { link = "Todo" },
+		["@text.warning"]                 = { link = "WarningMsg" },
+		["@text.danger"]                  = { link = "ErrorMsg" },
 	}
 end
 
