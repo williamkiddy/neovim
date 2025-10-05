@@ -44,7 +44,7 @@ function M.get(colors, options)
 		-- functions
 		["@function"]                     = { link = "Function" },
 		["@function.builtin"]             = { link = "Special" },
-		["@function.call"]                = { link = "@Function" },
+		["@function.call"]                = { link = "@function" },
 		["@function.macro"]               = { link = "Macro" },
 		["@function.method"]              = { link = "Function" },
 		["@function.method.call"]         = { link = "@function.method" },
