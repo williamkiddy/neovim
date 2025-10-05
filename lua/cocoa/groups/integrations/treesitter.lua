@@ -44,10 +44,10 @@ function M.get(colors, options)
 		-- functions
 		["@function"]                     = { link = "Function" },
 		["@function.builtin"]             = { link = "Special" },
-		["@function.call"]                = { link = "@function" },
+		["@function.call"]                = { link = "Function" },
 		["@function.macro"]               = { link = "Macro" },
 		["@function.method"]              = { link = "Function" },
-		["@function.method.call"]         = { link = "@function.method" },
+		["@function.method.call"]         = { link = "Function" },
 
 		-- keywords
 		["@keyword"]                      = { link = "Keyword" },
@@ -63,7 +63,7 @@ function M.get(colors, options)
 		["@keyword.storage"]              = { link = "StorageClass" },
 
 		-- markups
-		["@markup"]                       = { link = "@none" },
+		["@markup"]                       = { link = "none" },
 		["@markup.emphasis"]              = { italic = true },
 		["@markup.environment"]           = { link = "Macro" },
 		["@markup.environment.name"]      = { link = "Type" },
@@ -87,7 +87,7 @@ function M.get(colors, options)
 		-- others
 		["@module"]                       = { link = "Include" },
 		["@module.builtin"]               = { fg = colors.named[options.themeconf].red }, -- Variable names that are defined by the languages, like `this` or `self`.
-		["@namespace.builtin"]            = { link = "@variable.builtin" },
+		["@namespace.builtin"]            = { link = "Variable" },
 		["@number"]                       = { link = "Number" },
 		["@number.float"]                 = { link = "Float" },
 		["@operator"]                     = { link = "Opterator" },                        -- For any operator: `+`, but also `->` and `*` in C.
@@ -105,7 +105,7 @@ function M.get(colors, options)
 
 		-- tags
 		["@tag"]                          = { link = "Label" },
-		["@tag.attribute"]                = { link = "@property" },
+		["@tag.attribute"]                = { link = "Keyword" },
 		["@tag.delimiter"]                = { link = "Delimiter" },
 		["@tag.delimiter.tsx"]            = { fg = colors.named[options.themeconf].yellow },
 		["@tag.tsx"]                      = { fg = colors.named[options.themeconf].red },
@@ -115,7 +115,7 @@ function M.get(colors, options)
 		["@type"]                         = { link = "Type" },
 		["@type.builtin"]                 = { link = "TypeBuiltin" },
 		["@type.definition"]              = { link = "TypeDef" },
-		["@type.qualifier"]               = { link = "@keyword" },
+		["@type.qualifier"]               = { link = "Keyword" },
 
 		-- variables
 		["@variable"]                     = { link = "Identifier" },
