@@ -20,11 +20,11 @@ function M.get(colors, options)
 		-- comments
 		["@comment"]                      = { link = "Comment" },
 		["@comment.error"]                = { link = "Error" },
-		["@comment.hint"]                 = { fg = C.hint },
-		["@comment.info"]                 = { fg = C.info },
+		["@comment.hint"]                 = { fg = colors.hint },
+		["@comment.info"]                 = { fg = colors.info },
 		["@comment.note"]                 = { link = "Note" },
 		["@comment.todo"]                 = { link = "Todo" },
-		["@comment.warning"]              = { link = C.warning },
+		["@comment.warning"]              = { link = colors.warning },
 		["@comment.documentation"]        = { link = "Comment" },
 
 		-- constants
@@ -33,7 +33,7 @@ function M.get(colors, options)
 		["@constant.macro"]               = { link = "Define" },
 
 		-- constructors
-		["@constructor"]                  = { fg = C.def6 },
+		["@constructor"]                  = { fg = colors.def6 },
 		["@constructor.tsx"]              = { link = "PreProc" },
 
 		-- diff
