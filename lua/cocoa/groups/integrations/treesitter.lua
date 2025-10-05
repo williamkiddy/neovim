@@ -63,33 +63,33 @@ function M.get(colors, options)
 		["@keyword.storage"]              = { link = "StorageClass" },
 
 		-- markups
-		["@markup"]                       = "@none",
+		["@markup"]                       = { link = "@none" },
 		["@markup.emphasis"]              = { italic = true },
-		["@markup.environment"]           = "Macro",
-		["@markup.environment.name"]      = "Type",
-		["@markup.heading"]               = "Title",
+		["@markup.environment"]           = { link = "Macro" },
+		["@markup.environment.name"]      = { link = "Type" },
+		["@markup.heading"]               = { link = "Title" },
 		["@markup.italic"]                = { italic = true },
 		["@markup.link"]                  = { fg = colors.def4 },
-		["@markup.link.label"]            = "SpecialChar",
-		["@markup.link.label.symbol"]     = "Identifier",
-		["@markup.link.url"]              = "Underlined",
+		["@markup.link.label"]            = { link = "SpecialChar" },
+		["@markup.link.label.symbol"]     = { link = "Identifier" },
+		["@markup.link.url"]              = { link = "Underlined" },
 		["@markup.list"]                  = { fg = colors.tone2 },                        -- For special punctutation that does not fall in the categories before.
 		["@markup.list.checked"]          = { fg = colors.named[options.themeconf].green }, -- For brackets and parens.
 		["@markup.list.markdown"]         = { fg = colors.named[options.themeconf].orange, bold = true },
 		["@markup.list.unchecked"]        = { fg = colors.named[options.themeconf].blue }, -- For brackets and parens.
-		["@markup.math"]                  = "Special",
-		["@markup.raw"]                   = "String",
+		["@markup.math"]                  = { link = "Special" },
+		["@markup.raw"]                   = { link = "String" },
 		["@markup.raw.markdown_inline"]   = { bg = colors.bg_visual, fg = colors.named[options.themeconf].blue },
 		["@markup.strikethrough"]         = { strikethrough = true },
 		["@markup.strong"]                = { bold = true },
 		["@markup.underline"]             = { underline = true },
 
 		-- others
-		["@module"]                       = "Include",
+		["@module"]                       = { link = "Include" },
 		["@module.builtin"]               = { fg = colors.named[options.themeconf].red }, -- Variable names that are defined by the languages, like `this` or `self`.
-		["@namespace.builtin"]            = "@variable.builtin",
-		["@number"]                       = "Number",
-		["@number.float"]                 = "Float",
+		["@namespace.builtin"]            = { link = "@variable.builtin" },
+		["@number"]                       = { link = "Number" },
+		["@number.float"]                 = { link = "Float" },
 		["@operator"]                     = { link = "Opterator" },                        -- For any operator: `+`, but also `->` and `*` in C.
 		["@property"]                     = { fg = colors.named[options.themeconf].green },
 		["@punctuation.bracket"]          = { fg = colors.fg_dark },                       -- For brackets and parens.
@@ -98,15 +98,15 @@ function M.get(colors, options)
 		["@punctuation.special.markdown"] = { fg = colors.named[options.themeconf].orange }, -- For special symbols (e.g. `{}` in string interpolation)
 
 		-- strings
-		["@string"]                       = "String",
+		["@string"]                       = { link = "String" },
 		["@string.documentation"]         = { fg = colors.named[options.themeconf].yellow },
 		["@string.escape"]                = { fg = colors.named[options.themeconf].magenta }, -- For escape characters within a string.
 		["@string.regexp"]                = { fg = colors.accent6 },                        -- For regexes.
 
 		-- tags
-		["@tag"]                          = "Label",
-		["@tag.attribute"]                = "@property",
-		["@tag.delimiter"]                = "Delimiter",
+		["@tag"]                          = { link = "Label" },
+		["@tag.attribute"]                = { link = "@property" },
+		["@tag.delimiter"]                = { link = "Delimiter" },
 		["@tag.delimiter.tsx"]            = { fg = colors.named[options.themeconf].yellow },
 		["@tag.tsx"]                      = { fg = colors.named[options.themeconf].red },
 		["@tag.javascript"]               = { fg = colors.named[options.themeconf].red },
@@ -115,7 +115,7 @@ function M.get(colors, options)
 		["@type"]                         = { link = "Type" },
 		["@type.builtin"]                 = { link = "TypeBuiltin" },
 		["@type.definition"]              = { link = "TypeDef" },
-		["@type.qualifier"]               = "@keyword",
+		["@type.qualifier"]               = { link = "@keyword" },
 
 		-- variables
 		["@variable"]                     = { link = "Identifier" },
