@@ -27,15 +27,10 @@ function C.extend_palette(options)
 	C.fg_statusline = C.pastel3     -- Statusline text
 	C.fg_selected = C.sec15         -- Text for selected items
 	C.fg_fold = C.sec9              -- Text for folded sections10) -- Bright foreground (text)
-	C.fg_visual = C.pastel4         -- Visual mode text
-	C.fg_sidebar = C.base2          -- Sidebar text
-	C.fg_statusline = C.pastel3     -- Statusline text
-	C.fg_selected = C.sec15         -- Text for selected items
-	C.fg_fold = C.sec9              -- Text for folded sections
 
 	-- Popups
-	C.bg_popup = C.sec1        -- Popup background
-	C.fg_popup = C.sec9        -- Popup text
+	C.bg_popup = C.bg          -- Popup background
+	C.fg_popup = C.fg_visual   -- Popup text
 	C.bg_popup_border = C.base1 -- Popup border background
 	C.fg_popup_border = C.sec3 -- Popup border text
 
