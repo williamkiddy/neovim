@@ -14,7 +14,7 @@ function M.get(colors, options)
 
 		-- characters
 		["@character"]                    = { link = "Character" },
-		["@character.printf"]             = { link = "SpeacialChar" },
+		["@character.printf"]             = { link = "SpecialChar" },
 		["@character.special"]            = { link = "SpecialChar" },
 
 		-- comments
