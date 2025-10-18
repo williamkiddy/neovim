@@ -49,7 +49,7 @@ function M.get(colors, options)
 		PmenuSbar = { bg = colors.base1 },                                                    -- Popup menu scrollbar
 		PmenuThumb = { bg = colors.base1, fg = colors.base1 },                                -- Popup menu scrollbar thumb
 
-		Folded = { bg = colors.fg_bright, fg = colors.fg },
+		Folded = { bg = colors.bg_bright, fg = colors.fg },
 
 		Question = { fg = colors.info },                                                -- Question prompt
 		QuickFixLine = { bg = colors.bg_visual, bold = true },                          -- Quick fix line
