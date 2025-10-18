@@ -10,7 +10,7 @@ function C.extend_palette(options)
 	C.bg_inactive = C.base2  -- Background for inactive windows
 	C.bg_highlight = C.base1 -- Highlighted background
 	C.bg_visual = C.accent3  -- Visual selection
-	C.bg_bright = C.pastel15 -- Bright background
+	C.bg_bright = C.base1    -- Bright background
 	C.bg_sidebar = C.sec10   -- Sidebar background
 	C.bg_statusline = C.base1 -- Statusline background
 	C.bg_selected = C.hue7   -- Background for selected items
