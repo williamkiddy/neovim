@@ -49,34 +49,36 @@ function M.get(colors, options)
 		PmenuSbar = { bg = colors.base1 },                                                    -- Popup menu scrollbar
 		PmenuThumb = { bg = colors.base1, fg = colors.base1 },                                -- Popup menu scrollbar thumb
 
-		Question = { fg = colors.info },                                                      -- Question prompt
-		QuickFixLine = { bg = colors.bg_visual, bold = true },                                -- Quick fix line
+		Folded = { bg = colors.fg_bright, fg = colors.fg },
 
-		Search = { bg = colors.base0, fg = colors.base3, bold = true, underline = true },     -- Search results
-		IncSearch = { bg = colors.sec2, fg = colors.base1, bold = true },                     -- Incremental search
-		CurSearch = { link = "IncSearch" },                                                   -- Current search style same as incremental search
+		Question = { fg = colors.info },                                                -- Question prompt
+		QuickFixLine = { bg = colors.bg_visual, bold = true },                          -- Quick fix line
 
-		SpecialKey = { link = "NonText" },                                                    -- Special keys linked to NonText style
+		Search = { bg = colors.base0, fg = colors.base3, bold = true, underline = true }, -- Search results
+		IncSearch = { bg = colors.sec2, fg = colors.base1, bold = true },               -- Incremental search
+		CurSearch = { link = "IncSearch" },                                             -- Current search style same as incremental search
 
-		SpellBad = { sp = colors.error, undercurl = true },                                   -- Misspelled words
-		SpellCap = { sp = colors.warning, undercurl = true },                                 -- Capitalized errors
-		SpellLocal = { sp = colors.info, undercurl = true },                                  -- Localized spelling errors
-		SpellRare = { sp = colors.hint, undercurl = true },                                   -- Rare spelling errors
+		SpecialKey = { link = "NonText" },                                              -- Special keys linked to NonText style
 
-		StatusLine = { fg = colors.fg_sidebar, bg = colors.bg_statusline },                   -- Status line in current window
-		StatusLineNC = { fg = colors.sec0, bg = colors.bg_statusline },                       -- Status line in non-current windows
-		TabLine = { bg = colors.bg_statusline, fg = colors.fg },                              -- Tab line
-		TabLineFill = { bg = colors.black0, fg = colors.none },                               -- Tab line fill
-		TabLineSel = { fg = colors.fg_bright, bg = colors.bg },                               -- Active tab line
+		SpellBad = { sp = colors.error, undercurl = true },                             -- Misspelled words
+		SpellCap = { sp = colors.warning, undercurl = true },                           -- Capitalized errors
+		SpellLocal = { sp = colors.info, undercurl = true },                            -- Localized spelling errors
+		SpellRare = { sp = colors.hint, undercurl = true },                             -- Rare spelling errors
 
-		Title = { fg = colors.fg_bright, bold = true },                                       -- Title text with bright foreground and bold
-		Visual = { bg = colors.bg_visual, bold = options.cursorline.bold },                   -- Visual mode background
-		VisualNOS = { bg = colors.bg_visual },                                                -- Visual mode in "Not Owning the Selection"
-		WarningMsg = { fg = colors.warning },                                                 -- Warning messages
-		Whitespace = { fg = colors.base1 },                                                   -- Whitespace characters
-		WildMenu = { bg = colors.bg_visual },                                                 -- Current match in wildmenu
-		WinBar = { bg = colors.bg_dark, fg = colors.fg },                                     -- Window bar with dark background
-		WinBarNC = { bg = colors.bg_dark, fg = colors.fg_inactive },                          -- Non-current window bar
+		StatusLine = { fg = colors.fg_sidebar, bg = colors.bg_statusline },             -- Status line in current window
+		StatusLineNC = { fg = colors.sec0, bg = colors.bg_statusline },                 -- Status line in non-current windows
+		TabLine = { bg = colors.bg_statusline, fg = colors.fg },                        -- Tab line
+		TabLineFill = { bg = colors.black0, fg = colors.none },                         -- Tab line fill
+		TabLineSel = { fg = colors.fg_bright, bg = colors.bg },                         -- Active tab line
+
+		Title = { fg = colors.fg_bright, bold = true },                                 -- Title text with bright foreground and bold
+		Visual = { bg = colors.bg_visual, bold = options.cursorline.bold },             -- Visual mode background
+		VisualNOS = { bg = colors.bg_visual },                                          -- Visual mode in "Not Owning the Selection"
+		WarningMsg = { fg = colors.warning },                                           -- Warning messages
+		Whitespace = { fg = colors.base1 },                                             -- Whitespace characters
+		WildMenu = { bg = colors.bg_visual },                                           -- Current match in wildmenu
+		WinBar = { bg = colors.bg_dark, fg = colors.fg },                               -- Window bar with dark background
+		WinBarNC = { bg = colors.bg_dark, fg = colors.fg_inactive },                    -- Non-current window bar
 	}
 end
 
