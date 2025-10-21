@@ -5,16 +5,16 @@ function C.extend_palette(options)
 	C.none = "NONE"
 
 	-- Backgrounds
-	C.bg = C.base0          -- Main background
-	C.bg_dark = C.accent0   -- Darker background
-	C.bg_inactive = C.base2 -- Background for inactive windows
+	C.bg = C.base0           -- Main background
+	C.bg_dark = C.accent0    -- Darker background
+	C.bg_inactive = C.base2  -- Background for inactive windows
 	C.bg_highlight = C.base1 -- Highlighted background
-	C.bg_visual = C.accent3 -- Visual selection
-	C.bg_bright = C.base1   -- Bright background
-	C.bg_sidebar = C.sec10  -- Sidebar background
-	C.bg_statusline = C.bg  -- Statusline background
-	C.bg_selected = C.hue7  -- Background for selected items
-	C.bg_fold = C.base2     -- Background for folded sections
+	C.bg_visual = C.accent3  -- Visual selection
+	C.bg_bright = C.base1    -- Bright background
+	C.bg_sidebar = C.bg      -- Sidebar background
+	C.bg_statusline = C.base1 -- Statusline background
+	C.bg_selected = C.hue7   -- Background for selected items
+	C.bg_fold = C.base2      -- Background for folded sections
 
 	-- Foregrounds
 	C.fg = C.base8                  -- Main foreground (text)
