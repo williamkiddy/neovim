@@ -65,7 +65,7 @@ function M.get(colors, options)
 		SpellLocal = { sp = colors.info, undercurl = true },                            -- Localized spelling errors
 		SpellRare = { sp = colors.hint, undercurl = true },                             -- Rare spelling errors
 
-		StatusLine = { fg = colors.fg_sidebar, bg = colors.bg_statusline },             -- Status line in current window
+		StatusLine = { fg = colors.fg_sidebar, bg = colors.bg_sidebar },                -- Status line in current window
 		StatusLineNC = { fg = colors.sec0, bg = colors.bg_statusline },                 -- Status line in non-current windows
 		TabLine = { bg = colors.bg_statusline, fg = colors.fg },                        -- Tab line
 		TabLineFill = { bg = colors.black0, fg = colors.none },                         -- Tab line fill

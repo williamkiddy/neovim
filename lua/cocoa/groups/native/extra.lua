@@ -19,7 +19,6 @@ function M.get(colors, options)
 		DiagnosticWarn = { fg = colors.warning, undercurl = options.diagnostic.undercurl },              -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 		DiagnosticInfo = { fg = colors.info, undercurl = options.diagnostic.undercurl },                 -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 		DiagnosticHint = { fg = colors.hint, undercurl = options.diagnostic.undercurl },                 -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-		DiagnosticUnnecessary = { fg = colors.sec1 },                                                    -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 		DiagnosticVirtualTextError = { bg = U.blend(colors.error, colors.bg, 0.1), fg = colors.error },  -- Used for "Error" diagnostic virtual text
 		DiagnosticVirtualTextWarn = { bg = U.blend(colors.warning, colors.bg, 0.1), fg = colors.warning }, -- Used for "Warning" diagnostic virtual text
 		DiagnosticVirtualTextInfo = { bg = U.blend(colors.info, colors.bg, 0.1), fg = colors.info },     -- Used for "Information" diagnostic virtual text
