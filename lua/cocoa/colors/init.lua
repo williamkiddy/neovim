@@ -67,12 +67,12 @@ function C.extend_palette(options)
 	}
 
 	-- Diagnostics
-	C.error = C.sec2  -- Error color
-	C.warn = C.sec4   -- Warning color
-	C.warning = C.sec4 -- Additional warning color
-	C.hint = C.sec8   -- Hint color
-	C.info = C.sec7   -- Info color
-	C.todo = C.def3   -- Todo comments
+	C.error = C.sec1  -- Error color
+	C.warn = C.sec3   -- Warning color
+	C.warning = C.sec3 -- Additional warning color
+	C.hint = C.sec2   -- Hint color
+	C.info = C.sec2   -- Info color
+	C.todo = C.sec3   -- Todo comments
 end
 
 return C
