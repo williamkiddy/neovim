@@ -215,4 +215,7 @@ colors.named = {
 	},
 }
 
-return colors
+return { 
+	colors = colors,
+	named = named,
+}
