@@ -103,10 +103,12 @@ function M.hsv_to_rbg(h, s, v)
 end
 
 function M.darken(hex, amount, bg)
+	bg = bg or "#000000" -- default to black if not provided
 	return M.blend(hex, bg, math.abs(amount))
 end
 
 function M.lighten(hex, amount, bg)
+	bg = bg or "#ffffff" -- default to white
 	return M.blend(hex, bg, math.abs(amount))
 end
 
