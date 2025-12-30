@@ -1,6 +1,6 @@
 local colors = {}
 
-local colors = {
+colors = {
 	base0 = "#0f0d13",
 	base1 = "#1a1820",
 	base2 = "#24212b",
