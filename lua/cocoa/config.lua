@@ -13,10 +13,10 @@ local defaults = {
 		bold_number = true,
 	},
 	diagnostic = {
-		undercurl = true
+		undercurl = true,
 	},
 	override = {},
-	themeconf = "core" -- Can be core/accent/sec/def
+	themeconf = "core",
 }
 
 -- Function to merge two tables

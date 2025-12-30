@@ -24,8 +24,8 @@ function M.get(colors, options)
 		Structure = { fg = colors.named[options.themeconf].cyan, bold = true },
 
 		Special = { fg = colors.named[options.themeconf].yellow },
-		Todo = { fg = colors.named.fruit1, bold = true },
-		Error = { fg = colors.named.fruit2, bold = true },
+		Todo = { fg = colors.todo, bold = true },
+		Error = { fg = colors.error, bold = true },
 
 		MarkdownHeading = { fg = colors.named[options.themeconf].pink, bold = true },
 		MarkdownLinkText = { fg = colors.named[options.themeconf].purple, underline = true },
