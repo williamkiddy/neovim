@@ -1,4 +1,5 @@
-local main = {}
+local colors = {}
+
 local colors = {
 	base0 = "#0f0d13",
 	base1 = "#1a1820",
