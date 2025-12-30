@@ -215,40 +215,4 @@ colors.named = {
 	},
 }
 
-main.colors = {
-	foreground = colors.base8,
-	background = colors.base0,
-	cursor_border = colors.accent6,
-	cursor_bg = colors.accent6,
-	cursor_fg = colors.base0,
-	selection_bg = colors.accent2,
-	selection_fg = colors.base8,
-	ansi = {
-		colors.base0,
-		colors.base7,
-		colors.base5,
-		colors.base6,
-		colors.base4,
-		colors.base3,
-		colors.accent6,
-		colors.sec10,
-	},
-	brights = {
-		colors.extra.neutral4,
-		colors.accent4,
-		colors.base5,
-		colors.base6,
-		colors.base4,
-		colors.base3,
-		colors.accent6,
-		colors.base8,
-	},
-}
-
-main.tab_bar = {
-	background = colors.base0,
-}
-
-return {
-	cirqla_x = main,
-}
+return colors
