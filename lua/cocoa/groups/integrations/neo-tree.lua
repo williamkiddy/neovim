@@ -6,7 +6,7 @@ function M.get(colors, options)
 		NeoTreeDirectoryIcon = { link = "NeoTreeFolderIcon" },
 		NeoTreeDirectoryName = { link = "NvimTreeFolderName" },
 		NeoTreeDirectoryNameOpened = { link = "NvimTreeOpenedFolderName" },
-		NeoTreeDotfile = { fg = colors.extra.mineral5 },
+		NeoTreeDotfile = { fg = colors.sec4 },
 		NeoTreeDimText = { fg = colors.fg_dark },
 		NeoTreeRootName = { link = "NvimTreeRootFolder" },
 		NeoTreeFileName = { link = "NvimTreeNormal" },
