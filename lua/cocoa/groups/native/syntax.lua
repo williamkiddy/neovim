@@ -2,14 +2,14 @@ local M = {}
 
 function M.get(colors, options)
 	return {
-		Constant = { fg = colors.named[options.themeconf].blue },
+		Constant = { fg = colors.named[options.themeconf].green },
 		String = { fg = colors.named[options.themeconf].green },
 		Character = { fg = colors.named[options.themeconf].cyan },
-		Number = { fg = colors.named[options.themeconf].blue },
+		Number = { fg = colors.named[options.themeconf].green },
 		Boolean = { fg = colors.named[options.themeconf].yellow, bold = true },
-		Float = { fg = colors.named[options.themeconf].blue },
+		Float = { fg = colors.named[options.themeconf].green },
 
-		Identifier = { fg = colors.named[options.themeconf].blue },
+		Identifier = { fg = colors.named[options.themeconf].green },
 		Function = { fg = colors.named[options.themeconf].orange },
 
 		Statement = { fg = colors.named[options.themeconf].yellow, bold = true },
