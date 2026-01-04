@@ -9,7 +9,7 @@ function M.get(colors, options)
 		Boolean = { fg = colors.named[options.themeconf].yellow, bold = true },
 		Float = { fg = colors.named[options.themeconf].green },
 
-		Identifier = { fg = colors.named[options.themeconf].green },
+		Identifier = { fg = colors.named[options.themeconf].purple },
 		Function = { fg = colors.named[options.themeconf].orange },
 
 		Statement = { fg = colors.named[options.themeconf].yellow, bold = true },
