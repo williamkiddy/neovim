@@ -2,8 +2,8 @@ local M = {}
 
 function M.get(colors, options)
 	return {
-		Constant = { fg = colors.named[options.themeconf].green },
-		String = { fg = colors.named[options.themeconf].green },
+		Constant = { fg = colors.named[options.themeconf].purple },
+		String = { fg = colors.named[options.themeconf].purple },
 		Character = { fg = colors.named[options.themeconf].cyan },
 		Number = { fg = colors.named[options.themeconf].green },
 		Boolean = { fg = colors.named[options.themeconf].yellow, bold = true },
