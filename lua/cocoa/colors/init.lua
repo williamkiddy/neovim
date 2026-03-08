@@ -2,10 +2,11 @@ local C
 local U = require("cocoa.utils")
 
 function C.extend_palette(options)
-	if options.matugen.enabled then
-		C = require(options.matugen.path)
+	local ok, matugen_colors = pcall(require, options.matugen and options.matugen.path or "cocoa.colors.colors")
+	if ok and matugen_colors then
+		C = matugen_colors
 	else
-		C = require("cocoa.colors.colors")
+		C = {}
 	end
 	C.none = "NONE"
 
