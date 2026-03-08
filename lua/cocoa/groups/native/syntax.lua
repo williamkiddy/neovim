@@ -2,46 +2,55 @@ local M = {}
 
 function M.get(colors, options)
 	return {
-		Constant = { fg = colors.named[options.themeconf].purple },
-		String = { fg = colors.named[options.themeconf].purple },
-		Character = { fg = colors.named[options.themeconf].cyan },
-		Number = { fg = colors.named[options.themeconf].green },
-		Boolean = { fg = colors.named[options.themeconf].yellow, bold = true },
-		Float = { fg = colors.named[options.themeconf].green },
+		-- Basics
+		Constant = { fg = colors.B1 },
+		String = { fg = colors.C3 },
+		Character = { fg = colors.C3 },
+		Number = { fg = colors.C5 },
+		Boolean = { fg = colors.B3, bold = true },
+		Float = { fg = colors.C5 },
 
-		Identifier = { fg = colors.named[options.themeconf].purple },
-		Function = { fg = colors.named[options.themeconf].orange },
+		-- Variables and Functions
+		Identifier = { fg = colors.A5 },
+		Function = { fg = colors.C7 },
 
-		Statement = { fg = colors.named[options.themeconf].yellow, bold = true },
-		Conditional = { fg = colors.named[options.themeconf].orange, bold = true },
-		Repeat = { fg = colors.named[options.themeconf].magenta, bold = true },
-		Label = { fg = colors.named[options.themeconf].cyan },
-		Operator = { fg = colors.named[options.themeconf].yellow },
-		Keyword = { fg = colors.named[options.themeconf].green, bold = true },
+		-- Language Features
+		Statement = { fg = colors.B1, bold = true },
+		Conditional = { fg = colors.B0, bold = true },
+		Repeat = { fg = colors.B0, bold = true },
+		Label = { fg = colors.C11 },
+		Operator = { fg = colors.B3 },
+		Keyword = { fg = colors.B1, bold = true },
 
-		PreProc = { fg = colors.named[options.themeconf].purple, italic = true },
-		Type = { fg = colors.named[options.themeconf].yellow },
-		Structure = { fg = colors.named[options.themeconf].cyan, bold = true },
+		-- Types and Pre-processing
+		PreProc = { fg = colors.C9, italic = true },
+		Type = { fg = colors.C4 },
+		Structure = { fg = colors.C11, bold = true },
 
-		Special = { fg = colors.named[options.themeconf].yellow },
-		Todo = { fg = colors.todo, bold = true },
-		Error = { fg = colors.error, bold = true },
+		-- Special and Errors
+		Special = { fg = colors.B3 },
+		Todo = { fg = colors.B3, bold = true },
+		Error = { fg = colors.C1, bold = true },
 
-		MarkdownHeading = { fg = colors.named[options.themeconf].pink, bold = true },
-		MarkdownLinkText = { fg = colors.named[options.themeconf].purple, underline = true },
-		MarkdownLinkUrl = { fg = colors.named[options.themeconf].magenta },
+		-- Markdown
+		MarkdownHeading = { fg = colors.B0, bold = true },
+		MarkdownLinkText = { fg = colors.B1, underline = true },
+		MarkdownLinkUrl = { fg = colors.C7 },
 
-		GitAdd = { fg = colors.git.add },
-		GitChange = { fg = colors.git.change },
-		GitDelete = { fg = colors.git.delete },
+		-- Git
+		GitAdd = { fg = colors.C3 },
+		GitChange = { fg = colors.C4 },
+		GitDelete = { fg = colors.C0 },
 
-		SpellBad = { sp = colors.change0, undercurl = true },
-		SpellCap = { sp = colors.change1, undercurl = true },
-		SpellLocal = { sp = colors.named[options.themeconf].green, undercurl = true },
-		SpellRare = { sp = colors.named[options.themeconf].yellow, undercurl = true },
+		-- Spell Checking
+		SpellBad = { sp = colors.C1, undercurl = true },
+		SpellCap = { sp = colors.C4, undercurl = true },
+		SpellLocal = { sp = colors.C3, undercurl = true },
+		SpellRare = { sp = colors.B3, undercurl = true },
 
-		Whitespace = { fg = colors.named[options.themeconf].red },
-		NonText = {},
+		-- UI Elements
+		Whitespace = { fg = colors.A2 },
+		NonText = { fg = colors.A2 },
 	}
 end
 

@@ -17,6 +17,10 @@ local defaults = {
 	},
 	override = {},
 	themeconf = "core",
+	matugen = {
+		enabled = false,
+		path = nil,
+	},
 }
 
 -- Function to merge two tables

@@ -1,182 +1,39 @@
 local colors = {}
 
 colors = {
-	base0 = "#0f0d13",
-	base1 = "#25242f",
-	base2 = "#3b3c4b",
-	base3 = "#515367",
-	base4 = "#676b84",
-	base5 = "#7d83a0",
-	base6 = "#939abc",
-	base7 = "#a9b2d8",
-	base8 = "#c0caf5",
 
-	acc0 = "#1e1b25",
-	acc1 = "#563a44",
-	acc2 = "#8e5a63",
-	acc3 = "#c67a82",
-	acc4 = "#ff9aa2",
-	acc5 = "#f4a2b9",
-	acc6 = "#e9aad0",
-	acc7 = "#deb2e7",
-	acc8 = "#d4bbff",
+	-- UI / Background
+	A0 = "#0b0f14",
+	A1 = "#131722",
+	A2 = "#1a2030",
+	A3 = "#242b3d",
+	A4 = "#6b7399",
+	A5 = "#a4ace6",
+	A6 = "#d7dcff",
 
-	sec0 = "#1a1428",
-	sec1 = "#221a30",
-	sec2 = "#2a2038",
-	sec3 = "#ff9e8a",
-	sec4 = "#ffa786",
-	sec5 = "#ffc64b",
-	sec6 = "#ffcb32",
-	sec7 = "#d9d73b",
-	sec8 = "#c6d859",
-	sec9 = "#92d5bf",
-	sec10 = "#8bd3d4",
-	sec11 = "#91bcff",
-	sec12 = "#9bb2ff",
-	sec13 = "#b0a0ff",
-	sec14 = "#d4c8ff",
-	sec15 = "#e8e0ff",
+	B0 = "#f38ba8", -- pastel red / rose
+	B1 = "#cba6f7", -- mauve purple
+	B2 = "#89b4fa", -- pastel blue
+	B3 = "#f9e2af", -- soft yellow
+	B4 = "#fab387", -- peach orange
 
-	def0 = "#ff9aa2",
-	def1 = "#f3d47f",
-	def2 = "#ffe08a",
-	def3 = "#b9f27c",
-	def4 = "#82aaff",
-	def5 = "#9ab4ff",
-	def6 = "#d4bbff",
-	def7 = "#e0c8ff",
-	def8 = "#c0caf5",
+	C0 = "#f38ba8", -- rose
+	C1 = "#f5a9b8", -- pink
+	C2 = "#fab387", -- peach
+	C3 = "#f9e2af", -- pastel yellow
+	C4 = "#a6e3a1", -- soft green
+	C5 = "#94e2d5", -- teal
+	C6 = "#89dceb", -- cyan
+	C7 = "#7dcfff", -- sky
 
-	tone0 = "#d4bbff",
-	tone1 = "#9ab4ff",
-	tone2 = "#89dceb",
-	tone3 = "#c0e6a0",
-	tone4 = "#f0d090",
-	tone5 = "#ffb3ba",
-	tone6 = "#d0d8f0",
-	tone7 = "#a9b1d6",
-	tone8 = "#5d6589",
-
-	hue0 = "#ff9aa2",
-	hue1 = "#ffb3a0",
-	hue2 = "#f3d47f",
-	hue3 = "#ffe090",
-	hue4 = "#fff0a8",
-	hue5 = "#c8ff9c",
-	hue6 = "#a8f290",
-	hue7 = "#90e0a8",
-	hue8 = "#80e0ff",
-	hue9 = "#90b8ff",
-	hue10 = "#b0a8ff",
-	hue11 = "#d0a0ff",
-	hue12 = "#f090b8",
-	hue13 = "#f08ba8",
-	hue14 = "#ffb890",
-	hue15 = "#ffc0a0",
-
-	pas0 = "#e0d8f5",
-	pas1 = "#d0c0e8",
-	pas2 = "#c0d8ff",
-	pas3 = "#c0e8e0",
-	pas4 = "#d0f0c8",
-	pas5 = "#e0f0d8",
-	pas6 = "#c8e0f8",
-	pas7 = "#c0d8ff",
-	pas8 = "#c8d0f0",
-	pas9 = "#d8c8f8",
-	pas10 = "#e0c0f0",
-	pas11 = "#f0c8e0",
-	pas12 = "#d8e0f8",
-	pas13 = "#e8d8f0",
-	pas14 = "#e0f0e0",
-	pas15 = "#f0f0e8",
-
-	extra = {
-		neu0 = "#c0caf5",
-		neu1 = "#a9b1d6",
-		neu2 = "#7f85a3",
-		neu3 = "#656d98",
-		neu4 = "#484e73",
-		neu5 = "#343a52",
-		neu6 = "#262a3f",
-		neu7 = "#1a1c2e",
-		neu8 = "#0f0f14",
-		rich0 = "#e0c8ff",
-		rich1 = "#c0a8ff",
-		rich2 = "#b090ff",
-		rich3 = "#a080f0",
-		rich4 = "#f090c0",
-		rich5 = "#f0a0b0",
-		rich6 = "#ffb090",
-		rich7 = "#ffc0a0",
-		rich8 = "#ffd0b0",
-		min0 = "#1f1c26",
-		min1 = "#282434",
-		min2 = "#323044",
-		min3 = "#3d3a50",
-		min4 = "#4a4760",
-		min5 = "#5f5a80",
-		min6 = "#7a75a0",
-		min7 = "#9d95c0",
-		min8 = "#b8b0d8",
-		bri0 = "#ff9aa2",
-		bri1 = "#ffb3ba",
-		bri2 = "#f3d47f",
-		bri3 = "#ffe08a",
-		bri4 = "#b9f27c",
-		bri5 = "#76e5ff",
-		bri6 = "#9ab4ff",
-		bri7 = "#d4bbff",
-		bri8 = "#c0caf5",
-	},
-
-	fruit = {
-		strawberry = { base = "#f5d8e0", soft = "#e8b8c8", dim = "#7a5068" },
-		cherry = { base = "#f5d0d8", soft = "#e8a8c0", dim = "#7a4a60" },
-		raspberry = { base = "#f5c8e0", soft = "#e8a0d0", dim = "#7a4a70" },
-		tangerine = { base = "#f5e0d0", soft = "#e8c0a8", dim = "#7a6048" },
-		apricot = { base = "#f5e8d0", soft = "#e8d0b0", dim = "#7a6848" },
-		banana = { base = "#f5f0d0", soft = "#e8e0b0", dim = "#7a7048" },
-		lemon = { base = "#f5f4d0", soft = "#e8e4b0", dim = "#7a7448" },
-		lime = { base = "#e8f5d0", soft = "#d0e8b0", dim = "#687a48" },
-		kiwi = { base = "#d8f5d0", soft = "#c0e8a8", dim = "#607a50" },
-		apple = { base = "#d0f5d8", soft = "#b8e8c0", dim = "#587a60" },
-		blueberry = { base = "#d8e8f5", soft = "#c0d0e8", dim = "#607090" },
-		grape = { base = "#e0d8f5", soft = "#c8c0e8", dim = "#687080" },
-		plum = { base = "#e8d0f5", soft = "#d0b8e8", dim = "#706890" },
-		mango = { base = "#f5f0d8", soft = "#e8e0c0", dim = "#7a7450" },
-		passion = { base = "#f5e8d0", soft = "#e8d8b0", dim = "#7a6c48" },
-		dragonfruit = { base = "#f5d8f0", soft = "#e8c0e8", dim = "#7a5080" },
-	},
-}
-
-colors.named = {
-	core = {
-		black = colors.base0,
-		white = colors.base8,
-		red = colors.sec3,
-		orange = colors.sec4,
-		yellow = colors.sec5,
-		green = colors.sec7,
-		cyan = colors.sec10,
-		blue = colors.sec11,
-		purple = colors.sec13,
-		pink = colors.acc7,
-		magenta = colors.sec11,
-	},
-	accent = {
-		black = colors.acc0,
-		white = colors.acc8,
-		red = colors.acc4,
-		orange = colors.hue2,
-		yellow = colors.acc7,
-		green = colors.sec12,
-		blue = colors.sec8,
-		purple = colors.hue11,
-		pink = colors.hue12,
-		cyan = colors.acc6,
-	},
+	C8 = "#89b4fa", -- pastel blue
+	C9 = "#9db7ff", -- light blue
+	C10 = "#b4befe", -- lavender blue
+	C11 = "#cba6f7", -- mauve
+	C12 = "#d0a9ff", -- soft violet
+	C13 = "#e0aaff", -- pastel purple
+	C14 = "#f2cdcd", -- rosewater
+	C15 = "#f5c2e7", -- soft magenta
 }
 
 return colors

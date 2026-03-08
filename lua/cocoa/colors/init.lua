@@ -1,78 +1,82 @@
-local C = require("cocoa.colors.colors") -- previous color palette!
+local C
 local U = require("cocoa.utils")
 
 function C.extend_palette(options)
+	if options.matugen.enabled then
+		C = require(options.matugen.path)
+	else
+		C = require("cocoa.colors.colors")
+	end
 	C.none = "NONE"
 
 	-- Backgrounds
-	C.bg = C.base0 -- Main background
-	C.bg_dark = C.acc0 -- Darker background
-	C.bg_inactive = C.base2 -- Background for inactive windows
-	C.bg_highlight = C.base1 -- Highlighted background
-	C.bg_visual = C.acc3 -- Visual selection
-	C.bg_bright = C.base1 -- Bright background
-	C.bg_sidebar = C.bg -- Sidebar background
-	C.bg_statusline = C.base1 -- Statusline background
-	C.bg_selected = C.hue7 -- Background for selected items
-	C.bg_fold = C.base2 -- Background for folded sections
+	C.bg = C.A0
+	C.bg_dark = C.A0
+	C.bg_inactive = C.A1
+	C.bg_highlight = C.A2
+	C.bg_visual = C.A3
+	C.bg_bright = C.A1
+	C.bg_sidebar = C.A0
+	C.bg_statusline = C.A1
+	C.bg_selected = C.A2
+	C.bg_fold = C.A1
 
 	-- Foregrounds
-	C.fg = C.base8 -- Main foreground (text)
-	C.fg_dark = C.extra.neu6 -- Darker text
-	C.fg_inactive = C.extra.neu4 -- Inactive window text
-	C.fg_highlight = C.pas13 -- Highlighted text
-	C.fg_bright = C.base8 -- Bright foreground (text)
-	C.fg_visual = C.pas4 -- Visual mode text
-	C.fg_sidebar = C.fg -- Sidebar text
-	C.fg_statusline = C.pas3 -- Statusline text
-	C.fg_selected = C.sec15 -- Text for selected items
-	C.fg_fold = C.sec9 -- Text for folded sections10) -- Bright foreground (text)
+	C.fg = C.A4
+	C.fg_dark = C.A3
+	C.fg_inactive = C.A3
+	C.fg_highlight = C.A5
+	C.fg_bright = C.A5
+	C.fg_visual = C.A5
+	C.fg_sidebar = C.A4
+	C.fg_statusline = C.A4
+	C.fg_selected = C.A5
+	C.fg_fold = C.C2
 
 	-- Popups
-	C.bg_popup = C.bg -- Popup background
-	C.fg_popup = C.fg_visual -- Popup text
-	C.bg_popup_border = C.base1 -- Popup border background
-	C.fg_popup_border = C.sec3 -- Popup border text
+	C.bg_popup = C.A1
+	C.fg_popup = C.A4
+	C.bg_popup_border = C.A2
+	C.fg_popup_border = C.B0
 
 	-- Floating windows
-	C.bg_float = U.blend(C.bg, C.extra.min7, 0.9) -- Background for floating windows
-	C.fg_float = C.base8 -- Text for floating windows
-	C.bg_float_border = C.bg_float -- Border background for floating windows
-	C.fg_float_border = C.fg_float -- Border text for floating windows
+	C.bg_float = U.blend(C.A0, C.A2, 0.8)
+	C.fg_float = C.A4
+	C.bg_float_border = C.A2
+	C.fg_float_border = C.B1
 
 	-- Theme variations
 	if options.theme == "Mufflora" then
-		-- High contrast
-		C.bg = C.sec0
-		C.bg_selected = U.blend(C.bg, C.hue7, 0.92)
+		C.bg = C.A0
+		C.bg_selected = U.blend(C.A0, C.B1, 0.9)
 	elseif options.theme == "Puffica" then
-		C.bg = C.base2
-		C.bg_highlight = C.pas9
-		C.fg = C.pas5
+		C.bg = C.A1
+		C.bg_highlight = C.A2
+		C.fg = C.A4
 	end
 
 	-- Diff highlighting
 	C.diff = {
-		change0 = C.sec2,
-		change1 = C.sec4,
-		add = C.sec5, -- Additions in diff
-		delete = C.base4, -- Deletions in diff
+		change0 = C.A2,
+		change1 = C.C4,
+		add = C.C3,
+		delete = C.C0,
 	}
 
 	-- Git
 	C.git = {
-		add = C.sec7, -- Git additions
-		delete = C.sec2, -- Git deletions
-		change = C.sec4, -- Git changes
+		add = C.C3,
+		delete = C.C0,
+		change = C.C4,
 	}
 
 	-- Diagnostics
-	C.error = C.sec1 -- Error color
-	C.warn = C.sec3 -- Warning color
-	C.warning = C.sec3 -- Additional warning color
-	C.hint = C.sec2 -- Hint color
-	C.info = C.sec2 -- Info color
-	C.todo = C.sec3 -- Todo comments
+	C.error = C.C1
+	C.warn = C.C4
+	C.warning = C.C4
+	C.hint = C.C7
+	C.info = C.C6
+	C.todo = C.B3
 end
 
 return C

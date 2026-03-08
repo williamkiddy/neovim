@@ -1,24 +1,25 @@
 local M = {}
 local U = require("cocoa.utils")
+
 function M.get(colors, options)
 	return {
-		NvimTreeFolderName = { fg = colors.fg },
-		NvimTreeFolderIcon = { fg = colors.sec3 },
-		NvimTreeCursorLine = { bg = colors.bg_selected },
-		NvimTreeNormal = { fg = colors.fg },
-		NvimTreeOpenedFolderName = { link = "NvimTreeNormal" },
-		NvimTreeEmptyFolderName = { fg = U.blend(colors.fg, colors.bg, 0.144) },
-		NvimTreeIndentMarker = { fg = colors.base4 },
-		NvimTreeWinSeparator = { fg = colors.fg_sidebar },
-		NvimTreeRootFolder = { fg = colors.sec2, bold = true },
-		NvimTreeSymlink = { fg = colors.base6 },
-		NvimTreeStatuslineNC = { fg = colors.base4, bg = colors.bg_highlight },
-		NvimTreeGitDirty = { fg = colors.sec15 },
-		NvimTreeGitNew = { fg = colors.git.add },
-		NvimTreeGitDeleted = { fg = colors.git.delete },
-		NvimTreeSpecialFile = { fg = colors.base0 },
-		NvimTreeImageFile = { fg = colors.sec5 },
-		NvimTreeOpenedFile = { fg = colors.sec4 },
+		NvimTreeNormal = { fg = colors.A4, bg = colors.A0 },
+		NvimTreeFolderName = { fg = colors.A4 },
+		NvimTreeFolderIcon = { fg = colors.B1 },
+		NvimTreeCursorLine = { bg = colors.A2 },
+		NvimTreeOpenedFolderName = { fg = colors.A5, bold = true },
+		NvimTreeEmptyFolderName = { fg = colors.A3 },
+		NvimTreeIndentMarker = { fg = colors.A2 },
+		NvimTreeWinSeparator = { fg = colors.A0, bg = colors.A0 },
+		NvimTreeRootFolder = { fg = colors.B0, bold = true },
+		NvimTreeSymlink = { fg = colors.C10 },
+		NvimTreeStatuslineNC = { fg = colors.A3, bg = colors.A1 },
+		NvimTreeGitDirty = { fg = colors.C4 },
+		NvimTreeGitNew = { fg = colors.C3 },
+		NvimTreeGitDeleted = { fg = colors.C0 },
+		NvimTreeSpecialFile = { fg = colors.B0, underline = true },
+		NvimTreeImageFile = { fg = colors.C9 },
+		NvimTreeOpenedFile = { fg = colors.B0, bold = true },
 	}
 end
 
