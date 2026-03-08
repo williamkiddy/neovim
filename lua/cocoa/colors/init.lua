@@ -4,9 +4,9 @@ local U = require("cocoa.utils")
 function C.extend_palette(options)
 	local ok, matugen_colors = pcall(require, options.matugen and options.matugen.path or "cocoa.colors.colors")
 	if ok and matugen_colors then
-		C = matugen_colors
-	else
-		C = {}
+		for k, v in pairs(matugen_colors) do
+			C[k] = v
+		end
 	end
 	C.none = "NONE"
 
