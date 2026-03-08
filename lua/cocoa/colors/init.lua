@@ -1,4 +1,4 @@
-local C
+local C = {}
 local U = require("cocoa.utils")
 
 function C.extend_palette(options)
