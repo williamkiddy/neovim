@@ -2,7 +2,16 @@ local C = {}
 local U = require("cocoa.utils")
 
 function C.extend_palette(options)
-	local ok, matugen_colors = pcall(require, options.matugen and options.matugen.path or "cocoa.colors.colors")
+	local ok, matugen_colors
+	if options.matugen and options.matugen.enabled and options.matugen.path then
+		if options.matugen.path:sub(1, 1) == "/" then
+			ok, matugen_colors = pcall(dofile, options.matugen.path)
+		else
+			ok, matugen_colors = pcall(require, options.matugen.path)
+		end
+	else
+		ok, matugen_colors = pcall(require, "cocoa.colors.colors")
+	end
 	if ok and matugen_colors then
 		for k, v in pairs(matugen_colors) do
 			C[k] = v
